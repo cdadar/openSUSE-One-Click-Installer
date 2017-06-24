@@ -40,8 +40,15 @@ fi
 
 # 添加软件源
 # w32codec-all 需要该源
-sudo zypper --gpg-auto-import-keys ar -f http://packman.inode.at/suse/openSUSE_Leap_$OSVER/ Packman\ Repository
+sudo zypper --gpg-auto-import-keys ar -fr http://packman.inode.at/suse/openSUSE_Leap_$OSVER/ packman
 
+sudo zypper --gpg-auto-import-keys ar -fr http://download.opensuse.org/repositories/home:/opensuse_zh/openSUSE_Leap_$OSVER/home:opensuse_zh.repo
+sudo zypper --gpg-auto-import-keys ar -fr http://repo.fdzh.org/chrome/google-chrome-mirrors.repo
+sudo zypper --gpg-auto-import-keys ar -fr http://download.opensuse.org/repositories/editors/openSUSE_Leap_$OSVER/ editors 
+
+sudo zypper --gpg-auto-import-keys ar -fr http://download.opensuse.org/repositories/M17N:/fonts/openSUSE_$OSVER/M17N:fonts.repo 
+
+sudo zypper --gpg-auto-import-keys ar -fr http://download.opensuse.org/repositories/devel:/languages:/nodejs/openSUSE_Leap_42.2/devel:languages:nodejs.repo
 
 # 刷新软件源并更新系统
 sudo zypper -n refresh
@@ -56,18 +63,13 @@ fi
 
 if [ "$install_netease_cloud_music" != "0" ]; then
     # kwplayer needs this repo
-    NETEASE_TMP_DIR=`netease_tmp -d`
-  sudo zypper --gpg-auto-import-keys ar -f -r http://download.opensuse.org/repositories/home:/opensuse_zh/openSUSE_Leap_$OSVER/home:opensuse_zh.repo
- 
- aria2c --conditional-get=true --allow-overwrite=true -c -d $NETEASE_TMP_DIR --check-certificate=false http://s1.music.126.net/download/pc/netease-cloud-music_1.0.0-2_amd64_ubuntu16.04.deb
+    wget  http://s1.music.126.net/download/pc/netease-cloud-music_1.0.0-2_amd64_ubuntu16.04.deb
 
-  cd $NETEASE_TMP_DIR
-  ar p netease-cloud-music_*.deb data.tar.xz > netease-cloud-music_tmp.tar.xz
-  sudo tar -xvf netease-cloud-music_tmp.tar.xz -C /
+    ar p netease-cloud-music_*.deb data.tar.xz > netease-cloud-music_tmp.tar.xz
+    sudo tar -xvf netease-cloud-music_tmp.tar.xz -C /
 
   # opensuse-zh 源中的脚本不能很好的安装
-  sudo zypper -n in -l netease-cloud-music
-  cd -
+    sudo zypper -n in -l netease-cloud-music
   
 fi
 
@@ -82,8 +84,8 @@ if [ "$install_google_chrome" != "0" ]; then
   # Google Chrome
   # sudo zypper --gpg-auto-import-keys ar -f http://dl.google.com/linux/chrome/rpm/stable/$(uname -m) Google-Chrome
   # 在大陆常常不能访问 dl.google.com，所以启用 fdzh google chrome 镜像源
-  sudo zypper --gpg-auto-import-keys ar -fr http://repo.fdzh.org/chrome/google-chrome-mirrors.repo
-  sudo zypper ref
+
+
   sudo zypper -n in -l google-chrome-stable
 fi
 
@@ -115,6 +117,8 @@ sudo zypper -n in -l texlive texlive-latex  texlive-xetex texlive-ctex
 
 sudo zypper -n in -l gcc-c++ gcc
 
+sudo zypper -n in -l clang llvm-devel
+
 sudo zypper -n in -l tmux vim
 
 sudo zypper -n in -l rdesktop
@@ -123,10 +127,18 @@ sudo zypper -n in -l steam
 
 sudo zypper -n in -l fcitx fcitx-rime
 
-sudo zypper -n in -l xsel
+# sudo zypper -n in -l xsel
 
+sudo zypper -n in -l xclip
 
-sudo zypper --gpg-auto-import-keys ar -f http://download.opensuse.org/repositories/editors/openSUSE_Leap_$OSVER/ editors
+sudo zypper -n in -l  aspell
+
+sudo zypper -n in -l sbcl
+
+sudo zypper -n in -l nodejs
+
+sudo npm install -g webpack tern  gitbook-cli
+
 sudo zypper -n in -l emacs
 
 
@@ -147,7 +159,17 @@ QUITMARK
   rm -rf $ALIEDIT_TMP_DIR
 fi
 
-sudo zypper -n in gcc kernel-source virtualbox virtualbox-qt
+sudo zypper -n in -l  gcc kernel-source virtualbox virtualbox-qt
+
+sudo zypper -n in -l docker docker-compose 
+
+sudo zypper -n in -l the_silver_searcher
+
+sudo zypper -n in -l glocal
+
+sudo zypper -n in -l proxychains
+
+sudo zypper -n in -l privoxy
 
 if [ "$translate_user_dirs_names_from_chinese_to_english" != "0" ]; then
   export LANG=default
@@ -161,3 +183,6 @@ if [ "$translate_user_dirs_names_from_chinese_to_english" != "0" ]; then
   cd ~/图片/ && ls -A | xargs -i mv -f {} ~/Pictures/ && rmdir ~/图片
   cd ~/视频/ && ls -A | xargs -i mv -f {} ~/Videos/ && rmdir ~/视频
 fi
+
+
+#TODO 将github管理的配置处理
