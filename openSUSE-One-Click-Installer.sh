@@ -40,15 +40,18 @@ fi
 
 # 添加软件源
 # w32codec-all 需要该源
-sudo zypper --gpg-auto-import-keys ar -fr http://packman.inode.at/suse/openSUSE_Leap_$OSVER/ packman
+sudo zypper --gpg-auto-import-keys ar -c  http://packman.inode.at/suse/openSUSE_Leap_$OSVER/ packman
 
-sudo zypper --gpg-auto-import-keys ar -fr http://download.opensuse.org/repositories/home:/opensuse_zh/openSUSE_Leap_$OSVER/home:opensuse_zh.repo
-sudo zypper --gpg-auto-import-keys ar -fr http://repo.fdzh.org/chrome/google-chrome-mirrors.repo
-sudo zypper --gpg-auto-import-keys ar -fr http://download.opensuse.org/repositories/editors/openSUSE_Leap_$OSVER/ editors 
+sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/home:/opensuse_zh/openSUSE_Leap_$OSVER/ opensusu_zh
+# sudo zypper --gpg-auto-import-keys ar http://repo.fdzh.org/chrome/ google-chrome-stable
 
-sudo zypper --gpg-auto-import-keys ar -fr http://download.opensuse.org/repositories/M17N:/fonts/openSUSE_$OSVER/M17N:fonts.repo 
+sudo zypper --gpg-auto-import-keys ar -c  http://dl.google.com/linux/chrome/rpm/stable/$(uname -m) google-chrome
 
-sudo zypper --gpg-auto-import-keys ar -fr http://download.opensuse.org/repositories/devel:/languages:/nodejs/openSUSE_Leap_42.2/devel:languages:nodejs.repo
+sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/editors/openSUSE_Leap_$OSVER/ editors 
+
+sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/M17N:/fonts/openSUSE_$OSVER/  M17N:fonts
+
+sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/nodejs/openSUSE_$OSVER/ nodejs
 
 # 刷新软件源并更新系统
 sudo zypper -n refresh
@@ -82,7 +85,7 @@ if [ "$install_google_chrome" != "0" ]; then
   # 在大陆常常不能访问 dl.google.com，所以添加 IP地址映射
   # sudo sh -c "echo '203.208.46.163    dl.google.com' > /etc/hosts"
   # Google Chrome
-  # sudo zypper --gpg-auto-import-keys ar -f http://dl.google.com/linux/chrome/rpm/stable/$(uname -m) Google-Chrome
+  # sudo zypper --gpg-auto-import-keys ar -f  http://dl.google.com/linux/chrome/rpm/stable/$(uname -m) Google-Chrome
   # 在大陆常常不能访问 dl.google.com，所以启用 fdzh google chrome 镜像源
 
 
