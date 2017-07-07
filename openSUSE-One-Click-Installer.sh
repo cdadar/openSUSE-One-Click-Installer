@@ -49,9 +49,9 @@ sudo zypper --gpg-auto-import-keys ar -c  http://dl.google.com/linux/chrome/rpm/
 
 sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/editors/openSUSE_Leap_$OSVER/ editors 
 
-sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/M17N:/fonts/openSUSE_$OSVER/  M17N:fonts
+sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/M17N:/fonts/openSUSE_Leap_$OSVER/  M17N:fonts
 
-sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/nodejs/openSUSE_$OSVER/ nodejs
+sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/nodejs/openSUSE_Leap_$OSVER/ nodejs
 
 # 刷新软件源并更新系统
 sudo zypper -n refresh
