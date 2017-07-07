@@ -142,25 +142,7 @@ sudo zypper -n in -l nodejs
 
 sudo npm install -g webpack tern  gitbook-cli
 
-sudo zypper -n in -l emacs
-
-
-if [ "$install_aliedit" != "0" ]; then
-  # 支付宝安全控件的依赖包
-  sudo zypper -n in libpng12-0
-
-  # 安装支付宝安全控件
-  ALIEDIT_TMP_DIR=`mktemp -d`
-  aria2c --conditional-get=true --allow-overwrite=true -c -d $ALIEDIT_TMP_DIR --check-certificate=false https://download.alipay.com/alipaysc/linux/aliedit/1.0.3.20/aliedit.tar.gz
-
-  tar -C $ALIEDIT_TMP_DIR -xzvf  $ALIEDIT_TMP_DIR/aliedit.tar.gz
-
-  # aliedit.sh 需要键入一个字符来退出执行
-  sh $ALIEDIT_TMP_DIR/aliedit.sh <<QUITMARK
-  x
-QUITMARK
-  rm -rf $ALIEDIT_TMP_DIR
-fi
+sudo zypper -n in -l  editors:emacs
 
 sudo zypper -n in -l  gcc kernel-source virtualbox virtualbox-qt
 
@@ -173,6 +155,8 @@ sudo zypper -n in -l glocal
 sudo zypper -n in -l proxychains
 
 sudo zypper -n in -l privoxy
+
+sudo zypper -n in -l filezilla
 
 if [ "$translate_user_dirs_names_from_chinese_to_english" != "0" ]; then
   export LANG=default
