@@ -81,20 +81,9 @@ if [ "$install_flash_player" != "0" ]; then
     sudo zypper -n in -l flash-player-ppapi   
 fi
 
-if [ "$install_google_chrome" != "0" ]; then
-  # 在大陆常常不能访问 dl.google.com，所以添加 IP地址映射
-  # sudo sh -c "echo '203.208.46.163    dl.google.com' > /etc/hosts"
-  # Google Chrome
-  # sudo zypper --gpg-auto-import-keys ar -f  http://dl.google.com/linux/chrome/rpm/stable/$(uname -m) Google-Chrome
-  # 在大陆常常不能访问 dl.google.com，所以启用 fdzh google chrome 镜像源
-
-
-  sudo zypper -n in -l google-chrome-stable
-fi
+sudo zypper -n in -l google-chrome-stable
 
 sudo zypper -n in -l  packman:ffmpeg 
-
-
 
 # tomahawk use phonon-backend-vlc, so vlc-codecs ( in packman ) is needed.
 sudo zypper -n in -l packman:vlc-codecs
@@ -138,7 +127,7 @@ sudo zypper -n in -l  aspell
 
 sudo zypper -n in -l sbcl
 
-sudo zypper -n in -l nodejs
+sudo zypper -n in -l nodejs:nodejs
 
 sudo npm install -g webpack tern  gitbook-cli
 
@@ -157,6 +146,12 @@ sudo zypper -n in -l proxychains
 sudo zypper -n in -l privoxy
 
 sudo zypper -n in -l filezilla
+
+sudo zypper -n in -l https://vscode.cdn.azure.cn/stable/379d2efb5539b09112c793d3d9a413017d736f89/code-1.13.1-1497464533.el7.x86_64.rpm
+
+sudo zypper -n in -l http://dbeaver.jkiss.org/files/4.1.0/dbeaver-ce-4.1.0-stable.x86_64.rpm
+
+sudo zypper -n in -l http://pencil.evolus.vn/dl/V3.0.4/Pencil-3.0.4-49.x86_64.rpm
 
 if [ "$translate_user_dirs_names_from_chinese_to_english" != "0" ]; then
   export LANG=default
