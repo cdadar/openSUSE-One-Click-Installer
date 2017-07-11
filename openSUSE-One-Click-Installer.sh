@@ -53,6 +53,9 @@ sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositori
 
 sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/nodejs/openSUSE_Leap_$OSVER/ nodejs
 
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/zypp/repos.d/vscode.repo'
+
 # 刷新软件源并更新系统
 sudo zypper -n refresh
 sudo zypper -n update -l
@@ -133,13 +136,15 @@ sudo npm install -g webpack tern  gitbook-cli
 
 sudo zypper -n in -l  editors:emacs
 
+sudo zypper -n in -l etags
+
 sudo zypper -n in -l  gcc kernel-source virtualbox virtualbox-qt
 
 sudo zypper -n in -l docker docker-compose 
 
 sudo zypper -n in -l the_silver_searcher
 
-sudo zypper -n in -l glocal
+sudo zypper -n in -l global
 
 sudo zypper -n in -l proxychains
 
@@ -147,7 +152,7 @@ sudo zypper -n in -l privoxy
 
 sudo zypper -n in -l filezilla
 
-sudo zypper -n in -l https://vscode.cdn.azure.cn/stable/379d2efb5539b09112c793d3d9a413017d736f89/code-1.13.1-1497464533.el7.x86_64.rpm
+sudo zypper -n in -l code
 
 sudo zypper -n in -l http://dbeaver.jkiss.org/files/4.1.0/dbeaver-ce-4.1.0-stable.x86_64.rpm
 
