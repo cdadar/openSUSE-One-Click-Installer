@@ -138,6 +138,8 @@ sudo zypper -n in -l  editors:emacs
 
 sudo zypper -n in -l etags
 
+sudo zypper -n in -l ctags
+
 sudo zypper -n in -l  gcc kernel-source virtualbox virtualbox-qt
 
 sudo zypper -n in -l docker docker-compose 
