@@ -136,19 +136,19 @@ sudo zypper -n in -l nodejs:nodejs
 
 sudo npm install -g webpack tern  gitbook-cli
 
-sudo zypper -n in -l  editors:emacs
+sudo zypper -n in -l editors:emacs
 
 sudo zypper -n in -l etags
 
 sudo zypper -n in -l ctags
 
-sudo zypper -n in -l  gcc kernel-source virtualbox virtualbox-qt
-
-sudo zypper -n in -l docker docker-compose 
+sudo zypper -n in -l global
 
 sudo zypper -n in -l the_silver_searcher
 
-sudo zypper -n in -l global
+sudo zypper -n in -l  gcc kernel-source virtualbox virtualbox-qt
+
+sudo zypper -n in -l docker docker-compose 
 
 sudo zypper -n in -l proxychains
 
