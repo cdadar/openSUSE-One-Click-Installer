@@ -59,7 +59,7 @@ sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/zypp/repos.d/vscode.repo'
 
 # 刷新软件源并更新系统
-sudo zypper -n refresh
+sudo zypper --gpg-auto-import-keys ref
 sudo zypper -n update -l
 
 sudo zypper -n in -l aria2
