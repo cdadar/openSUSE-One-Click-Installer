@@ -158,6 +158,8 @@ sudo zypper -n in -l filezilla
 
 sudo zypper -n in -l mu4e
 
+sudo zypper -n in -l mutt getmail msmtp
+
 sudo zypper -n in -l code
 
 sudo zypper -n in -l http://dbeaver.jkiss.org/files/4.1.0/dbeaver-ce-4.1.0-stable.x86_64.rpm
