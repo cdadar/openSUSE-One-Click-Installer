@@ -158,7 +158,7 @@ sudo zypper -n in -l filezilla
 
 sudo zypper -n in -l mu4e
 
-sudo zypper -n in -l mutt getmail msmtp
+sudo zypper -n in -l mutt getmail msmtp procmail
 
 sudo zypper -n in -l code
 
