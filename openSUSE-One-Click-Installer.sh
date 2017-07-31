@@ -66,7 +66,7 @@ sudo zypper -n in -l aria2
 
 # 安装 gstreamer 相关插件，这样基于 phonon 框架的多媒体软件就可以播放受专利保护的多媒体文件了
 if [ "$install_gstreamer_plugins" != "0" ]; then
-  sudo zypper -n in -l gstreamer-0_10-plugins-base gstreamer-0_10-plugins-good gstreamer-0_10-plugins-bad gstreamer-0_10-plugins-ugly gstreamer-0_10-plugins-ugly-orig-addon gstreamer-0_10-plugins-ffmpeg gstreamer-0_10-plugins-fluendo_mp3
+  sudo zypper -n in -l gstreamer-0_10-plugins-base gstreamer-0_10-plugins-good gstreamer-0_10-plugins-bad gstreamer-0_10-plugins-ugly gstreamer-0_10-plugins-ffmpeg 
 fi
 
 if [ "$install_netease_cloud_music" != "0" ]; then
@@ -94,9 +94,9 @@ sudo zypper -n in -l  packman:ffmpeg
 sudo zypper -n in -l packman:vlc-codecs
 
   # vlc-codecs 包含许多受限多媒体格式的解码器
-sudo zypper -n in -l packman:vlc packman:vlc-codecs packman:xvba-video
+sudo zypper -n in -l packman:vlc packman:xvba-video
 
-
+sudo zypper -n in -l packman:mplayer
 
 sudo zypper -n in -l git
 
@@ -136,6 +136,8 @@ sudo zypper -n in -l nodejs:nodejs
 
 sudo npm install -g webpack tern  gitbook-cli
 
+sudo npm install -g yarn
+
 sudo zypper -n in -l editors:emacs
 
 sudo zypper -n in -l etags
@@ -150,21 +152,26 @@ sudo zypper -n in -l  gcc kernel-source virtualbox virtualbox-qt
 
 sudo zypper -n in -l docker docker-compose 
 
+sudo zypper -n in -l shadowsocks-libev
+
 sudo zypper -n in -l proxychains
 
 sudo zypper -n in -l privoxy
 
 sudo zypper -n in -l filezilla
 
-sudo zypper -n in -l mu4e
+sudo zypper -n in -l xterm
 
 sudo zypper -n in -l mutt getmail msmtp procmail
 
 sudo zypper -n in -l code
 
+sudo zypper -n in -l noto-sans-sc-fonts-full
+
 sudo zypper -n in -l http://dbeaver.jkiss.org/files/4.1.0/dbeaver-ce-4.1.0-stable.x86_64.rpm
 
-sudo zypper -n in -l http://pencil.evolus.vn/dl/V3.0.4/Pencil-3.0.4-49.x86_64.rpm
+# sudo zypper -n in -l http://pencil.evolus.vn/dl/V3.0.4/Pencil-3.0.4-49.x86_64.rpm
+
 
 if [ "$translate_user_dirs_names_from_chinese_to_english" != "0" ]; then
   export LANG=default
