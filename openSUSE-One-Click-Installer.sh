@@ -149,9 +149,11 @@ sudo zypper -n in -l ctags
 
 sudo zypper -n in -l global
 
+sudo zypper -n in -l osc
+
 sudo zypper -n in -l the_silver_searcher
 
-sudo zypper -n in -l  gcc kernel-source virtualbox virtualbox-qt
+sudo zypper -n in -l gcc kernel-source virtualbox virtualbox-qt
 
 sudo zypper -n in -l docker docker-compose 
 
