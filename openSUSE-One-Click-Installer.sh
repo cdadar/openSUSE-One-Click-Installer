@@ -117,6 +117,8 @@ sudo zypper -n in -l gcc-c++ gcc
 
 sudo zypper -n in -l clang llvm-devel
 
+sudo zypper -n in -l patterns-openSUSE-base patterns-openSUSE-devel_basis
+
 sudo zypper -n in -l tmux vim
 
 sudo zypper -n in -l rdesktop
