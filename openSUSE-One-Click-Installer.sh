@@ -182,6 +182,8 @@ sudo zypper -n in -l http://dbeaver.jkiss.org/files/4.1.0/dbeaver-ce-4.1.0-stabl
 sudo zypper -n in -l postgresql postgresql-devel
 
 
+sudo zypper -n in -l dropbox
+
 
 # sudo zypper -n in -l http://pencil.evolus.vn/dl/V3.0.4/Pencil-3.0.4-49.x86_64.rpm
 
