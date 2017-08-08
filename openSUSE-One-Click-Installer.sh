@@ -183,15 +183,28 @@ sudo zypper -n in -l patterns-openSUSE-base patterns-openSUSE-devel_basis
 
 sudo zypper -n in -l texlive texlive-latex  texlive-xetex texlive-ctex
 
-
 sudo npm install -g webpack
+
 sudo npm install -g tern 
+
 sudo npm install -g gitbook-cli
 
 sudo npm install -g yarn
 
 # sudo zypper -n in -l http://pencil.evolus.vn/dl/V3.0.4/Pencil-3.0.4-49.x86_64.rpm
 
+# ruby
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+
+curl -sSL https://get.rvm.io | bash -s stable
+
+rvm install 2.3
+
+rvm get stable --auto-dotfiles
+
+rvm
+
+gem install rails
 
 if [ "$translate_user_dirs_names_from_chinese_to_english" != "0" ]; then
   export LANG=default
