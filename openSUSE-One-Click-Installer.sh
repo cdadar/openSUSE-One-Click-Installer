@@ -91,6 +91,7 @@ if [ "$install_flash_player" != "0" ]; then
     sudo zypper -n in -l flash-player-ppapi   
 fi
 
+
 sudo zypper -n in -l google-chrome-stable
 
 sudo zypper -n in -l  packman:ffmpeg 
@@ -102,6 +103,16 @@ sudo zypper -n in -l packman:vlc-codecs
 sudo zypper -n in -l packman:vlc packman:xvba-video
 
 sudo zypper -n in -l packman:mplayer
+
+sudo zypper -n in -l nodejs:nodejs6
+
+sudo zypper -n in -l editors:emacs
+
+sudo zypper -n in -l etags
+
+sudo zypper -n in -l ctags
+
+sudo zypper -n in -l global
 
 sudo zypper -n in -l git
 
@@ -115,13 +126,9 @@ sudo zypper -n in -l p7zip
 # 这些 zip 包中的文件名实际上是以 GBK 编码的
 sudo zypper -n in -l unzip-rcc
 
-sudo zypper -n in -l texlive texlive-latex  texlive-xetex texlive-ctex
-
 sudo zypper -n in -l gcc-c++ gcc
 
 sudo zypper -n in -l clang llvm-devel
-
-sudo zypper -n in -l patterns-openSUSE-base patterns-openSUSE-devel_basis
 
 sudo zypper -n in -l tmux vim
 
@@ -138,20 +145,6 @@ sudo zypper -n in -l xclip
 sudo zypper -n in -l  aspell
 
 sudo zypper -n in -l sbcl
-
-sudo zypper -n in -l nodejs:nodejs
-
-sudo npm install -g webpack tern  gitbook-cli
-
-sudo npm install -g yarn
-
-sudo zypper -n in -l editors:emacs
-
-sudo zypper -n in -l etags
-
-sudo zypper -n in -l ctags
-
-sudo zypper -n in -l global
 
 sudo zypper -n in -l osc
 
@@ -184,6 +177,18 @@ sudo zypper -n in -l postgresql postgresql-devel
 
 sudo zypper -n in -l dropbox
 
+sudo zypper -n in -l dropbox
+
+sudo zypper -n in -l patterns-openSUSE-base patterns-openSUSE-devel_basis
+
+sudo zypper -n in -l texlive texlive-latex  texlive-xetex texlive-ctex
+
+
+sudo npm install -g webpack
+sudo npm install -g tern 
+sudo npm install -g gitbook-cli
+
+sudo npm install -g yarn
 
 # sudo zypper -n in -l http://pencil.evolus.vn/dl/V3.0.4/Pencil-3.0.4-49.x86_64.rpm
 
