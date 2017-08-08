@@ -91,7 +91,6 @@ if [ "$install_flash_player" != "0" ]; then
     sudo zypper -n in -l flash-player-ppapi   
 fi
 
-
 sudo zypper -n in -l google-chrome-stable
 
 sudo zypper -n in -l  packman:ffmpeg 
@@ -173,9 +172,6 @@ sudo zypper -n in -l noto-sans-sc-fonts-full
 sudo zypper -n in -l http://dbeaver.jkiss.org/files/4.1.0/dbeaver-ce-4.1.0-stable.x86_64.rpm
 
 sudo zypper -n in -l postgresql postgresql-devel
-
-
-sudo zypper -n in -l dropbox
 
 sudo zypper -n in -l dropbox
 
