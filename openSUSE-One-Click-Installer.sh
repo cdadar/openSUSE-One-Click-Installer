@@ -200,10 +200,6 @@ curl -sSL https://get.rvm.io | bash -s stable
 
 rvm install 2.3
 
-rvm get stable --auto-dotfiles
-
-rvm
-
 gem install rails
 
 if [ "$translate_user_dirs_names_from_chinese_to_english" != "0" ]; then
