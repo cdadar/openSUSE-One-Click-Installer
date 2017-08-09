@@ -169,7 +169,7 @@ sudo zypper -n in -l code
 
 sudo zypper -n in -l noto-sans-sc-fonts-full
 
-sudo zypper -n in -l http://dbeaver.jkiss.org/files/4.1.0/dbeaver-ce-4.1.0-stable.x86_64.rpm
+sudo zypper -n in -l http://dbeaver.jkiss.org/files/4.1.2/dbeaver-ce-4.1.2-stable.x86_64.rpm
 
 sudo zypper -n in -l postgresql postgresql-devel
 
