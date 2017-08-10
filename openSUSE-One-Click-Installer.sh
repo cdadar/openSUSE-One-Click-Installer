@@ -190,11 +190,26 @@ sudo npm install -g yarn
 # sudo zypper -n in -l http://pencil.evolus.vn/dl/V3.0.4/Pencil-3.0.4-49.x86_64.rpm
 
 # ruby
-gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+# gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 
-curl -sSL https://get.rvm.io | bash -s stable
+# curl -sSL https://get.rvm.io | bash -s stable
 
-rvm install 2.3
+# rvm install 2.3
+
+
+git clone git://github.com/sstephenson/rbenv.git ~/.rbenv
+# 用来编译安装 ruby
+git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+# 通过 gem 命令安装完 gem 后无需手动输入 rbenv rehash 命令, 推荐
+git clone git://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
+# 通过 rbenv update 命令来更新 rbenv 以及所有插件, 推荐
+git clone git://github.com/rkh/rbenv-update.git ~/.rbenv/plugins/rbenv-update
+# 使用 Ruby China 的镜像安装 Ruby, 国内用户推荐
+git clone git://github.com/AndorChen/rbenv-china-mirror.git ~/.rbenv/plugins/rbenv-china-mirror
+
+rbenv install 2.3.2
+
+rbenv global 2.3.2
 
 gem install rails
 
