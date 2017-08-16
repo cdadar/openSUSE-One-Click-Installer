@@ -1,0 +1,20 @@
+* openSUSE-One-Click-Installer
+openSUSE一键安装脚本,主要安装常用的软件
+** 软件源
+*** packman
+主要使用该源的音频解码等包
+*** opensusu_zh
+netease-cloud-music
+*** google-chrome
+google-chrome-stable
+*** editors
+主要使用 emacs25.2 ,oss中的emacs现在才24.3
+*** M17N:fonts
+
+*** nodejs
+** 下载工具
+- aria2
+- deluge
+- uget
+- mkdonkey
+-
