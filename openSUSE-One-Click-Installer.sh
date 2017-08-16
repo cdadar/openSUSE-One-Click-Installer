@@ -60,6 +60,7 @@ sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.m
 
 # 刷新软件源并更新系统
 sudo zypper --gpg-auto-import-keys ref
+
 sudo zypper -n update -l
 
 sudo zypper -n in -l aria2
@@ -73,7 +74,6 @@ sudo zypper -n in -l mldonkey
 # 安装 gstreamer 相关插件，这样基于 phonon 框架的多媒体软件就可以播放受专利保护的多媒体文件了
 if [ "$install_gstreamer_plugins" != "0" ]; then
   sudo zypper -n in -l gstreamer-0_10-plugins-base gstreamer-0_10-plugins-good gstreamer-0_10-plugins-bad gstreamer-0_10-plugins-ugly gstreamer-0_10-plugins-ffmpeg  gstreamer-plugins-bad-orig-addon
-
 fi
 
 if [ "$install_netease_cloud_music" != "0" ]; then
@@ -90,7 +90,7 @@ fi
 
 # 解决Firefox不能播放flash在线视频
 if [ "$install_flash_player" != "0" ]; then
-    sudo zypper -n in -l flash-player-ppapi   
+    sudo zypper -n in -l flash-player-ppapi
 fi
 
 sudo zypper -n in -l google-chrome-stable
