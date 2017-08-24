@@ -191,10 +191,6 @@ sudo npm install -g gitbook-cli
 
 sudo npm install -g yarn
 
-sudo pip install  future
-
-sudo pip install frozendict
-
 # sudo zypper -n in -l http://pencil.evolus.vn/dl/V3.0.4/Pencil-3.0.4-49.x86_64.rpm
 
 
