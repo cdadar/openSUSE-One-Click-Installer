@@ -53,6 +53,8 @@ sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositori
 
 sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/nodejs/openSUSE_Leap_$OSVER/ nodejs
 
+sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/tools/openSUSE_Leap_$OSVER/ devel:tools
+
 # sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/server:/mail/openSUSE_Leap_$OSVER/ mail
 
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
@@ -147,7 +149,7 @@ sudo zypper -n in -l  aspell
 
 sudo zypper -n in -l sbcl
 
-sudo zypper -n in -l osc
+sudo zypper -n in -l osc rpmdevtools
 
 sudo zypper -n in -l the_silver_searcher
 
