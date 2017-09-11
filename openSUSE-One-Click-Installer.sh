@@ -187,6 +187,8 @@ sudo zypper -n in -l texlive texlive-latex  texlive-xetex texlive-ctex
 
 sudo zypper -n in -l texlive-cjkpunct texlive-wrapfig texlive-capt-of 
 
+sudo zypper -n in -l screenfetch
+
 sudo npm install -g webpack
 
 sudo npm install -g tern 
