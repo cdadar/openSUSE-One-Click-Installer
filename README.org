@@ -17,4 +17,3 @@ google-chrome-stable
 - deluge
 - uget
 - mkdonkey
--
