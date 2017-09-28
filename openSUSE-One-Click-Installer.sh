@@ -173,8 +173,6 @@ sudo zypper -n in -l code
 
 sudo zypper -n in -l noto-sans-sc-fonts-full
 
-sudo zypper -n in -l http://dbeaver.jkiss.org/files/4.1.2/dbeaver-ce-4.1.2-stable.x86_64.rpm
-
 sudo zypper -n in -l postgresql postgresql-server postgresql-contrib postgresql-devel
 
 sudo zypper -n in -l pgadmin3
@@ -202,7 +200,7 @@ sudo npm install -g gitbook-cli
 sudo npm install -g yarn
 
 # sudo zypper -n in -l http://pencil.evolus.vn/dl/V3.0.4/Pencil-3.0.4-49.x86_64.rpm
-
+# sudo zypper -n in -l http://dbeaver.jkiss.org/files/4.1.2/dbeaver-ce-4.1.2-stable.x86_64.rpm
 
 if [ "$translate_user_dirs_names_from_chinese_to_english" != "0" ]; then
   export LANG=default
