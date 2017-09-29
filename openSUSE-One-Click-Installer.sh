@@ -193,6 +193,8 @@ sudo zypper -n in -l screenfetch
 
 sudo zypper -n in -l keepass
 
+sudo zypper -n in -l zeal
+
 sudo npm install -g webpack
 
 sudo npm install -g tern 
