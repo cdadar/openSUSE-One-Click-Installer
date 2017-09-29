@@ -109,7 +109,7 @@ sudo zypper -n in -l packman:mplayer
 
 sudo zypper -n in -l nodejs:nodejs6
 
-sudo zypper -n in -l editors:emacs
+sudo zypper -n in -l editors:emacs editors:emacs-el
 
 sudo zypper -n in -l etags
 
