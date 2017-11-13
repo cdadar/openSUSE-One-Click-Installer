@@ -105,7 +105,7 @@ sudo zypper -n in -l packman:vlc-codecs
   # vlc-codecs 包含许多受限多媒体格式的解码器
 sudo zypper -n in -l packman:vlc packman:xvba-video
 
-sudo zypper -n in -l packman:mplayer
+sudo zypper -n in -l packman:MPlayer
 
 sudo zypper -n in -l nodejs:nodejs6
 
