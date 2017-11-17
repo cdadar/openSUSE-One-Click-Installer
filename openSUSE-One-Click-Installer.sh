@@ -75,19 +75,19 @@ sudo zypper -n in -l mldonkey
 
 # 安装 gstreamer 相关插件，这样基于 phonon 框架的多媒体软件就可以播放受专利保护的多媒体文件了
 if [ "$install_gstreamer_plugins" != "0" ]; then
-  sudo zypper -n in -l gstreamer-0_10-plugins-base gstreamer-0_10-plugins-good gstreamer-0_10-plugins-bad gstreamer-0_10-plugins-ugly gstreamer-0_10-plugins-ffmpeg  gstreamer-plugins-bad-orig-addon
+    sudo zypper -n in -l gstreamer-0_10-plugins-base gstreamer-0_10-plugins-good gstreamer-0_10-plugins-bad gstreamer-0_10-plugins-ugly gstreamer-0_10-plugins-ffmpeg  gstreamer-plugins-bad-orig-addon
 fi
 
 if [ "$install_netease_cloud_music" != "0" ]; then
     # kwplayer needs this repo
-    wget  http://s1.music.126.net/download/pc/netease-cloud-music_1.0.0-2_amd64_ubuntu16.04.deb
+    # wget  http://s1.music.126.net/download/pc/netease-cloud-music_1.0.0-2_amd64_ubuntu16.04.deb
+    wget http://s1.music.126.net/dmusic/netease-cloud-music_1.1.0_amd64_ubuntu.deb
 
     ar p netease-cloud-music_*.deb data.tar.xz > netease-cloud-music_tmp.tar.xz
     sudo tar -xvf netease-cloud-music_tmp.tar.xz -C /
 
-  # opensuse-zh 源中的脚本不能很好的安装
+    # opensuse-zh 源中的脚本不能很好的安装
     sudo zypper -n in -l netease-cloud-music
-  
 fi
 
 # 解决Firefox不能播放flash在线视频
@@ -97,12 +97,12 @@ fi
 
 sudo zypper -n in -l google-chrome-stable
 
-sudo zypper -n in -l  packman:ffmpeg 
+sudo zypper -n in -l packman:ffmpeg
 
 # tomahawk use phonon-backend-vlc, so vlc-codecs ( in packman ) is needed.
 sudo zypper -n in -l packman:vlc-codecs
 
-  # vlc-codecs 包含许多受限多媒体格式的解码器
+# vlc-codecs 包含许多受限多媒体格式的解码器
 sudo zypper -n in -l packman:vlc packman:xvba-video
 
 sudo zypper -n in -l packman:MPlayer
@@ -207,16 +207,16 @@ sudo npm install -g yarn
 # sudo zypper -n in -l http://dbeaver.jkiss.org/files/4.1.2/dbeaver-ce-4.1.2-stable.x86_64.rpm
 
 if [ "$translate_user_dirs_names_from_chinese_to_english" != "0" ]; then
-  export LANG=default
-  xdg-user-dirs-update --force
-  cd ~/桌面/ && ls -A | xargs -i mv -f {} ~/Desktop/ && rmdir ~/桌面
-  cd ~/下载/ && ls -A | xargs -i mv -f {} ~/Downloads/ && rmdir ~/下载
-  cd ~/模板/ && ls -A | xargs -i mv -f {} ~/Templates/ && rmdir ~/模板
-  cd ~/公共/ && ls -A | xargs -i mv -f {} ~/Public/ && rmdir ~/公共
-  cd ~/文档/ && ls -A | xargs -i mv -f {} ~/Documents/ && rmdir ~/文档
-  cd ~/音乐/ && ls -A | xargs -i mv -f {} ~/Music/ && rmdir ~/音乐
-  cd ~/图片/ && ls -A | xargs -i mv -f {} ~/Pictures/ && rmdir ~/图片
-  cd ~/视频/ && ls -A | xargs -i mv -f {} ~/Videos/ && rmdir ~/视频
+    export LANG=default
+    xdg-user-dirs-update --force
+    cd ~/桌面/ && ls -A | xargs -i mv -f {} ~/Desktop/ && rmdir ~/桌面
+    cd ~/下载/ && ls -A | xargs -i mv -f {} ~/Downloads/ && rmdir ~/下载
+    cd ~/模板/ && ls -A | xargs -i mv -f {} ~/Templates/ && rmdir ~/模板
+    cd ~/公共/ && ls -A | xargs -i mv -f {} ~/Public/ && rmdir ~/公共
+    cd ~/文档/ && ls -A | xargs -i mv -f {} ~/Documents/ && rmdir ~/文档
+    cd ~/音乐/ && ls -A | xargs -i mv -f {} ~/Music/ && rmdir ~/音乐
+    cd ~/图片/ && ls -A | xargs -i mv -f {} ~/Pictures/ && rmdir ~/图片
+    cd ~/视频/ && ls -A | xargs -i mv -f {} ~/Videos/ && rmdir ~/视频
 fi
 
 
