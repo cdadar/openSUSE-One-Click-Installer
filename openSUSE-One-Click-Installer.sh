@@ -43,6 +43,8 @@ fi
 sudo zypper --gpg-auto-import-keys ar -c  http://packman.inode.at/suse/openSUSE_Leap_$OSVER/ packman
 
 sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/home:/opensuse_zh/openSUSE_Leap_$OSVER/ opensusu_zh
+
+sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/home:/jiarenlu/openSUSE_Leap_$OSVER/ jiarenlu
 # sudo zypper --gpg-auto-import-keys ar http://repo.fdzh.org/chrome/ google-chrome-stable
 
 sudo zypper --gpg-auto-import-keys ar -c  http://dl.google.com/linux/chrome/rpm/stable/$(uname -m) google-chrome
@@ -64,6 +66,7 @@ sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.m
 sudo zypper --gpg-auto-import-keys ref
 
 sudo zypper -n update -l
+
 
 sudo zypper -n in -l aria2
 
@@ -194,6 +197,8 @@ sudo zypper -n in -l screenfetch
 sudo zypper -n in -l keepass
 
 sudo zypper -n in -l zeal
+
+sudo zypper -n in jiarenlu:bcloud
 
 sudo npm install -g webpack
 
