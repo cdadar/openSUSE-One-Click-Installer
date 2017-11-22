@@ -196,7 +196,11 @@ sudo zypper -n in -l screenfetch
 
 sudo zypper -n in -l keepass
 
+sudo zypper -n in -l keepassx
+
 sudo zypper -n in -l zeal
+
+sudo zypper -n in -l tidy
 
 sudo zypper -n in jiarenlu:bcloud
 
