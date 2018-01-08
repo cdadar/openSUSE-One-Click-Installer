@@ -110,6 +110,8 @@ sudo zypper -n in -l packman:vlc packman:xvba-video
 
 sudo zypper -n in -l packman:MPlayer
 
+sudo zypper -n in -l packman:obs-studio 
+
 sudo zypper -n in -l nodejs:nodejs6
 
 sudo zypper -n in -l editors:emacs editors:emacs-el
