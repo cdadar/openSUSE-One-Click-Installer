@@ -86,12 +86,10 @@ fi
 if [ "$install_netease_cloud_music" != "0" ]; then
     # kwplayer needs this repo
     # wget  http://s1.music.126.net/download/pc/netease-cloud-music_1.0.0-2_amd64_ubuntu16.04.deb
-    wget http://s1.music.126.net/dmusic/netease-cloud-music_1.1.0_amd64_ubuntu.deb
+    # wget http://s1.music.126.net/dmusic/netease-cloud-music_1.1.0_amd64_ubuntu.deb
 
-    ar p netease-cloud-music_*.deb data.tar.xz > netease-cloud-music_tmp.tar.xz
-    sudo tar -xvf netease-cloud-music_tmp.tar.xz -C /
-
-    # opensuse-zh 源中的脚本不能很好的安装
+    # ar p netease-cloud-music_*.deb data.tar.xz > netease-cloud-music_tmp.tar.xz
+    # sudo tar -xvf netease-cloud-music_tmp.tar.xz -C /
     sudo zypper -n in -l netease-cloud-music
 fi
 
