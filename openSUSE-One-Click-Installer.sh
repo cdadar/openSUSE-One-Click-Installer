@@ -204,6 +204,8 @@ sudo zypper -n in -l zeal
 
 sudo zypper -n in -l albert
 
+sudo zypper -n in -l freemind
+
 # sudo zypper -n in jiarenlu:bcloud
 
 sudo npm install -g webpack
