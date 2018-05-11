@@ -138,7 +138,9 @@ sudo zypper -n in -l gcc-c++ gcc
 
 sudo zypper -n in -l clang llvm-devel
 
-sudo zypper -n in -l tmux vim
+sudo zypper -n in -l tmux 
+
+sudo zypper -n in -l --from editors vim
 
 sudo zypper -n in -l rdesktop
 
