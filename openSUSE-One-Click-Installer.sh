@@ -237,7 +237,7 @@ sudo yarn global add  gitbook-cli
 
 sudo yarn global add vue-cli
 
-sudo yarn global remove angluar-cli
+sudo yarn global add angular-cli
 
 sudo yarn global add create-react-app
 
