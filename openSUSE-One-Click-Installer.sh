@@ -44,14 +44,14 @@ sudo zypper --gpg-auto-import-keys ar -c  http://packman.inode.at/suse/openSUSE_
 
 sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/home:/opensuse_zh/openSUSE_Leap_$OSVER/ opensusu_zh
 
-sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/home:/jiarenlu/openSUSE_Leap_$OSVER/ jiarenlu
+#sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/home:/jiarenlu/openSUSE_Leap_$OSVER/ jiarenlu
 # sudo zypper --gpg-auto-import-keys ar http://repo.fdzh.org/chrome/ google-chrome-stable
 
 sudo zypper --gpg-auto-import-keys ar -c  http://dl.google.com/linux/chrome/rpm/stable/$(uname -m) google-chrome
 
 # sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/editors/openSUSE_Leap_$OSVER/ editors 
 
-sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/M17N:/fonts/openSUSE_Leap_$OSVER/  M17N:fonts
+#sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/M17N:/fonts/openSUSE_Leap_$OSVER/  M17N:fonts
 
 # sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/nodejs/openSUSE_Leap_$OSVER/ nodejs
 
@@ -104,17 +104,17 @@ fi
 
 sudo zypper -n in -l google-chrome-stable
 
-sudo zypper -n in -l packman:ffmpeg
+sudo zypper  in  packman:ffmpeg
 
 # tomahawk use phonon-backend-vlc, so vlc-codecs ( in packman ) is needed.
-sudo zypper -n in -l packman:vlc-codecs
+sudo zypper  in  packman:vlc-codecs
 
 # vlc-codecs 包含许多受限多媒体格式的解码器
-sudo zypper -n in -l packman:vlc packman:xvba-video
+sudo zypper  in  packman:vlc packman:xvba-video
 
-sudo zypper -n in -l packman:MPlayer
+sudo zypper  in  packman:MPlayer
 
-sudo zypper -n in -l packman:obs-studio 
+sudo zypper  in  packman:obs-studio 
 
 sudo zypper -n in -l nodejs8
 
@@ -216,7 +216,18 @@ sudo zypper -n in -l freemind
 
 # sudo zypper -n in jiarenlu:bcloud
 
-sudo npm install -g yarn
+sudo zypper -n in -l libnotify-tools
+
+sudo zypper -n in -l redis
+
+
+sudo zypper -n in -l  wqy-bitmap-fonts
+
+sudo zypper -n in -l  wqy-microhei-fonts
+
+sudo zypper -n in -l   wqy-zenhei-fonts 
+
+suod npm install -g yarn
 
 sudo yarn global add  webpack
 
