@@ -49,15 +49,15 @@ sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositori
 
 sudo zypper --gpg-auto-import-keys ar -c  http://dl.google.com/linux/chrome/rpm/stable/$(uname -m) google-chrome
 
-sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/editors/openSUSE_Leap_$OSVER/ editors 
+# sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/editors/openSUSE_Leap_$OSVER/ editors 
 
 sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/M17N:/fonts/openSUSE_Leap_$OSVER/  M17N:fonts
 
-sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/nodejs/openSUSE_Leap_$OSVER/ nodejs
+# sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/nodejs/openSUSE_Leap_$OSVER/ nodejs
 
 # sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/php/openSUSE_Leap_$OSVER/ php
 
-sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/tools/openSUSE_Leap_$OSVER/ devel:tools
+# sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/tools/openSUSE_Leap_$OSVER/ devel:tools
 
 # sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/server:/mail/openSUSE_Leap_$OSVER/ mail
 
@@ -116,9 +116,9 @@ sudo zypper -n in -l packman:MPlayer
 
 sudo zypper -n in -l packman:obs-studio 
 
-sudo zypper -n in -l nodejs:nodejs6
+sudo zypper -n in -l nodejs8
 
-sudo zypper -n in -l editors:emacs editors:emacs-el
+sudo zypper -n in -l emacs emacs-el
 
 sudo zypper -n in -l etags
 
@@ -144,7 +144,7 @@ sudo zypper -n in -l clang llvm-devel
 
 sudo zypper -n in -l tmux 
 
-sudo zypper -n in -l --from editors vim
+sudo zypper -n in -l vim
 
 sudo zypper -n in -l rdesktop
 
