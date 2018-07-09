@@ -216,13 +216,19 @@ sudo zypper -n in -l freemind
 
 # sudo zypper -n in jiarenlu:bcloud
 
-sudo npm install -g webpack
-
-sudo npm install -g tern 
-
-sudo npm install -g gitbook-cli
-
 sudo npm install -g yarn
+
+sudo yarn global add  webpack
+
+sudo yarn global add  webpack-cli
+
+sudo yarn global add  gitbook-cli
+
+sudo yarn global add vue-cli
+
+sudo yarn global remove angluar-cli
+
+sudo yarn global add create-react-app
 
 # sudo zypper -n in -l http://pencil.evolus.vn/dl/V3.0.4/Pencil-3.0.4-49.x86_64.rpm
 # sudo zypper -n in -l http://dbeaver.jkiss.org/files/4.1.2/dbeaver-ce-4.1.2-stable.x86_64.rpm
