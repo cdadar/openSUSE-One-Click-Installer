@@ -66,7 +66,7 @@ sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.m
 
 sudo rpm -v --import https://download.sublimetext.com/sublimehq-rpm-pub.gpg
 
-sudo zypper addrepo -g -f https://download.sublimetext.com/rpm/stable/x86_64/sublime-text.repo
+# sudo zypper addrepo -g -f https://download.sublimetext.com/rpm/stable/x86_64/sublime-text.repo
 
 # 刷新软件源并更新系统
 sudo zypper --gpg-auto-import-keys ref
@@ -182,7 +182,7 @@ sudo zypper -n in -l mutt getmail msmtp procmail
 
 sudo zypper -n in -l code
 
-sudo zypper -n in -l sublime-text
+# sudo zypper -n in -l sublime-text
 
 sudo zypper -n in -l noto-serif-sc-fonts-full
 
