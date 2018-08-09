@@ -241,6 +241,8 @@ sudo yarn global add angular-cli
 
 sudo yarn global add create-react-app
 
+sudo yarn global add prettier
+
 # sudo zypper -n in -l http://pencil.evolus.vn/dl/V3.0.4/Pencil-3.0.4-49.x86_64.rpm
 # sudo zypper -n in -l http://dbeaver.jkiss.org/files/4.1.2/dbeaver-ce-4.1.2-stable.x86_64.rpm
 
