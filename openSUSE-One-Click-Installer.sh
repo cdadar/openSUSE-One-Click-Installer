@@ -164,6 +164,8 @@ sudo zypper -n in -l osc rpmdevtools
 
 sudo zypper -n in -l the_silver_searcher
 
+sudo zypper -n in -l ripgrep
+
 sudo zypper -n in -l gcc kernel-source virtualbox virtualbox-qt
 
 sudo zypper -n in -l docker docker-compose 
@@ -226,6 +228,8 @@ sudo zypper -n in -l  wqy-bitmap-fonts
 sudo zypper -n in -l  wqy-microhei-fonts
 
 sudo zypper -n in -l   wqy-zenhei-fonts 
+
+
 
 suod npm install -g yarn
 
