@@ -222,6 +222,15 @@ sudo zypper -n in -l libnotify-tools
 
 sudo zypper -n in -l redis
 
+#视频编辑
+sudo zypper -n in -l  kdenlive
+
+sudo zypper -n in -l blender
+
+#图片处理
+sudo zypper -n in -l krita
+
+
 
 sudo zypper -n in -l  wqy-bitmap-fonts
 
