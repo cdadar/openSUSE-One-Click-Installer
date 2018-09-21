@@ -84,7 +84,7 @@ sudo zypper -n in -l mldonkey
 
 # 安装 gstreamer 相关插件，这样基于 phonon 框架的多媒体软件就可以播放受专利保护的多媒体文件了
 if [ "$install_gstreamer_plugins" != "0" ]; then
-    sudo zypper -n in -l gstreamer-0_10-plugins-base gstreamer-0_10-plugins-good gstreamer-0_10-plugins-bad gstreamer-0_10-plugins-ugly gstreamer-0_10-plugins-ffmpeg  gstreamer-plugins-bad-orig-addon
+    sudo zypper -n in -f --from packman gstreamer-0_10-plugins-base gstreamer-0_10-plugins-good gstreamer-0_10-plugins-bad gstreamer-0_10-plugins-ugly gstreamer-0_10-plugins-ffmpeg  gstreamer-plugins-bad-orig-addon
 fi
 
 if [ "$install_netease_cloud_music" != "0" ]; then
@@ -230,15 +230,13 @@ sudo zypper -n in -l blender
 #图片处理
 sudo zypper -n in -l krita
 
+sudo zypper -n in -l wqy-bitmap-fonts
 
+sudo zypper -n in -l wqy-microhei-fonts
 
-sudo zypper -n in -l  wqy-bitmap-fonts
+sudo zypper -n in -l wqy-zenhei-fonts
 
-sudo zypper -n in -l  wqy-microhei-fonts
-
-sudo zypper -n in -l   wqy-zenhei-fonts 
-
-
+sudo zypper -n in -l syslog
 
 suod npm install -g yarn
 
