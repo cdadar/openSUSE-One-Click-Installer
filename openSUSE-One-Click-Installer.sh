@@ -236,7 +236,7 @@ sudo zypper -n in -l wqy-microhei-fonts
 
 sudo zypper -n in -l wqy-zenhei-fonts
 
-sudo zypper -n in -l syslog
+sudo zypper -n in -l syslog-ng syslog-service
 
 suod npm install -g yarn
 
