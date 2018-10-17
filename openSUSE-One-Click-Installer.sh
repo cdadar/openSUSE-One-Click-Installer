@@ -6,10 +6,10 @@ export LANG=default
 SCRIPT_DIR=$(dirname $0)
 
 if [ ! -f $SCRIPT_DIR/README.md ]; then
-  wget -nd -c -P $SCRIPT_DIR --no-check-certificate --no-cookies  "https://raw.githubusercontent.com/redhatlinux10/openSUSE-One-Click-Installer/master/README.md"
+  wget -nd -c -P $SCRIPT_DIR --no-check-certificate --no-cookies  "https://raw.github.com/cdadar/openSUSE-One-Click-Installer/master/README.md"
 fi
 if [ ! -f $SCRIPT_DIR/ooci.conf ]; then
-  wget -nd -c -P $SCRIPT_DIR --no-check-certificate --no-cookies  "https://raw.githubusercontent.com/redhatlinux10/openSUSE-One-Click-Installer/master/ooci.conf"
+  wget -nd -c -P $SCRIPT_DIR --no-check-certificate --no-cookies  "https://raw.github.com/cdadar/openSUSE-One-Click-Installer/master/ooci.conf"
 fi
 
 cat "$SCRIPT_DIR/README.md"
@@ -21,6 +21,9 @@ fi
 if [ "$confirm_continue" == "n" -o "$confirm_continue" == "no" ]; then
   exit
 fi
+
+sudo zypper -n in -l lsb-release
+
 
 . $SCRIPT_DIR/ooci.conf
 
@@ -238,7 +241,7 @@ sudo zypper -n in -l wqy-zenhei-fonts
 
 sudo zypper -n in -l syslog-ng syslog-service
 
-suod npm install -g yarn
+sudo npm install -g yarn
 
 sudo yarn global add  webpack
 
