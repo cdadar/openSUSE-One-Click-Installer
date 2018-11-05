@@ -52,6 +52,8 @@ sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositori
 
 sudo zypper --gpg-auto-import-keys ar -c  http://dl.google.com/linux/chrome/rpm/stable/$(uname -m) google-chrome
 
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/Virtualization/openSUSE_Leap_$OSVER/ virtualization 
+
 # sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/editors/openSUSE_Leap_$OSVER/ editors 
 
 #sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/M17N:/fonts/openSUSE_Leap_$OSVER/  M17N:fonts
@@ -175,7 +177,9 @@ sudo zypper -n in -l ripgrep
 
 sudo zypper -n in -l gcc kernel-source virtualbox virtualbox-qt
 
-sudo zypper -n in -l docker docker-compose 
+sudo zypper -n in -l docker docker-compose
+
+# sudo zypper -n in -l vagrant
 
 sudo zypper -n in -l shadowsocks-libev
 
