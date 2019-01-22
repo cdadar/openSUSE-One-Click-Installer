@@ -66,6 +66,8 @@ sudo zypper --gpg-auto-import-keys ar -c  http://dl.google.com/linux/chrome/rpm/
 
 # sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/server:/mail/openSUSE_Leap_$OSVER/ mail
 
+# sudo zyppr --gpg-auto-import-keys ar -c  http://download.opensuse.org/repositories/server:/database:/postgresql/openSUSE_Leap_$OSVER postgresql
+
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/zypp/repos.d/vscode.repo'
 
