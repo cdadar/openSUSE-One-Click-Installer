@@ -205,6 +205,8 @@ sudo zypper -n in -l noto-serif-sc-fonts-full
 
 # sudo zypper -n in -l noto-serif-tc-fonts-full noto-serif-jp-fonts-full noto-serif-kr-fonts-full
 
+sudo zypper -n in -l hack-font
+
 sudo zypper -n in -l postgresql postgresql-server postgresql-contrib postgresql-devel
 
 sudo zypper -n in -l pgadmin3
