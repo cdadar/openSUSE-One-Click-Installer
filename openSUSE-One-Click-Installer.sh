@@ -90,6 +90,8 @@ sudo zypper -n in -l aria2
 
 sudo zypper -n in -l deluge
 
+sudo zypper -n in -l transmission
+
 sudo zypper -n in -l uget
 
 sudo zypper -n in -l mldonkey
