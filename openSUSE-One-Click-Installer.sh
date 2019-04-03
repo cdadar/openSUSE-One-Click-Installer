@@ -52,7 +52,12 @@ sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositori
 
 sudo zypper --gpg-auto-import-keys ar -c  http://dl.google.com/linux/chrome/rpm/stable/$(uname -m) google-chrome
 
-# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/Virtualization/openSUSE_Leap_$OSVER/ virtualization 
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/Virtualization/openSUSE_Leap_$OSVER/ virtualization
+
+sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/Virtualization:/vagrant/openSUSE_Leap_$OSVER/ vagrant
+
+
+sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/languages:/ruby:/extensions/openSUSE_Leap_$OSVER/  devel:languages:ruby:extensions
 
 # sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/editors/openSUSE_Leap_$OSVER/ editors 
 
@@ -181,7 +186,7 @@ sudo zypper -n in -l gcc kernel-source virtualbox virtualbox-qt
 
 sudo zypper -n in -l docker docker-compose
 
-# sudo zypper -n in -l vagrant
+sudo zypper -n in -l ruby2.5-rubygem-net-ssh-5.1 vagrant
 
 sudo zypper -n in -l shadowsocks-libev
 
