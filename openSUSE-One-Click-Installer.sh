@@ -56,7 +56,6 @@ sudo zypper --gpg-auto-import-keys ar -c  http://dl.google.com/linux/chrome/rpm/
 
 sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/Virtualization:/vagrant/openSUSE_Leap_$OSVER/ vagrant
 
-
 sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/languages:/ruby:/extensions/openSUSE_Leap_$OSVER/  devel:languages:ruby:extensions
 
 # sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/editors/openSUSE_Leap_$OSVER/ editors 
@@ -66,6 +65,10 @@ sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositor
 # sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/nodejs/openSUSE_Leap_$OSVER/ nodejs
 
 # sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/php/openSUSE_Leap_$OSVER/ php
+
+sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/go/openSUSE_Leap_$OSVER/ go
+
+#sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/rust/openSUSE_Leap_$OSVER/ rust
 
 # sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/tools/openSUSE_Leap_$OSVER/ devel:tools
 
