@@ -143,6 +143,8 @@ sudo zypper -n in -l etags
 
 sudo zypper -n in -l ctags
 
+sudo zypper -n in -l fd
+
 sudo zypper -n in -l global
 
 sudo zypper -n in -l git
