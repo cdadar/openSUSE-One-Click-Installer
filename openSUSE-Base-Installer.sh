@@ -43,45 +43,41 @@ fi
 
 # 添加软件源
 # w32codec-all 需要该源
-sudo zypper --gpg-auto-import-keys ar -c  http://packman.inode.at/suse/openSUSE_Leap_$OSVER/ packman
+#sudo zypper --gpg-auto-import-keys ar -c  http://packman.inode.at/suse/openSUSE_Leap_$OSVER/ packman
 
-sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/home:/opensuse_zh/openSUSE_Leap_$OSVER/ opensusu_zh
+#sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/home:/opensuse_zh/openSUSE_Leap_$OSVER/ opensusu_zh
 
 #sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/home:/jiarenlu/openSUSE_Leap_$OSVER/ jiarenlu
-# sudo zypper --gpg-auto-import-keys ar http://repo.fdzh.org/chrome/ google-chrome-stable
+#sudo zypper --gpg-auto-import-keys ar http://repo.fdzh.org/chrome/ google-chrome-stable
 
-# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/Virtualization/openSUSE_Leap_$OSVER/ virtualization
+#sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/Virtualization/openSUSE_Leap_$OSVER/ virtualization
 
-# sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/editors/openSUSE_Leap_$OSVER/ editors 
+#sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/editors/openSUSE_Leap_$OSVER/ editors 
 
 #sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/M17N:/fonts/openSUSE_Leap_$OSVER/  M17N:fonts
 
-# sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/nodejs/openSUSE_Leap_$OSVER/ nodejs
+#sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/nodejs/openSUSE_Leap_$OSVER/ nodejs
 
-# sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/php/openSUSE_Leap_$OSVER/ php
+#sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/php/openSUSE_Leap_$OSVER/ php
 
-# sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/go/openSUSE_Leap_$OSVER/ go
+#sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/go/openSUSE_Leap_$OSVER/ go
 
 #sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/rust/openSUSE_Leap_$OSVER/ rust
 
-# sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/tools/openSUSE_Leap_$OSVER/ devel:tools
+#sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/tools/openSUSE_Leap_$OSVER/ devel:tools
 
-# sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/server:/mail/openSUSE_Leap_$OSVER/ mail
+#sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/server:/mail/openSUSE_Leap_$OSVER/ mail
 
-# sudo zyppr --gpg-auto-import-keys ar -c  http://download.opensuse.org/repositories/server:/database:/postgresql/openSUSE_Leap_$OSVER postgresql
+#sudo zyppr --gpg-auto-import-keys ar -c  http://download.opensuse.org/repositories/server:/database:/postgresql/openSUSE_Leap_$OSVER postgresql
 
-# sudo rpm -v --import https://download.sublimetext.com/sublimehq-rpm-pub.gpg
+#sudo rpm -v --import https://download.sublimetext.com/sublimehq-rpm-pub.gpg
 
-# sudo zypper addrepo -g -f https://download.sublimetext.com/rpm/stable/x86_64/sublime-text.repo
+#sudo zypper addrepo -g -f https://download.sublimetext.com/rpm/stable/x86_64/sublime-text.repo
 
 # 刷新软件源并更新系统
 sudo zypper --gpg-auto-import-keys ref
 
 sudo zypper -n update -l
-
-sudo zypper -n in -l aria2
-
-sudo zypper -n in -l mldonkey
 
 sudo zypper -n in -l nodejs8
 
@@ -121,7 +117,7 @@ sudo zypper -n in -l vim
 
 sudo zypper -n in -l xclip
 
-sudo zypper -n in -l  aspell
+sudo zypper -n in -l aspell
 
 sudo zypper -n in -l sbcl
 
@@ -133,15 +129,9 @@ sudo zypper -n in -l ripgrep
 
 sudo zypper -n in -l docker docker-compose
 
-sudo zypper -n in -l proxychains
-
-sudo zypper -n in -l privoxy
-
 sudo zypper -n in -l xterm
 
 sudo zypper -n in -l mu4e
-
-sudo zypper -n in -l mutt getmail msmtp procmail
 
 # sudo zypper -n in -l sublime-text
 
