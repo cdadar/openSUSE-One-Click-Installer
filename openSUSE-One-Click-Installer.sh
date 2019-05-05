@@ -60,7 +60,7 @@ sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositor
 
 # sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/editors/openSUSE_Leap_$OSVER/ editors 
 
-#sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/M17N:/fonts/openSUSE_Leap_$OSVER/  M17N:fonts
+# sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/M17N:/fonts/openSUSE_Leap_$OSVER/  M17N:fonts
 
 # sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/nodejs/openSUSE_Leap_$OSVER/ nodejs
 
@@ -133,7 +133,9 @@ sudo zypper -n in -f packman:vlc packman:xvba-video
 
 sudo zypper -n in -f  packman:MPlayer
 
-sudo zypper -n in -f  packman:obs-studio 
+sudo zypper -n in -f  packman:obs-studio
+
+sudo zypper -n in -l zsh
 
 sudo zypper -n in -l nodejs8
 
@@ -221,7 +223,7 @@ sudo zypper -n in -l hack-font
 
 sudo zypper -n in -l postgresql postgresql-server postgresql-contrib postgresql-devel
 
-sudo zypper -n in -l pgadmin3
+# sudo zypper -n in -l pgadmin3
 
 sudo zypper -n in -l dropbox
 
