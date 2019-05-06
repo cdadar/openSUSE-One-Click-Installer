@@ -224,7 +224,7 @@ sudo zypper -n in -l hack-font
 
 sudo zypper -n in -l postgresql postgresql-server postgresql-contrib postgresql-devel
 
-sudo zypper -n in -l mariadb-client
+sudo zypper -n in -l mariadb mariadb-client libmariadb-devel
 
 # sudo zypper -n in -l pgadmin3
 
