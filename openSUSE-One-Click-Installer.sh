@@ -60,7 +60,7 @@ sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositor
 
 # sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/editors/openSUSE_Leap_$OSVER/ editors 
 
-# sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/M17N:/fonts/openSUSE_Leap_$OSVER/  M17N:fonts
+sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/M17N:/fonts/openSUSE_Leap_$OSVER/  M17N:fonts
 
 # sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/nodejs/openSUSE_Leap_$OSVER/ nodejs
 
@@ -136,6 +136,7 @@ sudo zypper -n in -f  packman:MPlayer
 sudo zypper -n in -f  packman:obs-studio
 
 sudo zypper -n in -l zsh
+
 
 sudo zypper -n in -l nodejs8
 
@@ -254,7 +255,7 @@ sudo zypper -n in -l libnotify-tools
 sudo zypper -n in -l redis
 
 #视频编辑
-sudo zypper -n in -l  kdenlive
+sudo zypper -n in -l kdenlive
 
 sudo zypper -n in -l blender
 
@@ -307,5 +308,6 @@ if [ "$translate_user_dirs_names_from_chinese_to_english" != "0" ]; then
     cd ~/视频/ && ls -A | xargs -i mv -f {} ~/Videos/ && rmdir ~/视频
 fi
 
+chsh -s /bin/zsh
 
 #TODO 将github管理的配置处理
