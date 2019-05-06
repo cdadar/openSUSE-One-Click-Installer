@@ -232,6 +232,8 @@ sudo zypper -n in -l dropbox
 
 sudo zypper -n in -l patterns-openSUSE-base patterns-openSUSE-devel_basis
 
+# sudo zypper -n in -l texlive-scheme-full
+
 sudo zypper -n in -l texlive texlive-latex  texlive-xetex texlive-ctex
 
 sudo zypper -n in -l texlive-cjkpunct texlive-wrapfig texlive-capt-of 
