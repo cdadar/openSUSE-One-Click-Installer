@@ -155,6 +155,8 @@ sudo zypper -n in -l global
 
 sudo zypper -n in -l git
 
+wget --no-check-certificate -q  https://raw.githubusercontent.com/petervanderdoes/gitflow-avh/develop/contrib/gitflow-installer.sh && sudo bash gitflow-installer.sh install stable; rm gitflow-installer.sh
+
 # 压缩，解压 rar 文件
 sudo zypper -n in -l rar unrar
 
