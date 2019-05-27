@@ -101,7 +101,10 @@ sudo zypper -n in -l mldonkey
 
 # 安装 gstreamer 相关插件，这样基于 phonon 框架的多媒体软件就可以播放受专利保护的多媒体文件了
 if [ "$install_gstreamer_plugins" != "0" ]; then
-    sudo zypper -n in -f --from packman gstreamer-0_10-plugins-base gstreamer-0_10-plugins-good gstreamer-0_10-plugins-bad gstreamer-0_10-plugins-ugly gstreamer-0_10-plugins-ffmpeg  gstreamer-plugins-bad-orig-addon
+    sudo zypper in -f --from packman gstreamer-0_10-plugins-base gstreamer-0_10-plugins-good gstreamer-0_10-plugins-bad gstreamer-0_10-plugins-ugly gstreamer-0_10-plugins-ffmpeg  gstreamer-plugins-bad-orig-addon
+
+   sudo zypper in -f --from packman gstreamer-plugins-bad gstreamer-plugins-bad-chromaprint gstreamer-plugins-bad-devel gstreamer-plugins-bad-fluidsynth gstreamer-plugins-bad-lang gstreamer-plugins-libav gstreamer-plugins-ugly gstreamer-plugins-ugly-lang
+
 fi
 
 if [ "$install_netease_cloud_music" != "0" ]; then
@@ -126,7 +129,7 @@ sudo zypper -n in -l chromium
 sudo zypper -n in -f  packman:ffmpeg-3
 
 # tomahawk use phonon-backend-vlc, so vlc-codecs ( in packman ) is needed.
-sudo zypper -n in -f  packman:vlc-codecs
+sudo zypper -n in -f  packman:vlc-codecs 
 
 # vlc-codecs 包含许多受限多媒体格式的解码器
 sudo zypper -n in -f packman:vlc packman:xvba-video
