@@ -177,6 +177,8 @@ sudo zypper -n in -l tmux
 
 sudo zypper -n in -l vim
 
+suod zypper -n in -l neovim
+
 sudo zypper -n in -l rdesktop
 
 sudo zypper -n in -l steam
