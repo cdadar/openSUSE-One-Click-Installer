@@ -263,6 +263,8 @@ sudo zypper -n in -l zeal
 
 sudo zypper -n in -l albert
 
+sudo zypper -n in -l rofi
+
 sudo zypper -n in -l freemind
 
 # sudo zypper -n in jiarenlu:bcloud
