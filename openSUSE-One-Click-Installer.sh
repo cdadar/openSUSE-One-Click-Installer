@@ -261,8 +261,6 @@ sudo zypper -n in -l keepassx
 
 sudo zypper -n in -l zeal
 
-sudo zypper -n in -l albert
-
 sudo zypper -n in -l rofi
 
 sudo zypper -n in -l freemind
