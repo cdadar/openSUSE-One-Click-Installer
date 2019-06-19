@@ -97,6 +97,12 @@ sudo zypper -n in -l transmission
 
 sudo zypper -n in -l uget
 
+wget https://raw.githubusercontent.com/ugetdm/uget-integrator/master/install/linux/install_uget_integrator.sh
+
+chmod +x install_uget_integrator.sh
+
+./install_uget_integrator.sh
+
 sudo zypper -n in -l mldonkey
 
 # 安装 gstreamer 相关插件，这样基于 phonon 框架的多媒体软件就可以播放受专利保护的多媒体文件了
