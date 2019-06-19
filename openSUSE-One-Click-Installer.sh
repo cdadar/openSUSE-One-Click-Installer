@@ -105,6 +105,10 @@ chmod +x install_uget_integrator.sh
 
 sudo zypper -n in -l mldonkey
 
+sudo zypper -n in -l axel
+
+sudo zypper -n in -l htop
+
 # 安装 gstreamer 相关插件，这样基于 phonon 框架的多媒体软件就可以播放受专利保护的多媒体文件了
 if [ "$install_gstreamer_plugins" != "0" ]; then
     sudo zypper in -f --from packman gstreamer-0_10-plugins-base gstreamer-0_10-plugins-good gstreamer-0_10-plugins-bad gstreamer-0_10-plugins-ugly gstreamer-0_10-plugins-ffmpeg  gstreamer-plugins-bad-orig-addon
@@ -279,6 +283,8 @@ sudo zypper -n in -l blender
 #图片处理
 sudo zypper -n in -l krita
 
+sudo zypper -n in -l gnuplot
+
 sudo zypper -n in -l wqy-bitmap-fonts
 
 sudo zypper -n in -l wqy-microhei-fonts
@@ -287,25 +293,7 @@ sudo zypper -n in -l wqy-zenhei-fonts
 
 sudo zypper -n in -l syslog-ng syslog-service
 
-sudo npm install -g yarn
 
-sudo yarn global add  webpack
-
-sudo yarn global add  webpack-cli
-
-sudo yarn global add  gitbook-cli
-
-sudo yarn global add vue-cli
-
-sudo yarn global add angular-cli
-
-sudo yarn global add create-react-app
-
-sudo yarn global add prettier
-
-sudo yarn global add yo
-
-sudo yarn global add generator-jhipster
 
 # sudo zypper -n in -l http://pencil.evolus.vn/dl/V3.0.4/Pencil-3.0.4-49.x86_64.rpm
 # sudo zypper -n in -l http://dbeaver.jkiss.org/files/4.1.2/dbeaver-ce-4.1.2-stable.x86_64.rpm
