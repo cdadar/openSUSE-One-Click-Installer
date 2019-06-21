@@ -136,6 +136,8 @@ sudo zypper -n in -l google-chrome-stable
 
 sudo zypper -n in -l chromium
 
+sudo zypper -n in -l midori
+
 sudo zypper -n in -f  packman:ffmpeg-3
 
 # tomahawk use phonon-backend-vlc, so vlc-codecs ( in packman ) is needed.
