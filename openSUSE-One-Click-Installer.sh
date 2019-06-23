@@ -205,6 +205,8 @@ sudo zypper -n in -l  aspell
 
 sudo zypper -n in -l sbcl
 
+sudo zypper -n in -l clisp
+
 sudo zypper -n in -l osc rpmdevtools
 
 sudo zypper -n in -l the_silver_searcher
