@@ -269,6 +269,8 @@ sudo zypper -n in -l keepass
 
 sudo zypper -n in -l keepassx
 
+sudo zypper -n in -l keepassxc
+
 sudo zypper -n in -l zeal
 
 sudo zypper -n in -l rofi
