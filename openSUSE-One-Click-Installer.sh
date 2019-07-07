@@ -301,6 +301,9 @@ sudo zypper -n in -l wqy-zenhei-fonts
 
 sudo zypper -n in -l syslog-ng syslog-service
 
+# 禁用 Leap 软件检查更新
+sudo zypper remove plasma5-pk-updates
+sudo zypper addlock plasma5-pk-updates
 
 # sudo zypper -n in -l http://pencil.evolus.vn/dl/V3.0.4/Pencil-3.0.4-49.x86_64.rpm
 # sudo zypper -n in -l http://dbeaver.jkiss.org/files/4.1.2/dbeaver-ce-4.1.2-stable.x86_64.rpm
