@@ -296,6 +296,8 @@ sudo zypper -n in -l krita
 
 sudo zypper -n in -l gnuplot
 
+sudo zypper -n in -l bibletime
+
 sudo zypper -n in -l wqy-bitmap-fonts
 
 sudo zypper -n in -l wqy-microhei-fonts
