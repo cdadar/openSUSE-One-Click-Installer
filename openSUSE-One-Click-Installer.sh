@@ -150,10 +150,11 @@ sudo zypper -n in -f  packman:MPlayer
 
 sudo zypper -n in -f  packman:obs-studio
 
+sudo zypper -n in -f  audacious clementine
+
 sudo zypper -n in -l peek simplescreenrecorder
 
 sudo zypper -n in -l zsh
-
 
 sudo zypper -n in -l nodejs8
 
