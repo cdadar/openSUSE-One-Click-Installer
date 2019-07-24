@@ -304,6 +304,8 @@ sudo zypper -n in -l wqy-zenhei-fonts
 
 sudo zypper -n in -l syslog-ng syslog-service
 
+sudo zypper -n in -l sysstat
+
 # 禁用 Leap 软件检查更新
 sudo zypper remove plasma5-pk-updates
 sudo zypper addlock plasma5-pk-updates
