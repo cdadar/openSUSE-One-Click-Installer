@@ -41,6 +41,15 @@ if [ "$disable_cd_repo" != "0" ]; then
   fi
 fi
 
+# 添加阿里镜像源
+#sudo zypper ar -fc https://mirrors.aliyun.com/opensuse/distribution/leap/$OSVER/repo/oss openSUSE-Aliyun-OSS
+#sudo zypper ar -fc https://mirrors.aliyun.com/opensuse/distribution/leap/$OSVER/repo/non-oss openSUSE-Aliyun-NON-OSS
+#sudo zypper ar -fc https://mirrors.aliyun.com/opensuse/update/leap/$OSVER/oss openSUSE-Aliyun-UPDATE-OSS
+#sudo zypper ar -fc https://mirrors.aliyun.com/opensuse/update/leap/$OSVER/non-oss openSUSE-Aliyun-UPDATE-NON-OSS
+# 第三方源
+#sudo zypper ar -fc https://mirrors.aliyun.com/packman/openSUSE_Leap_$OSVER openSUSE-Aliyun-Packman
+
+
 # 添加软件源
 # w32codec-all 需要该源
 sudo zypper --gpg-auto-import-keys ar -c  http://packman.inode.at/suse/openSUSE_Leap_$OSVER/ packman
@@ -58,7 +67,7 @@ sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositor
 
 sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/languages:/ruby:/extensions/openSUSE_Leap_$OSVER/  devel:languages:ruby:extensions
 
-# sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/editors/openSUSE_Leap_$OSVER/ editors 
+sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/editors/openSUSE_Leap_$OSVER/ editors 
 
 sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/M17N:/fonts/openSUSE_Leap_$OSVER/  M17N:fonts
 
@@ -198,15 +207,13 @@ suod zypper -n in -l neovim
 
 sudo zypper -n in -l rdesktop
 
-sudo zypper -n in -l steam
-
 sudo zypper -n in -l fcitx fcitx-rime
 
-# sudo zypper -n in -l xsel
+sudo zypper -n in -l xsel
 
-sudo zypper -n in -l xclip
+# sudo zypper -n in -l xclip
 
-sudo zypper -n in -l  aspell
+sudo zypper -n in -l aspell
 
 sudo zypper -n in -l sbcl
 
@@ -250,6 +257,8 @@ sudo zypper -n in -l noto-serif-sc-fonts-full
 
 sudo zypper -n in -l hack-font
 
+sudo zypper -n in -l fira-code-fonts
+
 sudo zypper -n in -l postgresql postgresql-server postgresql-contrib postgresql-devel
 
 sudo zypper -n in -l mariadb mariadb-client libmariadb-devel
@@ -258,7 +267,7 @@ sudo zypper -n in -l mariadb mariadb-client libmariadb-devel
 
 sudo zypper -n in -l dropbox
 
-sudo zypper -n in -l patterns-openSUSE-base patterns-openSUSE-devel_basis
+sudo zypper -n in -l patterns-opensuse-base patterns-opensuse-devel_basis
 
 # sudo zypper -n in -l texlive-scheme-full
 
@@ -271,10 +280,6 @@ sudo zypper -n in -l texlive-preprint
 sudo zypper -n in -l scrot
 
 sudo zypper -n in -l screenfetch
-
-sudo zypper -n in -l keepass
-
-sudo zypper -n in -l keepassx
 
 sudo zypper -n in -l keepassxc
 
@@ -314,26 +319,13 @@ sudo zypper -n in -l sysstat
 
 sudo zypper -n in -l dmenu xmonad fish xmobar 
 
-# 禁用 Leap 软件检查更新
+# 禁用 leap 软件检查更新
 sudo zypper remove plasma5-pk-updates
 sudo zypper addlock plasma5-pk-updates
 
-# sudo zypper -n in -l http://pencil.evolus.vn/dl/V3.0.4/Pencil-3.0.4-49.x86_64.rpm
+# sudo zypper -n in -l http://pencil.evolus.vn/dl/v3.0.4/pencil-3.0.4-49.x86_64.rpm
 # sudo zypper -n in -l http://dbeaver.jkiss.org/files/4.1.2/dbeaver-ce-4.1.2-stable.x86_64.rpm
-
-if [ "$translate_user_dirs_names_from_chinese_to_english" != "0" ]; then
-    export LANG=default
-    xdg-user-dirs-update --force
-    cd ~/桌面/ && ls -A | xargs -i mv -f {} ~/Desktop/ && rmdir ~/桌面
-    cd ~/下载/ && ls -A | xargs -i mv -f {} ~/Downloads/ && rmdir ~/下载
-    cd ~/模板/ && ls -A | xargs -i mv -f {} ~/Templates/ && rmdir ~/模板
-    cd ~/公共/ && ls -A | xargs -i mv -f {} ~/Public/ && rmdir ~/公共
-    cd ~/文档/ && ls -A | xargs -i mv -f {} ~/Documents/ && rmdir ~/文档
-    cd ~/音乐/ && ls -A | xargs -i mv -f {} ~/Music/ && rmdir ~/音乐
-    cd ~/图片/ && ls -A | xargs -i mv -f {} ~/Pictures/ && rmdir ~/图片
-    cd ~/视频/ && ls -A | xargs -i mv -f {} ~/Videos/ && rmdir ~/视频
-fi
 
 chsh -s /bin/zsh
 
-#TODO 将github管理的配置处理
+#todo 将github管理的配置处理
