@@ -317,7 +317,10 @@ sudo zypper -n in -l syslog-ng syslog-service
 
 sudo zypper -n in -l sysstat
 
-sudo zypper -n in -l dmenu xmonad fish xmobar 
+sudo zypper -n in -l dmenu xmonad fish xmobar
+
+sudo zypper -n in -l  goldendict stardict youdao-dict
+
 
 # 禁用 leap 软件检查更新
 sudo zypper remove plasma5-pk-updates
