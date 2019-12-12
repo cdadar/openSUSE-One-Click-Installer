@@ -77,7 +77,7 @@ sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositori
 
 sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/go/openSUSE_Leap_$OSVER/ go
 
-#sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/rust/openSUSE_Leap_$OSVER/ rust
+# sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/rust/openSUSE_Leap_$OSVER/ rust
 
 # sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/tools/openSUSE_Leap_$OSVER/ devel:tools
 
@@ -269,13 +269,6 @@ sudo zypper -n in -l dropbox
 
 sudo zypper -n in -l patterns-opensuse-base patterns-opensuse-devel_basis
 
-# sudo zypper -n in -l texlive-scheme-full
-
-sudo zypper -n in -l texlive texlive-latex  texlive-xetex texlive-ctex
-
-sudo zypper -n in -l texlive-cjkpunct texlive-wrapfig texlive-capt-of
-
-sudo zypper -n in -l texlive-preprint
 
 sudo zypper -n in -l scrot
 
