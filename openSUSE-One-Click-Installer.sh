@@ -314,6 +314,7 @@ sudo zypper -n in -l dmenu xmonad fish xmobar
 
 sudo zypper -n in -l  goldendict stardict youdao-dict
 
+sudo zypper -n in -l ledger
 
 # 禁用 leap 软件检查更新
 sudo zypper remove plasma5-pk-updates
