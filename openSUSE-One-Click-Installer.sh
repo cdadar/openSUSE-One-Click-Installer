@@ -165,7 +165,7 @@ sudo zypper -n in -l peek simplescreenrecorder
 
 sudo zypper -n in -l zsh
 
-sudo zypper -n in -l nodejs8
+sudo zypper -n in -l nodejs12
 
 sudo zypper -n in -l emacs emacs-el
 
@@ -203,7 +203,7 @@ sudo zypper -n in -l tmux
 
 sudo zypper -n in -l vim
 
-suod zypper -n in -l neovim
+sudo zypper -n in -l neovim
 
 sudo zypper -n in -l rdesktop
 
