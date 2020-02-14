@@ -312,9 +312,9 @@ sudo zypper -n in -l syslog-ng syslog-service
 
 sudo zypper -n in -l sysstat
 
-sudo zypper -n in -l dmenu xmonad fish xmobar
+sudo zypper -n in -l fish
 
-sudo zypper -n in -l  goldendict stardict youdao-dict
+sudo zypper -n in -l goldendict stardict youdao-dict
 
 sudo zypper -n in -l ledger
 
