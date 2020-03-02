@@ -67,7 +67,9 @@ sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositor
 
 sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/languages:/ruby:/extensions/openSUSE_Leap_$OSVER/  devel:languages:ruby:extensions
 
-sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/editors/openSUSE_Leap_$OSVER/ editors 
+sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/editors/openSUSE_Leap_$OSVER/ editors
+
+sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/Office/openSUSE_Leap_$OSVER office
 
 sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/M17N:/fonts/openSUSE_Leap_$OSVER/  M17N:fonts
 
@@ -323,6 +325,8 @@ sudo zypper -n in -l shotcut
 sudo zypper -n in -l vym
 
 sudo zypper -n in -l freemind
+
+sudo zypper -n in -l freeplane
 
 # 禁用 leap 软件检查更新
 # sudo zypper remove plasma5-pk-updates
