@@ -321,9 +321,12 @@ sudo zypper -n in -l ledger
 sudo zypper -n in -l shotcut
 
 sudo zypper -n in -l vym
+
+sudo zypper -n in -l freemind
+
 # 禁用 leap 软件检查更新
-sudo zypper remove plasma5-pk-updates
-sudo zypper addlock plasma5-pk-updates
+# sudo zypper remove plasma5-pk-updates
+# sudo zypper addlock plasma5-pk-updates
 
 # sudo zypper -n in -l http://pencil.evolus.vn/dl/v3.0.4/pencil-3.0.4-49.x86_64.rpm
 # sudo zypper -n in -l http://dbeaver.jkiss.org/files/4.1.2/dbeaver-ce-4.1.2-stable.x86_64.rpm
