@@ -109,15 +109,20 @@ sudo zypper -n in -l chromium
 
 sudo zypper -n in -l midori
 
-sudo zypper -n in -f  packman:ffmpeg-3
+sudo zypper -n in -f  packman:ffmpeg
 
 # tomahawk use phonon-backend-vlc, so vlc-codecs ( in packman ) is needed.
 sudo zypper -n in -f  packman:vlc-codecs 
 
 # vlc-codecs 包含许多受限多媒体格式的解码器
-sudo zypper -n in -f packman:vlc packman:xvba-video
+sudo zypper -n in -f packman:vlc 
 
 sudo zypper -n in -f  packman:MPlayer
+
+sudo zypper -n in -f  packman:gmplayer
+
+sudo zypper -n in -f  packman:smplayer
+
 
 sudo zypper -n in -f  packman:obs-studio
 
