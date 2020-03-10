@@ -44,6 +44,9 @@ sudo zypper --gpg-auto-import-keys ar -c  http://packman.inode.at/suse/openSUSE_
 
 sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/home:/opensuse_zh/openSUSE_Tumbleweed/ opensusu_zh
 
+sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/M17N:/fonts/openSUSE_Tumbleweed/  M17N:fonts
+
+
 # sudo zypper --gpg-auto-import-keys ar http://repo.fdzh.org/chrome/ google-chrome-stable
 
 sudo zypper --gpg-auto-import-keys ar -c  http://dl.google.com/linux/chrome/rpm/stable/$(uname -m) google-chrome
@@ -61,13 +64,28 @@ sudo zypper -n in -l aria2
 
 sudo zypper -n in -l deluge
 
+sudo zypper -n in -l transmission
+
 sudo zypper -n in -l uget
+
+wget https://raw.githubusercontent.com/ugetdm/uget-integrator/master/install/linux/install_uget_integrator.sh
+
+chmod +x install_uget_integrator.sh
+
+./install_uget_integrator.sh
 
 sudo zypper -n in -l mldonkey
 
+sudo zypper -n in -l axel
+
+sudo zypper -n in -l htop
+
 # 安装 gstreamer 相关插件，这样基于 phonon 框架的多媒体软件就可以播放受专利保护的多媒体文件了
 if [ "$install_gstreamer_plugins" != "0" ]; then
-    sudo zypper -n in -l gstreamer-0_10-plugins-base gstreamer-0_10-plugins-good gstreamer-0_10-plugins-bad gstreamer-0_10-plugins-ugly gstreamer-0_10-plugins-ffmpeg  gstreamer-plugins-bad-orig-addon
+    sudo zypper in -f --from packman gstreamer-0_10-plugins-base gstreamer-0_10-plugins-good gstreamer-0_10-plugins-bad gstreamer-0_10-plugins-ugly gstreamer-0_10-plugins-ffmpeg  gstreamer-plugins-bad-orig-addon
+
+   sudo zypper in -f --from packman gstreamer-plugins-bad gstreamer-plugins-bad-chromaprint gstreamer-plugins-bad-devel gstreamer-plugins-bad-fluidsynth gstreamer-plugins-bad-lang gstreamer-plugins-libav gstreamer-plugins-ugly gstreamer-plugins-ugly-lang
+
 fi
 
 if [ "$install_netease_cloud_music" != "0" ]; then
@@ -87,19 +105,29 @@ fi
 
 sudo zypper -n in -l google-chrome-stable
 
-sudo zypper -n in -l packman:ffmpeg
+sudo zypper -n in -l chromium
+
+sudo zypper -n in -l midori
+
+sudo zypper -n in -f  packman:ffmpeg-3
 
 # tomahawk use phonon-backend-vlc, so vlc-codecs ( in packman ) is needed.
-sudo zypper -n in -l packman:vlc-codecs
+sudo zypper -n in -f  packman:vlc-codecs 
 
 # vlc-codecs 包含许多受限多媒体格式的解码器
-sudo zypper -n in -l packman:vlc packman:xvba-video
+sudo zypper -n in -f packman:vlc packman:xvba-video
 
-sudo zypper -n in -l packman:MPlayer
+sudo zypper -n in -f  packman:MPlayer
 
-sudo zypper -n in -l packman:obs-studio 
+sudo zypper -n in -f  packman:obs-studio
 
-sudo zypper -n in -l nodejs6
+sudo zypper -n in -f  audacious clementine
+
+sudo zypper -n in -l peek simplescreenrecorder
+
+sudo zypper -n in -l zsh
+
+sudo zypper -n in -l nodejs
 
 sudo zypper -n in -l emacs emacs-el
 
@@ -107,9 +135,15 @@ sudo zypper -n in -l etags
 
 sudo zypper -n in -l ctags
 
+sudo zypper -n in -l fd
+
 sudo zypper -n in -l global
 
+sudo pip install pygments
+
 sudo zypper -n in -l git
+
+wget --no-check-certificate -q  https://raw.githubusercontent.com/petervanderdoes/gitflow-avh/develop/contrib/gitflow-installer.sh && sudo bash gitflow-installer.sh install stable; rm gitflow-installer.sh
 
 # 压缩，解压 rar 文件
 sudo zypper -n in -l rar unrar
@@ -123,33 +157,41 @@ sudo zypper -n in -l unzip-rcc
 
 sudo zypper -n in -l gcc-c++ gcc
 
+sudo zypper -n in -l cmake
+
 sudo zypper -n in -l clang llvm-devel
 
 sudo zypper -n in -l tmux 
 
 sudo zypper -n in -l vim
 
+sudo zypper -n in -l neovim
+
 sudo zypper -n in -l rdesktop
 
-sudo zypper -n in -l steam
+sudo zypper -n in -l ibus ibus-rime
 
-sudo zypper -n in -l fcitx fcitx-rime
+sudo zypper -n in -l xsel
 
-# sudo zypper -n in -l xsel
-
-sudo zypper -n in -l xclip
+# sudo zypper -n in -l xclip
 
 sudo zypper -n in -l aspell
 
 sudo zypper -n in -l sbcl
 
+sudo zypper -n in -l clisp
+
 sudo zypper -n in -l osc rpmdevtools
 
 sudo zypper -n in -l the_silver_searcher
 
+sudo zypper -n in -l ripgrep
+
 sudo zypper -n in -l gcc kernel-source virtualbox virtualbox-qt
 
-sudo zypper -n in -l docker docker-compose 
+sudo zypper -n in -l docker docker-compose
+
+sudo zypper -n in -l vagrant
 
 sudo zypper -n in -l shadowsocks-libev
 
@@ -161,71 +203,97 @@ sudo zypper -n in -l filezilla
 
 sudo zypper -n in -l xterm
 
-sudo zypper -n in -l mutt getmail msmtp procmail
+sudo zypper -n in -l rxvt-unicode urxvt-font-size urxvt-perls
+
+sudo zypper -n in -l mu4e
+
+sudo zypper -n in -l mutt getmail msmtp procmail fetchmail
 
 sudo zypper -n in -l code
 
+# sudo zypper -n in -l sublime-text
+
 sudo zypper -n in -l noto-serif-sc-fonts-full
+sudo zypper -n in -l noto-sans-sc-fonts-full
+
 
 # sudo zypper -n in -l noto-serif-tc-fonts-full noto-serif-jp-fonts-full noto-serif-kr-fonts-full
 
+sudo zypper -n in -l hack-font
+
+sudo zypper -n in -l fira-code-fonts
+
+sudo zypper -n in -l wqy-bitmap-fonts
+
+sudo zypper -n in -l wqy-microhei-fonts
+
+sudo zypper -n in -l wqy-zenhei-fonts
+
 sudo zypper -n in -l postgresql postgresql-server postgresql-contrib postgresql-devel
 
-sudo zypper -n in -l pgadmin3
+sudo zypper -n in -l mariadb mariadb-client libmariadb-devel
+
+# sudo zypper -n in -l pgadmin3
 
 sudo zypper -n in -l dropbox
 
-# sudo zypper -n in -l patterns-openSUSE-base patterns-openSUSE-devel_basis
+#sudo zypper -n in -l patterns-opensuse-base patterns-opensuse-devel_basis
 
-sudo zypper -n in -l texlive texlive-latex  texlive-xetex texlive-ctex
-
-sudo zypper -n in -l texlive-cjkpunct texlive-wrapfig texlive-capt-of 
 
 sudo zypper -n in -l scrot
 
 sudo zypper -n in -l screenfetch
 
-sudo zypper -n in -l keepass
-
-sudo zypper -n in -l keepassx
+sudo zypper -n in -l keepassxc
 
 sudo zypper -n in -l zeal
 
-sudo zypper -n in -l albert
+sudo zypper -n in -l rofi
 
 sudo zypper -n in -l freemind
 
+sudo zypper -n in -l freeplane
+
+sudo zypper -n in -l vym
+
 # sudo zypper -n in jiarenlu:bcloud
 
-sudo npm install -g yarn
+sudo zypper -n in -l libnotify-tools
 
-sudo yarn global add  webpack
+sudo zypper -n in -l redis
 
-sudo yarn global add  webpack-cli
+#视频编辑
+sudo zypper -n in -l kdenlive
 
-sudo yarn global add  gitbook-cli
+sudo zypper -n in -l blender
 
-sudo yarn global add vue-cli
+#图片处理
+sudo zypper -n in -l krita
 
-sudo yarn global remove angluar-cli
+sudo zypper -n in -l gnuplot
 
-sudo yarn global add create-react-app
+sudo zypper -n in -l bibletime
 
-# sudo zypper -n in -l http://pencil.evolus.vn/dl/V3.0.4/Pencil-3.0.4-49.x86_64.rpm
+
+sudo zypper -n in -l syslog-ng syslog-service
+
+sudo zypper -n in -l sysstat
+
+sudo zypper -n in -l fish
+
+sudo zypper -n in -l goldendict stardict youdao-dict
+
+sudo zypper -n in -l ledger
+
+sudo zypper -n in -l shotcut
+
+# 禁用 leap 软件检查更新
+#sudo zypper remove plasma5-pk-updates
+#sudo zypper addlock plasma5-pk-updates
+
+# sudo zypper -n in -l http://pencil.evolus.vn/dl/v3.0.4/pencil-3.0.4-49.x86_64.rpm
 # sudo zypper -n in -l http://dbeaver.jkiss.org/files/4.1.2/dbeaver-ce-4.1.2-stable.x86_64.rpm
 
-if [ "$translate_user_dirs_names_from_chinese_to_english" != "0" ]; then
-    export LANG=default
-    xdg-user-dirs-update --force
-    cd ~/桌面/ && ls -A | xargs -i mv -f {} ~/Desktop/ && rmdir ~/桌面
-    cd ~/下载/ && ls -A | xargs -i mv -f {} ~/Downloads/ && rmdir ~/下载
-    cd ~/模板/ && ls -A | xargs -i mv -f {} ~/Templates/ && rmdir ~/模板
-    cd ~/公共/ && ls -A | xargs -i mv -f {} ~/Public/ && rmdir ~/公共
-    cd ~/文档/ && ls -A | xargs -i mv -f {} ~/Documents/ && rmdir ~/文档
-    cd ~/音乐/ && ls -A | xargs -i mv -f {} ~/Music/ && rmdir ~/音乐
-    cd ~/图片/ && ls -A | xargs -i mv -f {} ~/Pictures/ && rmdir ~/图片
-    cd ~/视频/ && ls -A | xargs -i mv -f {} ~/Videos/ && rmdir ~/视频
-fi
+chsh -s /bin/zsh
 
-
-#TODO 将github管理的配置处理
+#todo 将github管理的配置处理
