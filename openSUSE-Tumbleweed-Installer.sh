@@ -210,8 +210,6 @@ sudo zypper -n in -l xterm
 
 sudo zypper -n in -l rxvt-unicode urxvt-font-size urxvt-perls
 
-sudo zypper -n in -l alacritty
-
 sudo zypper -n in -l mu4e
 
 sudo zypper -n in -l mutt getmail msmtp procmail fetchmail
