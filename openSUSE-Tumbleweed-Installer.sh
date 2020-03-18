@@ -134,9 +134,9 @@ sudo zypper -n in -l zsh
 
 sudo zypper -n in -l nodejs
 
-sudo zypper -n in -l java-1_8_0-openjdk-devel
+sudo zypper -n in -l java-1_8_0-openjdk java-1_8_0-openjdk-devel java-1_8_0-openjdk-src
 
-sudo zypper -n in -l java-11-openjdk-devel
+sudo zypper -n in -l java-11-openjdk java-11-openjdk-devel java-11-openjdk-src
 
 sudo zypper -n in -l emacs emacs-el
 
