@@ -218,6 +218,8 @@ sudo zypper -n in -l mu4e
 
 sudo zypper -n in -l mutt getmail msmtp procmail fetchmail
 
+sudo zypper -n in -l MozillaThunderbird  
+
 sudo zypper -n in -l code
 
 # sudo zypper -n in -l sublime-text
