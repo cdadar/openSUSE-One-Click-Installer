@@ -164,11 +164,11 @@ sudo zypper -n in -l p7zip
 # 这些 zip 包中的文件名实际上是以 GBK 编码的
 sudo zypper -n in -l unzip-rcc
 
-sudo zypper -n in -l gcc-c++ gcc
+sudo zypper -n in -l gcc-c++ gcc gcc-devel
 
 sudo zypper -n in -l cmake
 
-sudo zypper -n in -l clang llvm-devel
+sudo zypper -n in -l clang llvm-devel clang-devel
 
 sudo zypper -n in -l tmux 
 
