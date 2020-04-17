@@ -168,7 +168,7 @@ sudo zypper -n in -l gcc-c++ gcc gcc-devel
 
 sudo zypper -n in -l cmake
 
-sudo zypper -n in -l clang llvm-devel clang-devel
+sudo zypper -n in -l clang llvm llvm-devel clang-devel rtags
 
 sudo zypper -n in -l tmux 
 
