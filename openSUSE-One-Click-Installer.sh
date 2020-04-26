@@ -63,13 +63,13 @@ sudo zypper --gpg-auto-import-keys ar -c  http://dl.google.com/linux/chrome/rpm/
 
 # sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/Virtualization/openSUSE_Leap_$OSVER/ virtualization
 
-sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/Virtualization:/vagrant/openSUSE_Leap_$OSVER/ vagrant
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/Virtualization:/vagrant/openSUSE_Leap_$OSVER/ vagrant
 
-sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/languages:/ruby:/extensions/openSUSE_Leap_$OSVER/  devel:languages:ruby:extensions
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/languages:/ruby:/extensions/openSUSE_Leap_$OSVER/  devel:languages:ruby:extensions
 
 sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/editors/openSUSE_Leap_$OSVER/ editors
 
-sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/Office/openSUSE_Leap_$OSVER office
+# sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/Office/openSUSE_Leap_$OSVER office
 
 sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/M17N:/fonts/openSUSE_Leap_$OSVER/  M17N:fonts
 
@@ -79,7 +79,7 @@ sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositori
 
 sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/go/openSUSE_Leap_$OSVER/ go
 
-# sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/rust/openSUSE_Leap_$OSVER/ rust
+sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/rust/openSUSE_Leap_$OSVER/ rust
 
 # sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/tools/openSUSE_Leap_$OSVER/ devel:tools
 
@@ -100,11 +100,15 @@ sudo zypper --gpg-auto-import-keys ref
 sudo zypper -n update -l
 
 
+sudo zypper -n update -l
+
 sudo zypper -n in -l aria2
 
-sudo zypper -n in -l deluge
+# sudo zypper -n in -l deluge
 
-sudo zypper -n in -l transmission
+# sudo zypper -n in -l transmission
+
+sudo zypper -n in -l qbittorrent 
 
 sudo zypper -n in -l uget
 
@@ -149,15 +153,20 @@ sudo zypper -n in -l chromium
 
 sudo zypper -n in -l midori
 
-sudo zypper -n in -f  packman:ffmpeg-3
+sudo zypper -n in -f  packman:ffmpeg
 
 # tomahawk use phonon-backend-vlc, so vlc-codecs ( in packman ) is needed.
 sudo zypper -n in -f  packman:vlc-codecs 
 
 # vlc-codecs 包含许多受限多媒体格式的解码器
-sudo zypper -n in -f packman:vlc packman:xvba-video
+sudo zypper -n in -f packman:vlc 
 
 sudo zypper -n in -f  packman:MPlayer
+
+sudo zypper -n in -f  packman:gmplayer
+
+sudo zypper -n in -f  packman:smplayer
+
 
 sudo zypper -n in -f  packman:obs-studio
 
@@ -167,7 +176,11 @@ sudo zypper -n in -l peek simplescreenrecorder
 
 sudo zypper -n in -l zsh
 
-sudo zypper -n in -l nodejs12
+sudo zypper -n in -l nodejs
+
+sudo zypper -n in -l java-1_8_0-openjdk java-1_8_0-openjdk-devel java-1_8_0-openjdk-src
+
+sudo zypper -n in -l java-11-openjdk java-11-openjdk-devel java-11-openjdk-src
 
 sudo zypper -n in -l emacs emacs-el
 
@@ -195,11 +208,11 @@ sudo zypper -n in -l p7zip
 # 这些 zip 包中的文件名实际上是以 GBK 编码的
 sudo zypper -n in -l unzip-rcc
 
-sudo zypper -n in -l gcc-c++ gcc
+sudo zypper -n in -l gcc-c++ gcc gcc-devel
 
 sudo zypper -n in -l cmake
 
-sudo zypper -n in -l clang llvm-devel
+sudo zypper -n in -l clang llvm llvm-devel clang-devel rtags
 
 sudo zypper -n in -l tmux 
 
@@ -208,8 +221,6 @@ sudo zypper -n in -l vim
 sudo zypper -n in -l neovim
 
 sudo zypper -n in -l rdesktop
-
-#sudo zypper -n in -l fcitx fcitx-rime
 
 sudo zypper -n in -l ibus ibus-rime
 
@@ -233,7 +244,7 @@ sudo zypper -n in -l gcc kernel-source virtualbox virtualbox-qt
 
 sudo zypper -n in -l docker docker-compose
 
-sudo zypper -n in -l ruby2.5-rubygem-net-ssh-5.1 vagrant
+sudo zypper -n in -l vagrant
 
 sudo zypper -n in -l shadowsocks-libev
 
@@ -251,17 +262,27 @@ sudo zypper -n in -l mu4e
 
 sudo zypper -n in -l mutt getmail msmtp procmail fetchmail
 
+sudo zypper -n in -l MozillaThunderbird  
+
 sudo zypper -n in -l code
 
 # sudo zypper -n in -l sublime-text
 
 sudo zypper -n in -l noto-serif-sc-fonts-full
+sudo zypper -n in -l noto-sans-sc-fonts-full
+
 
 # sudo zypper -n in -l noto-serif-tc-fonts-full noto-serif-jp-fonts-full noto-serif-kr-fonts-full
 
 sudo zypper -n in -l hack-font
 
 sudo zypper -n in -l fira-code-fonts
+
+sudo zypper -n in -l wqy-bitmap-fonts
+
+sudo zypper -n in -l wqy-microhei-fonts
+
+sudo zypper -n in -l wqy-zenhei-fonts
 
 sudo zypper -n in -l postgresql postgresql-server postgresql-contrib postgresql-devel
 
@@ -271,7 +292,7 @@ sudo zypper -n in -l mariadb mariadb-client libmariadb-devel
 
 sudo zypper -n in -l dropbox
 
-sudo zypper -n in -l patterns-opensuse-base patterns-opensuse-devel_basis
+#sudo zypper -n in -l patterns-opensuse-base patterns-opensuse-devel_basis
 
 
 sudo zypper -n in -l scrot
@@ -285,6 +306,10 @@ sudo zypper -n in -l zeal
 sudo zypper -n in -l rofi
 
 sudo zypper -n in -l freemind
+
+sudo zypper -n in -l freeplane
+
+sudo zypper -n in -l vym
 
 # sudo zypper -n in jiarenlu:bcloud
 
@@ -304,11 +329,6 @@ sudo zypper -n in -l gnuplot
 
 sudo zypper -n in -l bibletime
 
-sudo zypper -n in -l wqy-bitmap-fonts
-
-sudo zypper -n in -l wqy-microhei-fonts
-
-sudo zypper -n in -l wqy-zenhei-fonts
 
 sudo zypper -n in -l syslog-ng syslog-service
 
@@ -322,15 +342,9 @@ sudo zypper -n in -l ledger
 
 sudo zypper -n in -l shotcut
 
-sudo zypper -n in -l vym
-
-sudo zypper -n in -l freemind
-
-sudo zypper -n in -l freeplane
-
 # 禁用 leap 软件检查更新
-# sudo zypper remove plasma5-pk-updates
-# sudo zypper addlock plasma5-pk-updates
+#sudo zypper remove plasma5-pk-updates
+#sudo zypper addlock plasma5-pk-updates
 
 # sudo zypper -n in -l http://pencil.evolus.vn/dl/v3.0.4/pencil-3.0.4-49.x86_64.rpm
 # sudo zypper -n in -l http://dbeaver.jkiss.org/files/4.1.2/dbeaver-ce-4.1.2-stable.x86_64.rpm

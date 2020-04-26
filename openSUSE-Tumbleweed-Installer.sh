@@ -66,6 +66,8 @@ sudo zypper -n in -l deluge
 
 sudo zypper -n in -l transmission
 
+sudo zypper -n in -l qbittorrent 
+
 sudo zypper -n in -l uget
 
 wget https://raw.githubusercontent.com/ugetdm/uget-integrator/master/install/linux/install_uget_integrator.sh
