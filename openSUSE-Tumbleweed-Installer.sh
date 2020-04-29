@@ -300,6 +300,8 @@ sudo zypper -n in -l ledger
 
 sudo zypper -n in -l shotcut
 
+sudo zypper -n in -l davfs2
+
 # 禁用 leap 软件检查更新
 #sudo zypper remove plasma5-pk-updates
 #sudo zypper addlock plasma5-pk-updates
