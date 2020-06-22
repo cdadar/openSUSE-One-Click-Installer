@@ -224,7 +224,7 @@ sudo zypper -n in -l neovim
 
 sudo zypper -n in -l rdesktop
 
-sudo zypper -n in -l ibus ibus-rime
+sudo zypper -n in -l fcitx fcitx-rime
 
 sudo zypper -n in -l xsel
 
