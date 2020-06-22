@@ -73,6 +73,8 @@ sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositori
 
 sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/M17N:/fonts/openSUSE_Leap_$OSVER/  M17N:fonts
 
+sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/M17N/openSUSE_Leap_$OSVER/ M17N
+
 sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/nodejs/openSUSE_Leap_$OSVER/ nodejs
 
 # sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/php/openSUSE_Leap_$OSVER/ php
