@@ -22,8 +22,6 @@ if [ "$confirm_continue" == "n" -o "$confirm_continue" == "no" ]; then
   exit
 fi
 
-. $SCRIPT_DIR/ooci.conf
-
 OSVER=$(lsb_release -r|awk '{print $2}')
 ARCH=$(uname -m)
 
@@ -111,24 +109,24 @@ sudo zypper -n in -l chromium
 
 sudo zypper -n in -l midori
 
-sudo zypper -n in -f  packman:ffmpeg
+sudo zypper -n in -l packman:ffmpeg
 
 # tomahawk use phonon-backend-vlc, so vlc-codecs ( in packman ) is needed.
-sudo zypper -n in -f  packman:vlc-codecs 
+sudo zypper -n in -l packman:vlc-codecs 
 
 # vlc-codecs 包含许多受限多媒体格式的解码器
-sudo zypper -n in -f packman:vlc 
+sudo zypper -n in -l packman:vlc 
 
-sudo zypper -n in -f  packman:MPlayer
+sudo zypper -n in -l packman:MPlayer
 
-sudo zypper -n in -f  packman:gmplayer
+sudo zypper -n in -l packman:gmplayer
 
-sudo zypper -n in -f  packman:smplayer
+sudo zypper -n in -l packman:smplayer
 
 
-sudo zypper -n in -f  packman:obs-studio
+sudo zypper -n in -l packman:obs-studio
 
-sudo zypper -n in -f  audacious clementine
+sudo zypper -n in -l audacious clementine
 
 sudo zypper -n in -l peek simplescreenrecorder
 
@@ -180,7 +178,9 @@ sudo zypper -n in -l neovim
 
 sudo zypper -n in -l rdesktop
 
-sudo zypper -n in -l ibus ibus-rime
+# sudo zypper -n in -l ibus ibus-rime
+
+sudo zypper -n in -l fcitx fcitx-rime
 
 sudo zypper -n in -l xsel
 
@@ -227,8 +227,8 @@ sudo zypper -n in -l code
 # sudo zypper -n in -l sublime-text
 
 sudo zypper -n in -l noto-serif-sc-fonts-full
-sudo zypper -n in -l noto-sans-sc-fonts-full
 
+sudo zypper -n in -l noto-sans-sc-fonts-full
 
 # sudo zypper -n in -l noto-serif-tc-fonts-full noto-serif-jp-fonts-full noto-serif-kr-fonts-full
 
@@ -251,7 +251,6 @@ sudo zypper -n in -l mariadb mariadb-client libmariadb-devel
 sudo zypper -n in -l dropbox
 
 #sudo zypper -n in -l patterns-opensuse-base patterns-opensuse-devel_basis
-
 
 sudo zypper -n in -l scrot
 
@@ -286,7 +285,6 @@ sudo zypper -n in -l krita
 sudo zypper -n in -l gnuplot
 
 sudo zypper -n in -l bibletime
-
 
 sudo zypper -n in -l syslog-ng syslog-service
 
