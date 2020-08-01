@@ -286,7 +286,7 @@ sudo zypper -n in -l wqy-microhei-fonts
 
 sudo zypper -n in -l wqy-zenhei-fonts
 
-sudo zypper -n in -l postgresql postgresql-server postgresql-contrib postgresql-devel
+sudo zypper -n in -l postgresql postgresql-server postgresql-contrib postgresql-devel postgresql-server-devel
 
 sudo zypper -n in -l mariadb mariadb-client libmariadb-devel
 
@@ -355,6 +355,8 @@ sudo zypper -n in -l direnv
 sudo zypper -n in -l net-tools-deprecated
 
 sudo zypper -n in -l remmina
+
+sudo zypper -n in -l calibre
 
 # 禁用 leap 软件检查更新
 #sudo zypper remove plasma5-pk-updates
