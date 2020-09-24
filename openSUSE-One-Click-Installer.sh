@@ -360,6 +360,7 @@ sudo zypper -n in -l calibre
 
 sudo zypper -n in -l inotify-tools
 
+# centos lrzsz
 sudo zypper -n in -l rzsz
 
 # 禁用 leap 软件检查更新
