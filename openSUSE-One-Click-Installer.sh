@@ -363,6 +363,8 @@ sudo zypper -n in -l inotify-tools
 # centos lrzsz
 sudo zypper -n in -l rzsz
 
+sudo zypper -n in -l calligra
+
 # 禁用 leap 软件检查更新
 #sudo zypper remove plasma5-pk-updates
 #sudo zypper addlock plasma5-pk-updates
