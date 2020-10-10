@@ -165,6 +165,8 @@ sudo zypper -n in -l wqy-zenhei-fonts
 
 sudo zypper -n in -l syslog-ng syslog-service
 
+sudo zypper -n in -l calligra
+
 sudo npm install -g yarn
 
 sudo yarn global add  webpack
