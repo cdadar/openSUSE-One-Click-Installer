@@ -73,15 +73,15 @@ sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositori
 
 sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/M17N:/fonts/openSUSE_Leap_$OSVER/  M17N:fonts
 
-sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/M17N/openSUSE_Leap_$OSVER/ M17N
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/M17N/openSUSE_Leap_$OSVER/ M17N
 
-sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/nodejs/openSUSE_Leap_$OSVER/ nodejs
+# sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/nodejs/openSUSE_Leap_$OSVER/ nodejs
 
-sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/php/openSUSE_Leap_$OSVER/ php
+# sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/php/openSUSE_Leap_$OSVER/ php
 
-sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/go/openSUSE_Leap_$OSVER/ go
+# sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/go/openSUSE_Leap_$OSVER/ go
 
-sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/rust/openSUSE_Leap_$OSVER/ rust
+# sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/rust/openSUSE_Leap_$OSVER/ rust
 
 # sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/tools/openSUSE_Leap_$OSVER/ devel:tools
 
@@ -98,9 +98,6 @@ sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.m
 
 # 刷新软件源并更新系统
 sudo zypper --gpg-auto-import-keys ref
-
-sudo zypper -n update -l
-
 
 sudo zypper -n update -l
 
@@ -153,7 +150,7 @@ sudo zypper -n in -l google-chrome-stable
 
 sudo zypper -n in -l chromium
 
-sudo zypper -n in -l midori
+# sudo zypper -n in -l midori
 
 sudo zypper -n in -f  packman:ffmpeg
 
@@ -163,16 +160,15 @@ sudo zypper -n in -f  packman:vlc-codecs
 # vlc-codecs 包含许多受限多媒体格式的解码器
 sudo zypper -n in -f packman:vlc 
 
-sudo zypper -n in -f  packman:MPlayer
+# sudo zypper -n in -f  packman:MPlayer
 
-sudo zypper -n in -f  packman:gmplayer
+# sudo zypper -n in -f  packman:gmplayer
 
-sudo zypper -n in -f  packman:smplayer
-
+# sudo zypper -n in -f  packman:smplayer
 
 sudo zypper -n in -f  packman:obs-studio
 
-sudo zypper -n in -f  audacious clementine
+# sudo zypper -n in -f  audacious clementine
 
 sudo zypper -n in -l peek simplescreenrecorder
 
@@ -224,7 +220,9 @@ sudo zypper -n in -l neovim
 
 sudo zypper -n in -l rdesktop
 
-sudo zypper -n in -l fcitx fcitx-rime
+# sudo zypper -n in -l fcitx fcitx-rime
+
+sudo zypper -n in -l ibus ibus-rime
 
 sudo zypper -n in -l xsel
 
@@ -271,8 +269,8 @@ sudo zypper -n in -l code
 # sudo zypper -n in -l sublime-text
 
 sudo zypper -n in -l noto-serif-sc-fonts-full
-sudo zypper -n in -l noto-sans-sc-fonts-full
 
+sudo zypper -n in -l noto-sans-sc-fonts-full
 
 # sudo zypper -n in -l noto-serif-tc-fonts-full noto-serif-jp-fonts-full noto-serif-kr-fonts-full
 
@@ -296,8 +294,7 @@ sudo zypper -n in -l dropbox
 
 #sudo zypper -n in -l patterns-opensuse-base patterns-opensuse-devel_basis
 
-
-sudo zypper -n in -l scrot
+# sudo zypper -n in -l scrot
 
 sudo zypper -n in -l screenfetch
 
@@ -331,7 +328,6 @@ sudo zypper -n in -l gnuplot
 
 sudo zypper -n in -l bibletime
 
-
 sudo zypper -n in -l syslog-ng syslog-service
 
 sudo zypper -n in -l sysstat
@@ -363,7 +359,7 @@ sudo zypper -n in -l inotify-tools
 # centos lrzsz
 sudo zypper -n in -l rzsz
 
-sudo zypper -n in -l calligra
+# sudo zypper -n in -l calligra
 
 sudo zypper -n in -l net-tools-deprecated 
 
