@@ -12,7 +12,6 @@ if [ ! -f $SCRIPT_DIR/ooci.conf ]; then
   wget -nd -c -P $SCRIPT_DIR --no-check-certificate --no-cookies  "https://raw.github.com/cdadar/openSUSE-One-Click-Installer/master/ooci.conf"
 fi
 
-cat "$SCRIPT_DIR/README.md"
 read -p "你确定继续吗？ (Y|n) : " confirm_continue
 
 if [ -z "$confirm_continue" ]; then
@@ -105,9 +104,9 @@ sudo zypper -n in -l aria2
 
 # sudo zypper -n in -l deluge
 
-# sudo zypper -n in -l transmission
+sudo zypper -n in -l transmission
 
-sudo zypper -n in -l qbittorrent 
+# sudo zypper -n in -l qbittorrent 
 
 sudo zypper -n in -l uget
 
