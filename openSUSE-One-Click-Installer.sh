@@ -102,11 +102,11 @@ sudo zypper -n update -l
 
 sudo zypper -n in -l aria2
 
-# sudo zypper -n in -l deluge
+sudo zypper -n in -l deluge
 
 sudo zypper -n in -l transmission
 
-# sudo zypper -n in -l qbittorrent 
+sudo zypper -n in -l qbittorrent
 
 sudo zypper -n in -l uget
 
@@ -223,9 +223,9 @@ sudo zypper -n in -l rdesktop
 
 sudo zypper -n in -l ibus ibus-rime
 
-sudo zypper -n in -l xsel
+# sudo zypper -n in -l xsel
 
-# sudo zypper -n in -l xclip
+sudo zypper -n in -l xclip
 
 sudo zypper -n in -l aspell
 
@@ -293,7 +293,7 @@ sudo zypper -n in -l dropbox
 
 #sudo zypper -n in -l patterns-opensuse-base patterns-opensuse-devel_basis
 
-# sudo zypper -n in -l scrot
+sudo zypper -n in -l scrot
 
 sudo zypper -n in -l screenfetch
 
@@ -316,7 +316,7 @@ sudo zypper -n in -l libnotify-tools
 sudo zypper -n in -l redis
 
 #视频编辑
-sudo zypper -n in -l kdenlive
+sudo zypper -n in -l  --no-recommends  kdenlive
 
 sudo zypper -n in -l blender
 
@@ -339,7 +339,7 @@ sudo zypper -n in -l ledger
 
 sudo zypper -n in -l shotcut
 
-sudo zypper -n in -l vym
+# sudo zypper -n in -l vym
 
 sudo zypper -n in -l freemind
 
@@ -360,7 +360,11 @@ sudo zypper -n in -l rzsz
 
 # sudo zypper -n in -l calligra
 
-sudo zypper -n in -l net-tools-deprecated 
+sudo zypper -n in -l net-tools-deprecated
+
+sudo zypper -n in -l steam
+
+sudo zypper -n in -l lutris
 
 # 禁用 leap 软件检查更新
 #sudo zypper remove plasma5-pk-updates
