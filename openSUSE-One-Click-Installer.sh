@@ -169,6 +169,8 @@ sudo zypper -n in -f  packman:obs-studio
 
 # sudo zypper -n in -f  audacious clementine
 
+sudo zypper -n in -f rhythmbox
+
 sudo zypper -n in -l peek simplescreenrecorder
 
 sudo zypper -n in -l zsh
