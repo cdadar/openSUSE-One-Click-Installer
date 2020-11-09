@@ -167,9 +167,13 @@ sudo zypper -n in -f packman:vlc
 
 sudo zypper -n in -f  packman:obs-studio
 
-# sudo zypper -n in -f  audacious clementine
+sudo zypper -n in -f  audacious
 
-sudo zypper -n in -f rhythmbox
+# sudo zypper -n in -f  clementine
+
+# sudo zypper -n in -f rhythmbox
+
+sudo zypper -n in -f cmus
 
 sudo zypper -n in -l peek simplescreenrecorder
 
@@ -316,6 +320,8 @@ sudo zypper -n in -l vym
 sudo zypper -n in -l libnotify-tools
 
 sudo zypper -n in -l redis
+
+sudo zypper al libqt5-qtbase-platformtheme-gtk3 libqt5-qtstyleplugins-platformtheme-gtk2
 
 #视频编辑
 sudo zypper -n in -l  --no-recommends  kdenlive
