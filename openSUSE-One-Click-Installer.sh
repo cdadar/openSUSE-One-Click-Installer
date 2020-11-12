@@ -247,6 +247,8 @@ sudo zypper -n in -l ripgrep
 
 sudo zypper -n in -l gcc kernel-source virtualbox virtualbox-qt
 
+sudo zypper -n in -l -t pattern kvm_server kvm_tools
+
 sudo zypper -n in -l docker docker-compose
 
 sudo zypper -n in -l vagrant
