@@ -349,11 +349,6 @@ sudo zypper -n in -l ledger
 
 sudo zypper -n in -l shotcut
 
-# sudo zypper -n in -l vym
-
-sudo zypper -n in -l freemind
-
-sudo zypper -n in -l freeplane
 
 sudo zypper -n in -l direnv
 
