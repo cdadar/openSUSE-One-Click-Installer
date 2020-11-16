@@ -371,6 +371,8 @@ sudo zypper -n in -l steam
 
 sudo zypper -n in -l lutris
 
+sudo zypper -n in -l exfat-utils
+
 # 禁用 leap 软件检查更新
 #sudo zypper remove plasma5-pk-updates
 #sudo zypper addlock plasma5-pk-updates
