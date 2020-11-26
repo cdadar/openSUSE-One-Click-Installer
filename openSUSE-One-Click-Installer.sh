@@ -169,11 +169,11 @@ sudo zypper -n in -f packman:vlc
 
 sudo zypper -n in -f  packman:obs-studio
 
-sudo zypper -n in -f  audacious
+# sudo zypper -n in -f  audacious
 
 # sudo zypper -n in -f  clementine
 
-# sudo zypper -n in -f rhythmbox
+sudo zypper -n in -f rhythmbox
 
 sudo zypper -n in -f cmus
 
@@ -187,7 +187,7 @@ sudo zypper -n in -l java-1_8_0-openjdk java-1_8_0-openjdk-devel java-1_8_0-open
 
 sudo zypper -n in -l java-11-openjdk java-11-openjdk-devel java-11-openjdk-src
 
-sudo zypper -n in -l adoptopenjdk-8-hotspot adoptopenjdk-11-hotspot
+# sudo zypper -n in -l adoptopenjdk-8-hotspot adoptopenjdk-11-hotspot
 
 sudo zypper -n in -l emacs emacs-el
 
