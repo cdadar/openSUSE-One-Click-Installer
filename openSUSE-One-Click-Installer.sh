@@ -40,7 +40,7 @@ fi
 # w32codec-all 需要该源
 sudo zypper --gpg-auto-import-keys ar -c  http://packman.inode.at/suse/openSUSE_Leap_$OSVER/ packman
 sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/home:/opensuse_zh/openSUSE_Leap_$OSVER/ opensusu_zh
-#sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/home:/jiarenlu/openSUSE_Leap_$OSVER/ jiarenlu
+# sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/home:/jiarenlu/openSUSE_Leap_$OSVER/ jiarenlu
 # sudo zypper --gpg-auto-import-keys ar http://repo.fdzh.org/chrome/ google-chrome-stable
 sudo zypper --gpg-auto-import-keys ar -c  http://dl.google.com/linux/chrome/rpm/stable/$(uname -m) google-chrome
 # sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/Virtualization/openSUSE_Leap_$OSVER/ virtualization
@@ -101,8 +101,8 @@ sudo zypper -n in -l chromium
 # sudo zypper -n in -l midori
 sudo zypper -n in -f  packman:ffmpeg
 # tomahawk use phonon-backend-vlc, so vlc-codecs ( in packman ) is needed.
-sudo zypper -n in -f  packman:vlc-codecs 
 # vlc-codecs 包含许多受限多媒体格式的解码器
+sudo zypper -n in -f packman:vlc-codecs 
 sudo zypper -n in -f packman:vlc 
 # sudo zypper -n in -f  packman:MPlayer
 # sudo zypper -n in -f  packman:gmplayer
@@ -121,6 +121,8 @@ sudo zypper -n in -l maven gradle
 # sudo zypper -n in -l adoptopenjdk-8-hotspot adoptopenjdk-11-hotspot
 sudo zypper -n in -l emacs emacs-el etags
 sudo zypper -n in -l ctags
+sudo zypper -n in -l the_silver_searcher
+sudo zypper -n in -l ripgrep
 sudo zypper -n in -l fd
 sudo zypper -n in -l global
 sudo pip install pygments
@@ -146,8 +148,6 @@ sudo zypper -n in -l aspell
 sudo zypper -n in -l sbcl
 sudo zypper -n in -l clisp
 sudo zypper -n in -l osc rpmdevtools
-sudo zypper -n in -l the_silver_searcher
-sudo zypper -n in -l ripgrep
 sudo zypper -n in -l gcc kernel-source virtualbox virtualbox-qt
 sudo zypper -n in -l -t pattern kvm_server kvm_tools
 sudo zypper -n in -l docker docker-compose
