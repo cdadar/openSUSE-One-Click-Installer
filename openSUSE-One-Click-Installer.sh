@@ -4,31 +4,22 @@
 OLD_LANG=$LANG
 export LANG=default
 SCRIPT_DIR=$(dirname $0)
-if [ ! -f $SCRIPT_DIR/README.md ]; then
-    wget -nd -c -P $SCRIPT_DIR --no-check-certificate --no-cookies  "https://raw.github.com/cdadar/openSUSE-One-Click-Installer/master/README.md"
-fi
-if [ ! -f $SCRIPT_DIR/ooci.conf ]; then
-    wget -nd -c -P $SCRIPT_DIR --no-check-certificate --no-cookies  "https://raw.github.com/cdadar/openSUSE-One-Click-Installer/master/ooci.conf"
-fi    
 read -p "你确定继续吗？ (Y|n) : " confirm_continue
 if [ -z "$confirm_continue" ]; then
     confirm_continue="Y"
-fi    
+fi
 if [ "$confirm_continue" == "n" -o "$confirm_continue" == "no" ]; then
     exit
-fi    
+fi
 sudo zypper -n in -l lsb-release
-. $SCRIPT_DIR/ooci.conf
 OSVER=$(lsb_release -r|awk '{print $2}')
 ARCH=$(uname -m)
 TMP_DIR=`mktemp -d`
 # 禁用 cd 源
-if [ "$disable_cd_repo" != "0" ]; then
-    CD_REPO_ID=`zypper lr -u | awk -F'[|+]'  '$6 ~ /^\s*cd:\/\// {print $1}'`
-    if [ -n "$CD_REPO_ID" ]; then
-        sudo zypper mr -d $CD_REPO_ID
-    fi
-fi  
+CD_REPO_ID=`zypper lr -u | awk -F'[|+]'  '$6 ~ /^\s*cd:\/\// {print $1}'`
+if [ -n "$CD_REPO_ID" ]; then
+    sudo zypper mr -d $CD_REPO_ID
+fi
 # 添加阿里镜像源
 #sudo zypper ar -fc https://mirrors.aliyun.com/opensuse/distribution/leap/$OSVER/repo/oss openSUSE-Aliyun-OSS
 #sudo zypper ar -fc https://mirrors.aliyun.com/opensuse/distribution/leap/$OSVER/repo/non-oss openSUSE-Aliyun-NON-OSS
@@ -67,22 +58,16 @@ sudo zypper al libqt5-qtbase-platformtheme-gtk3 libqt5-qtstyleplugins-platformth
 sudo zypper --gpg-auto-import-keys ref
 sudo zypper -n update -l
 # 安装 gstreamer 相关插件，这样基于 phonon 框架的多媒体软件就可以播放受专利保护的多媒体文件了
-if [ "$install_gstreamer_plugins" != "0" ]; then
-    sudo zypper in -f --from packman gstreamer-0_10-plugins-base gstreamer-0_10-plugins-good gstreamer-0_10-plugins-bad gstreamer-0_10-plugins-ugly gstreamer-0_10-plugins-ffmpeg  gstreamer-plugins-bad-orig-addon
-    sudo zypper in -f --from packman gstreamer-plugins-bad gstreamer-plugins-bad-chromaprint gstreamer-plugins-bad-devel gstreamer-plugins-bad-fluidsynth gstreamer-plugins-bad-lang gstreamer-plugins-libav gstreamer-plugins-ugly gstreamer-plugins-ugly-lang
-fi    
-if [ "$install_netease_cloud_music" != "0" ]; then
-    # kwplayer needs this repo
-    # wget  http://s1.music.126.net/download/pc/netease-cloud-music_1.0.0-2_amd64_ubuntu16.04.deb
-    # wget http://s1.music.126.net/dmusic/netease-cloud-music_1.1.0_amd64_ubuntu.deb
-    # ar p netease-cloud-music_*.deb data.tar.xz > netease-cloud-music_tmp.tar.xz
-    # sudo tar -xvf netease-cloud-music_tmp.tar.xz -C /
-    sudo zypper -n in -l netease-cloud-music
-fi
+sudo zypper in -f --from packman gstreamer-0_10-plugins-base gstreamer-0_10-plugins-good gstreamer-0_10-plugins-bad gstreamer-0_10-plugins-ugly gstreamer-0_10-plugins-ffmpeg  gstreamer-plugins-bad-orig-addon
+sudo zypper in -f --from packman gstreamer-plugins-bad gstreamer-plugins-bad-chromaprint gstreamer-plugins-bad-devel gstreamer-plugins-bad-fluidsynth gstreamer-plugins-bad-lang gstreamer-plugins-libav gstreamer-plugins-ugly gstreamer-plugins-ugly-lang
+# kwplayer needs this repo
+# wget  http://s1.music.126.net/download/pc/netease-cloud-music_1.0.0-2_amd64_ubuntu16.04.deb
+# wget http://s1.music.126.net/dmusic/netease-cloud-music_1.1.0_amd64_ubuntu.deb
+# ar p netease-cloud-music_*.deb data.tar.xz > netease-cloud-music_tmp.tar.xz
+# sudo tar -xvf netease-cloud-music_tmp.tar.xz -C /
+sudo zypper -n in -l netease-cloud-music
 # 解决Firefox不能播放flash在线视频
-if [ "$install_flash_player" != "0" ]; then
-    sudo zypper -n in -l flash-player-ppapi
-fi
+sudo zypper -n in -l flash-player-ppapi
 sudo zypper -n in -l aria2
 sudo zypper -n in -l uget
 wget https://raw.githubusercontent.com/ugetdm/uget-integrator/master/install/linux/install_uget_integrator.sh
@@ -218,3 +203,4 @@ sudo zypper -n in -l exfat-utils
 # sudo zypper -n in -l http://dbeaver.jkiss.org/files/4.1.2/dbeaver-ce-4.1.2-stable.x86_64.rpm
 chsh -s /bin/zsh
 #todo 将github管理的配置处理
+export LANG=$OLD_LANG
