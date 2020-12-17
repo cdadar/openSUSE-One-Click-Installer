@@ -63,6 +63,7 @@ sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.m
 # sudo rpm -v --import https://download.sublimetext.com/sublimehq-rpm-pub.gpg
 # sudo zypper addrepo -g -f https://download.sublimetext.com/rpm/stable/x86_64/sublime-text.repo
 # 刷新软件源并更新系统
+sudo zypper al libqt5-qtbase-platformtheme-gtk3 libqt5-qtstyleplugins-platformtheme-gtk2
 sudo zypper --gpg-auto-import-keys ref
 sudo zypper -n update -l
 # 安装 gstreamer 相关插件，这样基于 phonon 框架的多媒体软件就可以播放受专利保护的多媒体文件了
@@ -186,7 +187,6 @@ sudo zypper -n in -l vym
 # sudo zypper -n in jiarenlu:bcloud
 sudo zypper -n in -l libnotify-tools
 sudo zypper -n in -l redis
-sudo zypper al libqt5-qtbase-platformtheme-gtk3 libqt5-qtstyleplugins-platformtheme-gtk2
 #视频编辑
 sudo zypper -n in -l  --no-recommends  kdenlive
 sudo zypper -n in -l blender
