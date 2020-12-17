@@ -151,7 +151,7 @@ sudo zypper -n in -l code
 sudo zypper -n in -l noto-serif-sc-fonts-full
 sudo zypper -n in -l noto-sans-sc-fonts-full
 # sudo zypper -n in -l noto-serif-tc-fonts-full noto-serif-jp-fonts-full noto-serif-kr-fonts-full
-sudo zypper -n in -l hack-font
+sudo zypper -n in -l hack-fonts
 sudo zypper -n in -l fira-code-fonts
 sudo zypper -n in -l wqy-bitmap-fonts
 sudo zypper -n in -l wqy-microhei-fonts
@@ -196,6 +196,7 @@ sudo zypper -n in -l rzsz
 sudo zypper -n in -l steam
 sudo zypper -n in -l lutris
 sudo zypper -n in -l exfat-utils
+sudo zypper -n in -l gnome-shell-extension-user-theme
 # 禁用 leap 软件检查更新
 #sudo zypper remove plasma5-pk-updates
 #sudo zypper addlock plasma5-pk-updates
