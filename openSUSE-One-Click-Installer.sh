@@ -41,7 +41,8 @@ sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositori
 # sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/Office/openSUSE_Leap_$OSVER office
 sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/M17N:/fonts/openSUSE_Leap_$OSVER/  M17N:fonts
 # sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/M17N/openSUSE_Leap_$OSVER/ M17N
-sudo zypper --gpg-auto-import-keys ar -f https://adoptopenjdk.jfrog.io/adoptopenjdk/rpm/opensuse/$OSVER/$ARCH/ adoptopenjdk
+# sudo zypper --gpg-auto-import-keys ar -f https://adoptopenjdk.jfrog.io/adoptopenjdk/rpm/opensuse/$OSVER/$ARCH/ adoptopenjdk
+# sudo zypper --gpg-auto-import-keys ar -f https://download.opensuse.org/repositories/server:/database/openSUSE_Leap_$OSVER/ server:database
 # sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/nodejs/openSUSE_Leap_$OSVER/ nodejs
 # sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/php/openSUSE_Leap_$OSVER/ php
 # sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/go/openSUSE_Leap_$OSVER/ go
@@ -103,6 +104,7 @@ sudo zypper -n in -l nodejs
 sudo zypper -n in -l java-1_8_0-openjdk java-1_8_0-openjdk-devel java-1_8_0-openjdk-src
 sudo zypper -n in -l java-11-openjdk java-11-openjdk-devel java-11-openjdk-src
 sudo zypper -n in -l maven gradle
+# sudo zypper -n in -l zookeeper-server
 # sudo zypper -n in -l adoptopenjdk-8-hotspot adoptopenjdk-11-hotspot
 sudo zypper -n in -l emacs emacs-el etags
 sudo zypper -n in -l ctags
