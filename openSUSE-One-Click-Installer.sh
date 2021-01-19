@@ -44,6 +44,7 @@ sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositori
 # sudo zypper --gpg-auto-import-keys ar -f https://adoptopenjdk.jfrog.io/adoptopenjdk/rpm/opensuse/$OSVER/$ARCH/ adoptopenjdk
 # sudo zypper --gpg-auto-import-keys ar -f https://download.opensuse.org/repositories/server:/database/openSUSE_Leap_$OSVER/ server:database
 # sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/nodejs/openSUSE_Leap_$OSVER/ nodejs
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/gcc/openSUSE_Leap_$OSVER/ gcc
 # sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/php/openSUSE_Leap_$OSVER/ php
 # sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/go/openSUSE_Leap_$OSVER/ go
 # sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/rust/openSUSE_Leap_$OSVER/ rust
@@ -74,7 +75,7 @@ sudo zypper -n in -l uget
 wget https://raw.githubusercontent.com/ugetdm/uget-integrator/master/install/linux/install_uget_integrator.sh
 chmod +x install_uget_integrator.sh
 ./install_uget_integrator.sh
-sudo zypper -n in -l git
+sudo zypper -n in -l git subversion mercurial
 wget --no-check-certificate -q  https://raw.githubusercontent.com/petervanderdoes/gitflow-avh/develop/contrib/gitflow-installer.sh && sudo bash gitflow-installer.sh install stable; rm gitflow-installer.sh
 sudo zypper -n in -l deluge
 sudo zypper -n in -l transmission
@@ -201,6 +202,7 @@ sudo zypper -n in -l exfat-utils
 sudo zypper -n in -l gnome-shell-extension-user-theme
 sudo zypper -n in -l gnome-calendar 
 sudo zypper -n in -l typelib-1_0-LunarDate-3_0
+sudo zypper -n in -l xournalpp
 # 禁用 leap 软件检查更新
 #sudo zypper remove plasma5-pk-updates
 #sudo zypper addlock plasma5-pk-updates
