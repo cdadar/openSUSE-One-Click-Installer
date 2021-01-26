@@ -29,29 +29,36 @@ fi
 #sudo zypper ar -fc https://mirrors.aliyun.com/packman/openSUSE_Leap_$OSVER openSUSE-Aliyun-Packman
 # 添加软件源
 # w32codec-all 需要该源
-sudo zypper --gpg-auto-import-keys ar -c  http://packman.inode.at/suse/openSUSE_Leap_$OSVER/ packman
-sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/home:/opensuse_zh/openSUSE_Leap_$OSVER/ opensusu_zh
-# sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/home:/jiarenlu/openSUSE_Leap_$OSVER/ jiarenlu
-# sudo zypper --gpg-auto-import-keys ar http://repo.fdzh.org/chrome/ google-chrome-stable
-sudo zypper --gpg-auto-import-keys ar -c  http://dl.google.com/linux/chrome/rpm/stable/$(uname -m) google-chrome
+sudo zypper --gpg-auto-import-keys ar -c  https://packman.inode.at/suse/openSUSE_Leap_$OSVER/ packman
+sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/home:/opensuse_zh/openSUSE_Leap_$OSVER/ opensusu_zh
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/home:/jiarenlu/openSUSE_Leap_$OSVER/ jiarenlu
+# sudo zypper --gpg-auto-import-keys ar https://repo.fdzh.org/chrome/ google-chrome-stable
+sudo zypper --gpg-auto-import-keys ar -c  https://dl.google.com/linux/chrome/rpm/stable/$(uname -m) google-chrome
 # sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/Virtualization/openSUSE_Leap_$OSVER/ virtualization
 # sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/Virtualization:/vagrant/openSUSE_Leap_$OSVER/ vagrant
 # sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/languages:/ruby:/extensions/openSUSE_Leap_$OSVER/  devel:languages:ruby:extensions
-sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/editors/openSUSE_Leap_$OSVER/ editors
-sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/utilities/openSUSE_Leap_$OSVER/ utilities
-# sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/Office/openSUSE_Leap_$OSVER office
-sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/M17N:/fonts/openSUSE_Leap_$OSVER/  M17N:fonts
+sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/editors/openSUSE_Leap_$OSVER/ editors
+sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/utilities/openSUSE_Leap_$OSVER/ utilities
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/Office/openSUSE_Leap_$OSVER office
+sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/M17N:/fonts/openSUSE_Leap_$OSVER/  M17N:fonts
 # sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/M17N/openSUSE_Leap_$OSVER/ M17N
 # sudo zypper --gpg-auto-import-keys ar -f https://adoptopenjdk.jfrog.io/adoptopenjdk/rpm/opensuse/$OSVER/$ARCH/ adoptopenjdk
 # sudo zypper --gpg-auto-import-keys ar -f https://download.opensuse.org/repositories/server:/database/openSUSE_Leap_$OSVER/ server:database
-# sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/nodejs/openSUSE_Leap_$OSVER/ nodejs
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/languages:/nodejs/openSUSE_Leap_$OSVER/ nodejs
 # sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/gcc/openSUSE_Leap_$OSVER/ gcc
-# sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/php/openSUSE_Leap_$OSVER/ php
-# sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/go/openSUSE_Leap_$OSVER/ go
-# sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/languages:/rust/openSUSE_Leap_$OSVER/ rust
-# sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/devel:/tools/openSUSE_Leap_$OSVER/ devel:tools
-# sudo zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/server:/mail/openSUSE_Leap_$OSVER/ mail
-# sudo zyppr --gpg-auto-import-keys ar -c  http://download.opensuse.org/repositories/server:/database:/postgresql/openSUSE_Leap_$OSVER postgresql
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/languages:/php/openSUSE_Leap_$OSVER/ php
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/languages:/go/openSUSE_Leap_$OSVER/ go
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/languages:/rust/openSUSE_Leap_$OSVER/ rust
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/tools/openSUSE_Leap_$OSVER/ devel:tools
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/server:/mail/openSUSE_Leap_$OSVER/ mail
+# sudo zyppr --gpg-auto-import-keys ar -c  https://download.opensuse.org/repositories/server:/database:/postgresql/openSUSE_Leap_$OSVER postgresql
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/languages:/nodejs/openSUSE_Leap_$OSVER/ nodejs
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/languages:/php/openSUSE_Leap_$OSVER/ php
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/languages:/go/openSUSE_Leap_$OSVER/ go
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/languages:/rust/openSUSE_Leap_$OSVER/ rust
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/tools/openSUSE_Leap_$OSVER/ devel:tools
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/server:/mail/openSUSE_Leap_$OSVER/ mail
+# sudo zyppr --gpg-auto-import-keys ar -c  https://download.opensuse.org/repositories/server:/database:/postgresql/openSUSE_Leap_$OSVER postgresql
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/zypp/repos.d/vscode.repo'
 # sudo rpm -v --import https://download.sublimetext.com/sublimehq-rpm-pub.gpg
@@ -64,8 +71,8 @@ sudo zypper -n update -l
 sudo zypper in -f --from packman gstreamer-0_10-plugins-base gstreamer-0_10-plugins-good gstreamer-0_10-plugins-bad gstreamer-0_10-plugins-ugly gstreamer-0_10-plugins-ffmpeg  gstreamer-plugins-bad-orig-addon
 sudo zypper in -f --from packman gstreamer-plugins-bad gstreamer-plugins-bad-chromaprint gstreamer-plugins-bad-devel gstreamer-plugins-bad-fluidsynth gstreamer-plugins-bad-lang gstreamer-plugins-libav gstreamer-plugins-ugly gstreamer-plugins-ugly-lang
 # kwplayer needs this repo
-# wget  http://s1.music.126.net/download/pc/netease-cloud-music_1.0.0-2_amd64_ubuntu16.04.deb
-# wget http://s1.music.126.net/dmusic/netease-cloud-music_1.1.0_amd64_ubuntu.deb
+# wget  https://s1.music.126.net/download/pc/netease-cloud-music_1.0.0-2_amd64_ubuntu16.04.deb
+# wget https://s1.music.126.net/dmusic/netease-cloud-music_1.1.0_amd64_ubuntu.deb
 # ar p netease-cloud-music_*.deb data.tar.xz > netease-cloud-music_tmp.tar.xz
 # sudo tar -xvf netease-cloud-music_tmp.tar.xz -C /
 sudo zypper -n in -l netease-cloud-music
@@ -207,8 +214,8 @@ sudo zypper -n in -l xournalpp
 # 禁用 leap 软件检查更新
 #sudo zypper remove plasma5-pk-updates
 #sudo zypper addlock plasma5-pk-updates
-# sudo zypper -n in -l http://pencil.evolus.vn/dl/v3.0.4/pencil-3.0.4-49.x86_64.rpm
-# sudo zypper -n in -l http://dbeaver.jkiss.org/files/4.1.2/dbeaver-ce-4.1.2-stable.x86_64.rpm
+# sudo zypper -n in -l https://pencil.evolus.vn/dl/v3.0.4/pencil-3.0.4-49.x86_64.rpm
+# sudo zypper -n in -l https://dbeaver.jkiss.org/files/4.1.2/dbeaver-ce-4.1.2-stable.x86_64.rpm
 chsh -s /bin/zsh
 #todo 将github管理的配置处理
 export LANG=$OLD_LANG
