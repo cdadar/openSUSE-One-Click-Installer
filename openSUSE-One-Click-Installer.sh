@@ -167,6 +167,7 @@ sudo zypper -n in -l fira-code-fonts
 sudo zypper -n in -l wqy-bitmap-fonts
 sudo zypper -n in -l wqy-microhei-fonts
 sudo zypper -n in -l wqy-zenhei-fonts
+sudo zypper -n in -l adobe-sourcehanserif-fonts adobe-sourcehanserif-cn-fonts adobe-sourcehanserif-jp-fonts adobe-sourcehanserif-kr-fonts adobe-sourcehanserif-tw-fonts
 sudo zypper -n in -l postgresql postgresql-server postgresql-contrib postgresql-devel postgresql-server-devel
 sudo zypper -n in -l mariadb mariadb-client libmariadb-devel
 # sudo zypper -n in -l pgadmin3
