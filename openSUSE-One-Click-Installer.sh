@@ -210,9 +210,9 @@ sudo zypper -n in -l rzsz
 sudo zypper -n in -l steam
 sudo zypper -n in -l lutris
 sudo zypper -n in -l exfat-utils
-sudo zypper -n in -l gnome-shell-extension-user-theme
-sudo zypper -n in -l gnome-calendar 
-sudo zypper -n in -l typelib-1_0-LunarDate-3_0
+# sudo zypper -n in -l gnome-shell-extension-user-theme
+# sudo zypper -n in -l gnome-calendar 
+# sudo zypper -n in -l typelib-1_0-LunarDate-3_0
 sudo zypper -n in -l xournalpp
 # 禁用 leap 软件检查更新
 #sudo zypper remove plasma5-pk-updates
