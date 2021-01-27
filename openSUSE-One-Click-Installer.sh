@@ -64,7 +64,7 @@ sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.m
 # sudo rpm -v --import https://download.sublimetext.com/sublimehq-rpm-pub.gpg
 # sudo zypper addrepo -g -f https://download.sublimetext.com/rpm/stable/x86_64/sublime-text.repo
 # 刷新软件源并更新系统
-sudo zypper al libqt5-qtbase-platformtheme-gtk3 libqt5-qtstyleplugins-platformtheme-gtk2
+# sudo zypper al libqt5-qtbase-platformtheme-gtk3 libqt5-qtstyleplugins-platformtheme-gtk2
 sudo zypper --gpg-auto-import-keys ref
 sudo zypper -n update -l
 # 安装 gstreamer 相关插件，这样基于 phonon 框架的多媒体软件就可以播放受专利保护的多媒体文件了
@@ -91,7 +91,7 @@ sudo zypper -n in -l qbittorrent
 sudo zypper -n in -l mldonkey
 sudo zypper -n in -l axel
 sudo zypper -n in -l htop
-sudo zypper -n in -l google-chrome-stable
+sudo zypper -n in -f google-chrome-stable
 sudo zypper -n in -l chromium
 # sudo zypper -n in -l midori
 sudo zypper -n in -f  packman:ffmpeg
@@ -103,16 +103,16 @@ sudo zypper -n in -f packman:vlc
 # sudo zypper -n in -f  packman:gmplayer
 # sudo zypper -n in -f  packman:smplayer
 sudo zypper -n in -f  packman:obs-studio
-# sudo zypper -n in -f  audacious
-# sudo zypper -n in -f  clementine
-sudo zypper -n in -f rhythmbox
-sudo zypper -n in -f cmus
+# sudo zypper -n in -l  audacious
+# sudo zypper -n in -l  clementine
+# sudo zypper -n in -l rhythmbox
+sudo zypper -n in -l cmus
 sudo zypper -n in -l peek simplescreenrecorder
 sudo zypper -n in -l zsh
 sudo zypper -n in -l nodejs
 sudo zypper -n in -l java-1_8_0-openjdk java-1_8_0-openjdk-devel java-1_8_0-openjdk-src
 sudo zypper -n in -l java-11-openjdk java-11-openjdk-devel java-11-openjdk-src
-sudo zypper -n in -l maven gradle
+sudo zypper -n in -l maven gradle tomcat
 # sudo zypper -n in -l zookeeper-server
 # sudo zypper -n in -l adoptopenjdk-8-hotspot adoptopenjdk-11-hotspot
 sudo zypper -n in -l emacs emacs-el etags
@@ -136,8 +136,8 @@ sudo zypper -n in -l tmux
 sudo zypper -n in -l vim
 sudo zypper -n in -l neovim
 sudo zypper -n in -l rdesktop
-# sudo zypper -n in -l fcitx fcitx-rime
-sudo zypper -n in -l ibus ibus-rime
+sudo zypper -n in -l fcitx fcitx-rime
+#sudo zypper -n in -l ibus ibus-rime
 # sudo zypper -n in -l xsel
 sudo zypper -n in -l xclip
 sudo zypper -n in -l aspell
@@ -167,8 +167,8 @@ sudo zypper -n in -l fira-code-fonts
 sudo zypper -n in -l wqy-bitmap-fonts
 sudo zypper -n in -l wqy-microhei-fonts
 sudo zypper -n in -l wqy-zenhei-fonts
-sudo zypper -n in -l adobe-sourcehanserif-fonts adobe-sourcehanserif-cn-fonts adobe-sourcehanserif-jp-fonts adobe-sourcehanserif-kr-fonts adobe-sourcehanserif-tw-fonts
-sudo zypper -n in -l adobe-sourcehansans-fonts adobe-sourcehansans-cn-fonts adobe-sourcehansans-jp-fonts adobe-sourcehansans-kr-fonts 
+#sudo zypper -n in -l adobe-sourcehanserif-fonts adobe-sourcehanserif-cn-fonts adobe-sourcehanserif-jp-fonts adobe-sourcehanserif-kr-fonts adobe-sourcehanserif-tw-fonts
+#sudo zypper -n in -l adobe-sourcehansans-fonts adobe-sourcehansans-cn-fonts adobe-sourcehansans-jp-fonts adobe-sourcehansans-kr-fonts 
 # sudo zypper -n in -l adobe-sourcehansans-tw-fonts
 sudo zypper -n in -l postgresql postgresql-server postgresql-contrib postgresql-devel postgresql-server-devel
 sudo zypper -n in -l mariadb mariadb-client libmariadb-devel
