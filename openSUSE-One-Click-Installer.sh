@@ -12,11 +12,6 @@ if [ "$confirm_continue" == "n" -o "$confirm_continue" == "no" ]; then
     exit
 fi
 sudo zypper -n in -l lsb-release
-# 禁用 cd 源
-CD_REPO_ID=`zypper lr -u | awk -F'[|+]'  '$6 ~ /^\s*cd:\/\// {print $1}'`
-if [ -n "$CD_REPO_ID" ]; then
-    sudo zypper mr -d $CD_REPO_ID
-fi
 # 添加阿里镜像源
 #sudo zypper ar -fc https://mirrors.aliyun.com/opensuse/distribution/leap/$releasever/repo/oss openSUSE-Aliyun-OSS
 #sudo zypper ar -fc https://mirrors.aliyun.com/opensuse/distribution/leap/$releasever/repo/non-oss openSUSE-Aliyun-NON-OSS
