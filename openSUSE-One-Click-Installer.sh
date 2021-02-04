@@ -29,36 +29,36 @@ fi
 #sudo zypper ar -fc https://mirrors.aliyun.com/packman/openSUSE_Leap_$OSVER openSUSE-Aliyun-Packman
 # 添加软件源
 # w32codec-all 需要该源
-sudo zypper --gpg-auto-import-keys ar -c  https://packman.inode.at/suse/openSUSE_Leap_$OSVER/ packman
-sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/home:/opensuse_zh/openSUSE_Leap_$OSVER/ opensusu_zh
-# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/home:/jiarenlu/openSUSE_Leap_$OSVER/ jiarenlu
+sudo zypper --gpg-auto-import-keys ar -c  https://packman.inode.at/suse/openSUSE_Leap_$releasever/ packman
+sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/home:/opensuse_zh/openSUSE_Leap_$releasever/ opensusu_zh
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/home:/jiarenlu/openSUSE_Leap_$releasever/ jiarenlu
 # sudo zypper --gpg-auto-import-keys ar https://repo.fdzh.org/chrome/ google-chrome-stable
 sudo zypper --gpg-auto-import-keys ar -c  https://dl.google.com/linux/chrome/rpm/stable/$(uname -m) google-chrome
-# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/Virtualization/openSUSE_Leap_$OSVER/ virtualization
-# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/Virtualization:/vagrant/openSUSE_Leap_$OSVER/ vagrant
-# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/languages:/ruby:/extensions/openSUSE_Leap_$OSVER/  devel:languages:ruby:extensions
-sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/editors/openSUSE_Leap_$OSVER/ editors
-sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/utilities/openSUSE_Leap_$OSVER/ utilities
-# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/Office/openSUSE_Leap_$OSVER office
-sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/M17N:/fonts/openSUSE_Leap_$OSVER/  M17N:fonts
-# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/M17N/openSUSE_Leap_$OSVER/ M17N
-# sudo zypper --gpg-auto-import-keys ar -f https://adoptopenjdk.jfrog.io/adoptopenjdk/rpm/opensuse/$OSVER/$ARCH/ adoptopenjdk
-# sudo zypper --gpg-auto-import-keys ar -f https://download.opensuse.org/repositories/server:/database/openSUSE_Leap_$OSVER/ server:database
-# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/languages:/nodejs/openSUSE_Leap_$OSVER/ nodejs
-# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/gcc/openSUSE_Leap_$OSVER/ gcc
-# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/languages:/php/openSUSE_Leap_$OSVER/ php
-# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/languages:/go/openSUSE_Leap_$OSVER/ go
-# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/languages:/rust/openSUSE_Leap_$OSVER/ rust
-# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/tools/openSUSE_Leap_$OSVER/ devel:tools
-# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/server:/mail/openSUSE_Leap_$OSVER/ mail
-# sudo zyppr --gpg-auto-import-keys ar -c  https://download.opensuse.org/repositories/server:/database:/postgresql/openSUSE_Leap_$OSVER postgresql
-# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/languages:/nodejs/openSUSE_Leap_$OSVER/ nodejs
-# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/languages:/php/openSUSE_Leap_$OSVER/ php
-# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/languages:/go/openSUSE_Leap_$OSVER/ go
-# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/languages:/rust/openSUSE_Leap_$OSVER/ rust
-# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/tools/openSUSE_Leap_$OSVER/ devel:tools
-# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/server:/mail/openSUSE_Leap_$OSVER/ mail
-# sudo zyppr --gpg-auto-import-keys ar -c  https://download.opensuse.org/repositories/server:/database:/postgresql/openSUSE_Leap_$OSVER postgresql
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/Virtualization/openSUSE_Leap_$releasever/ virtualization
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/Virtualization:/vagrant/openSUSE_Leap_$releasever/ vagrant
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/languages:/ruby:/extensions/openSUSE_Leap_$releasever/  devel:languages:ruby:extensions
+sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/editors/openSUSE_Leap_$releasever/ editors
+sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/utilities/openSUSE_Leap_$releasever/ utilities
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/Office/openSUSE_Leap_$releasever office
+sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/M17N:/fonts/openSUSE_Leap_$releasever/  M17N:fonts
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/M17N/openSUSE_Leap_$releasever/ M17N
+# sudo zypper --gpg-auto-import-keys ar -f https://adoptopenjdk.jfrog.io/adoptopenjdk/rpm/opensuse/$releasever/$ARCH/ adoptopenjdk
+# sudo zypper --gpg-auto-import-keys ar -f https://download.opensuse.org/repositories/server:/database/openSUSE_Leap_$releasever/ server:database
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/languages:/nodejs/openSUSE_Leap_$releasever/ nodejs
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/gcc/openSUSE_Leap_$releasever/ gcc
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/languages:/php/openSUSE_Leap_$releasever/ php
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/languages:/go/openSUSE_Leap_$releasever/ go
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/languages:/rust/openSUSE_Leap_$releasever/ rust
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/tools/openSUSE_Leap_$releasever/ devel:tools
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/server:/mail/openSUSE_Leap_$releasever/ mail
+# sudo zyppr --gpg-auto-import-keys ar -c  https://download.opensuse.org/repositories/server:/database:/postgresql/openSUSE_Leap_$releasever postgresql
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/languages:/nodejs/openSUSE_Leap_$releasever/ nodejs
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/languages:/php/openSUSE_Leap_$releasever/ php
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/languages:/go/openSUSE_Leap_$releasever/ go
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/languages:/rust/openSUSE_Leap_$releasever/ rust
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/tools/openSUSE_Leap_$releasever/ devel:tools
+# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/server:/mail/openSUSE_Leap_$releasever/ mail
+# sudo zyppr --gpg-auto-import-keys ar -c  https://download.opensuse.org/repositories/server:/database:/postgresql/openSUSE_Leap_$releasever postgresql
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/zypp/repos.d/vscode.repo'
 # sudo rpm -v --import https://download.sublimetext.com/sublimehq-rpm-pub.gpg
