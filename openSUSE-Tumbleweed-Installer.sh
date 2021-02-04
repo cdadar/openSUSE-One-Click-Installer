@@ -22,19 +22,13 @@ if [ "$confirm_continue" == "n" -o "$confirm_continue" == "no" ]; then
   exit
 fi
 
-OSVER=$(lsb_release -r|awk '{print $2}')
-ARCH=$(uname -m)
-
-TMP_DIR=`mktemp -d`
-
 # 禁用 cd 源
-if [ "$disable_cd_repo" != "0" ]; then
-  CD_REPO_ID=`zypper lr -u | awk -F'[|+]'  '$6 ~ /^\s*cd:\/\// {print $1}'`
+CD_REPO_ID=`zypper lr -u | awk -F'[|+]'  '$6 ~ /^\s*cd:\/\// {print $1}'`
 
-  if [ -n "$CD_REPO_ID" ]; then
-      sudo zypper mr -d $CD_REPO_ID
-  fi
+if [ -n "$CD_REPO_ID" ]; then
+    sudo zypper mr -d $CD_REPO_ID
 fi
+
 
 # 添加软件源
 # w32codec-all 需要该源
