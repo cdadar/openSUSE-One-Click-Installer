@@ -76,7 +76,9 @@ sudo zypper -n in -l netease-cloud-music
 sudo zypper -n in -l flash-player-ppapi
 sudo zypper -n in -l aria2
 sudo zypper -n in -l uget
-wget https://raw.githubusercontent.com/ugetdm/uget-integrator/master/install/linux/install_uget_integrator.sh
+if [ ! -f ./install_uget_integrator.sh ]; then
+    wget https://raw.githubusercontent.com/ugetdm/uget-integrator/master/install/linux/install_uget_integrator.sh
+fi
 chmod +x install_uget_integrator.sh
 ./install_uget_integrator.sh
 sudo zypper -n in -l git subversion mercurial
