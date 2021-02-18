@@ -13,12 +13,12 @@ if [ "$confirm_continue" == "n" -o "$confirm_continue" == "no" ]; then
 fi
 sudo zypper -n in -l lsb-release
 # 添加阿里镜像源
-#sudo zypper ar -fc https://mirrors.aliyun.com/opensuse/distribution/leap/$releasever/repo/oss openSUSE-Aliyun-OSS
-#sudo zypper ar -fc https://mirrors.aliyun.com/opensuse/distribution/leap/$releasever/repo/non-oss openSUSE-Aliyun-NON-OSS
-#sudo zypper ar -fc https://mirrors.aliyun.com/opensuse/update/leap/$releasever/oss openSUSE-Aliyun-UPDATE-OSS
-#sudo zypper ar -fc https://mirrors.aliyun.com/opensuse/update/leap/$releasever/non-oss openSUSE-Aliyun-UPDATE-NON-OSS
+#sudo zypper ar -fc 'https://mirrors.aliyun.com/opensuse/distribution/leap/$releasever/repo/oss' openSUSE-Aliyun-OSS
+#sudo zypper ar -fc 'https://mirrors.aliyun.com/opensuse/distribution/leap/$releasever/repo/non-oss' openSUSE-Aliyun-NON-OSS
+#sudo zypper ar -fc 'https://mirrors.aliyun.com/opensuse/update/leap/$releasever/oss' openSUSE-Aliyun-UPDATE-OSS
+#sudo zypper ar -fc 'https://mirrors.aliyun.com/opensuse/update/leap/$releasever/non-oss' openSUSE-Aliyun-UPDATE-NON-OSS
 # 第三方源
-#sudo zypper ar -fc https://mirrors.aliyun.com/packman/openSUSE_Leap_$releasever openSUSE-Aliyun-Packman
+#sudo zypper ar -fc 'https://mirrors.aliyun.com/packman/openSUSE_Leap_$releasever' openSUSE-Aliyun-Packman
 # 添加软件源
 # w32codec-all 需要该源
 sudo zypper --gpg-auto-import-keys ar -c  'https://packman.inode.at/suse/openSUSE_Leap_$releasever/' packman
