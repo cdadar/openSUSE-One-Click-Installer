@@ -33,8 +33,8 @@ sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/reposito
 # sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/Office/openSUSE_Leap_$releasever' office
 sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/M17N:/fonts/openSUSE_Leap_$releasever/'  M17N:fonts
 # sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/M17N/openSUSE_Leap_$releasever/' M17N
-# sudo zypper --gpg-auto-import-keys ar -f 'https://adoptopenjdk.jfrog.io/adoptopenjdk/rpm/opensuse/$releasever/'$(uname -m)/ adoptopenjdk
-# sudo zypper --gpg-auto-import-keys ar -f 'https://download.opensuse.org/repositories/server:/database/openSUSE_Leap_$releasever/' server:database
+# sudo zypper --gpg-auto-import-keys ar -c 'https://adoptopenjdk.jfrog.io/adoptopenjdk/rpm/opensuse/$releasever/'$(uname -m)/ adoptopenjdk
+# sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/server:/database/openSUSE_Leap_$releasever/' server:database
 # sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/devel:/languages:/nodejs/openSUSE_Leap_$releasever/' nodejs
 # sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/devel:/gcc/openSUSE_Leap_$releasever/' gcc
 # sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/languages:/php/openSUSE_Leap_$releasever/' php
@@ -87,15 +87,16 @@ sudo zypper -n in -l htop
 sudo zypper -n in -f google-chrome-stable
 sudo zypper -n in -l chromium
 # sudo zypper -n in -l midori
-sudo zypper -n in -f  packman:ffmpeg
+sudo zypper -n in -l  packman:ffmpeg
 # tomahawk use phonon-backend-vlc, so vlc-codecs ( in packman ) is needed.
 # vlc-codecs 包含许多受限多媒体格式的解码器
-sudo zypper -n in -f packman:vlc-codecs 
-sudo zypper -n in -f packman:vlc 
-# sudo zypper -n in -f  packman:MPlayer
-# sudo zypper -n in -f  packman:gmplayer
-# sudo zypper -n in -f  packman:smplayer
-sudo zypper -n in -f  packman:obs-studio
+sudo zypper -n in -l packman:vlc-codecs 
+sudo zypper -n in -l packman:vlc 
+sudo zypper -n in -l handbrake-cli
+# sudo zypper -n in -l  packman:MPlayer
+# sudo zypper -n in -l  packman:gmplayer
+# sudo zypper -n in -l  packman:smplayer
+sudo zypper -n in -l  packman:obs-studio
 # sudo zypper -n in -l  audacious
 # sudo zypper -n in -l  clementine
 # sudo zypper -n in -l rhythmbox
@@ -189,7 +190,8 @@ sudo zypper -n in -l bibletime
 sudo zypper -n in -l syslog-ng syslog-service
 sudo zypper -n in -l sysstat
 sudo zypper -n in -l fish
-sudo zypper -n in -l goldendict stardict youdao-dict
+sudo zypper -n in -l goldendict stardict
+# sudo zypper -n in -l youdao-dict
 sudo zypper -n in -l ledger
 sudo zypper -n in -l shotcut
 sudo zypper -n in -l direnv
