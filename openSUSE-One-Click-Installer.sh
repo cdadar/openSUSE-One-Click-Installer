@@ -38,9 +38,10 @@ sudo zypper -n in -l aria2
 sudo zypper -n in -l uget
 if [ ! -f ./install_uget_integrator.sh ]; then
     wget https://raw.githubusercontent.com/ugetdm/uget-integrator/master/install/linux/install_uget_integrator.sh
+    chmod +x install_uget_integrator.sh
+    ./install_uget_integrator.sh
+    rm  ./install_uget_integrator.sh
 fi
-chmod +x install_uget_integrator.sh
-./install_uget_integrator.sh
 sudo zypper -n in -l git subversion mercurial
 wget --no-check-certificate -q  https://raw.githubusercontent.com/petervanderdoes/gitflow-avh/develop/contrib/gitflow-installer.sh && sudo bash gitflow-installer.sh install stable; rm gitflow-installer.sh
 sudo zypper -n in -l deluge
