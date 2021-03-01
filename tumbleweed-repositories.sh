@@ -1,18 +1,5 @@
 #!/bin/bash
 
-# 修改语言为英语，确保命令的输出都是英语，这样对命令输出的处理就不会出错了
-OLD_LANG=$LANG
-export LANG=default
-SCRIPT_DIR=$(dirname $0)
-read -p "你确定继续吗？ (Y|n) : " confirm_continue
-
-if [ -z "$confirm_continue" ]; then
-    confirm_continue="Y"
-fi
-if [ "$confirm_continue" == "n" -o "$confirm_continue" == "no" ]; then
-    exit
-fi
-
 # 添加软件源
 # w32codec-all 需要该源
 sudo zypper --gpg-auto-import-keys ar -c  http://packman.inode.at/suse/openSUSE_Tumbleweed/ packman
