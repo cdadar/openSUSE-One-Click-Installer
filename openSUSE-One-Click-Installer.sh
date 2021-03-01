@@ -21,7 +21,9 @@ sudo zypper -n in -l lsb-release
 #sudo zypper ar -fc 'https://mirrors.aliyun.com/packman/openSUSE_Leap_$releasever' openSUSE-Aliyun-Packman
 # 添加软件源
 # w32codec-all 需要该源
-sudo zypper --gpg-auto-import-keys ar -c  'https://packman.inode.at/suse/openSUSE_Leap_$releasever/' packman
+# sudo zypper --gpg-auto-import-keys ar -c  'https://packman.inode.at/suse/openSUSE_Leap_$releasever/' packman
+sudo zypper --gpg-auto-import-keys ar -fcg -p 90 'https://mirrors.ustc.edu.cn/packman/suse/openSUSE_Leap_$releasever/' packman
+
 sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/home:/opensuse_zh/openSUSE_Leap_$releasever/' opensusu_zh
 # sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/home:/jiarenlu/openSUSE_Leap_$releasever/' jiarenlu
 sudo zypper --gpg-auto-import-keys ar -c  https://dl.google.com/linux/chrome/rpm/stable/$(uname -m) google-chrome
@@ -59,8 +61,8 @@ sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.m
 sudo zypper --gpg-auto-import-keys ref
 sudo zypper -n update -l
 # 安装 gstreamer 相关插件，这样基于 phonon 框架的多媒体软件就可以播放受专利保护的多媒体文件了
-sudo zypper in -f --from packman gstreamer-0_10-plugins-base gstreamer-0_10-plugins-good gstreamer-0_10-plugins-bad gstreamer-0_10-plugins-ugly gstreamer-0_10-plugins-ffmpeg  gstreamer-plugins-bad-orig-addon
-sudo zypper in -f --from packman gstreamer-plugins-bad gstreamer-plugins-bad-chromaprint gstreamer-plugins-bad-devel gstreamer-plugins-bad-fluidsynth gstreamer-plugins-bad-lang gstreamer-plugins-libav gstreamer-plugins-ugly gstreamer-plugins-ugly-lang
+sudo zypper -n in -l gstreamer-0_10-plugins-base gstreamer-0_10-plugins-good gstreamer-0_10-plugins-bad gstreamer-0_10-plugins-ugly gstreamer-0_10-plugins-ffmpeg  gstreamer-plugins-bad-orig-addon
+sudo zypper -n in -l packman gstreamer-plugins-bad gstreamer-plugins-bad-chromaprint gstreamer-plugins-bad-devel gstreamer-plugins-bad-fluidsynth gstreamer-plugins-bad-lang gstreamer-plugins-libav gstreamer-plugins-ugly gstreamer-plugins-ugly-lang
 # kwplayer needs this repo
 # wget  https://s1.music.126.net/download/pc/netease-cloud-music_1.0.0-2_amd64_ubuntu16.04.deb
 # wget https://s1.music.126.net/dmusic/netease-cloud-music_1.1.0_amd64_ubuntu.deb
@@ -84,21 +86,21 @@ sudo zypper -n in -l qbittorrent
 sudo zypper -n in -l mldonkey
 sudo zypper -n in -l axel
 sudo zypper -n in -l htop
-sudo zypper -n in -f google-chrome-stable
+sudo zypper -n in -l google-chrome-stable
 sudo zypper -n in -l chromium
 # sudo zypper -n in -l midori
-sudo zypper -n in -l  packman:ffmpeg
+sudo zypper -n in -l packman:ffmpeg
 # tomahawk use phonon-backend-vlc, so vlc-codecs ( in packman ) is needed.
 # vlc-codecs 包含许多受限多媒体格式的解码器
 sudo zypper -n in -l packman:vlc-codecs 
 sudo zypper -n in -l packman:vlc 
 sudo zypper -n in -l handbrake-cli
-# sudo zypper -n in -l  packman:MPlayer
-# sudo zypper -n in -l  packman:gmplayer
-# sudo zypper -n in -l  packman:smplayer
+# sudo zypper -n in -l packman:MPlayer
+# sudo zypper -n in -l packman:gmplayer
+# sudo zypper -n in -l packman:smplayer
 sudo zypper -n in -l  packman:obs-studio
-# sudo zypper -n in -l  audacious
-# sudo zypper -n in -l  clementine
+# sudo zypper -n in -l audacious
+# sudo zypper -n in -l clementine
 # sudo zypper -n in -l rhythmbox
 sudo zypper -n in -l cmus
 sudo zypper -n in -l peek simplescreenrecorder
