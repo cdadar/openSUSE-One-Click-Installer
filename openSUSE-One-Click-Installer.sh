@@ -45,9 +45,10 @@ fi
 sudo zypper -n in -l git subversion mercurial
 wget --no-check-certificate -q  https://raw.githubusercontent.com/petervanderdoes/gitflow-avh/develop/contrib/gitflow-installer.sh && sudo bash gitflow-installer.sh install stable; rm gitflow-installer.sh
 sudo zypper -n in -l deluge
-sudo zypper -n in -l transmission
+#sudo zypper -n in -l transmission
 sudo zypper -n in -l qbittorrent
 sudo zypper -n in -l mldonkey
+sudo zypper -n in -l amule
 sudo zypper -n in -l axel
 sudo zypper -n in -l htop
 sudo zypper -n in -l google-chrome-stable
