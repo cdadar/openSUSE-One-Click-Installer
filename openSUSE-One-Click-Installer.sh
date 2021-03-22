@@ -48,7 +48,7 @@ sudo zypper -n in -l deluge
 #sudo zypper -n in -l transmission
 sudo zypper -n in -l qbittorrent
 sudo zypper -n in -l mldonkey
-sudo zypper -n in -l amule
+sudo zypper -n in -l aMule
 sudo zypper -n in -l axel
 sudo zypper -n in -l htop
 sudo zypper -n in -l google-chrome-stable
