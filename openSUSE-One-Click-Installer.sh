@@ -177,6 +177,7 @@ sudo zypper -n in -l exfat-utils
 # sudo zypper -n in -l gnome-calendar 
 # sudo zypper -n in -l typelib-1_0-LunarDate-3_0
 sudo zypper -n in -l xournalpp
+sudo zypper -n in -l stow
 # 禁用 leap 软件检查更新
 #sudo zypper remove plasma5-pk-updates
 #sudo zypper addlock plasma5-pk-updates
