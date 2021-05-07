@@ -12,7 +12,7 @@
 # sudo zypper --gpg-auto-import-keys ar -c  'https://packman.inode.at/suse/openSUSE_Leap_$releasever/' packman
 sudo zypper --gpg-auto-import-keys ar -fcg -p 90 'https://mirrors.ustc.edu.cn/packman/suse/openSUSE_Leap_$releasever/' packman
 
-sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/home:/opensuse_zh/openSUSE_Leap_$releasever/' opensusu_zh
+sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/home:/opensuse_zh/openSUSE_Leap_$releasever/' opensuse_zh
 # sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/home:/jiarenlu/openSUSE_Leap_$releasever/' jiarenlu
 sudo zypper --gpg-auto-import-keys ar -c  https://dl.google.com/linux/chrome/rpm/stable/$(uname -m) google-chrome
 # sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/Virtualization/openSUSE_Leap_$releasever/' virtualization
