@@ -27,7 +27,8 @@ sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/reposito
 # sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/server:/database/openSUSE_Leap_$releasever/' server:database
 # sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/devel:/languages:/nodejs/openSUSE_Leap_$releasever/' nodejs
 # sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/devel:/gcc/openSUSE_Leap_$releasever/' gcc
-# sudo zypper --gpg-auto-import-keys ar -c https://download.opensuse.org/repositories/devel:/languages:/php/openSUSE_Leap_$releasever/' php
+# sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/devel:/languages:/php/openSUSE_Leap_$releasever/' php
+# sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/devel:/languages:/python/openSUSE_Leap_$releasever/' python
 # sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/devel:/languages:/go/openSUSE_Leap_$releasever/' go
 # sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/devel:/languages:/rust/openSUSE_Leap_$releasever/' rust
 # sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/devel:/tools/openSUSE_Leap_$releasever/' devel:tools
