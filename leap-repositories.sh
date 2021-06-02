@@ -19,7 +19,7 @@ sudo zypper --gpg-auto-import-keys ar -c  https://dl.google.com/linux/chrome/rpm
 # sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/Virtualization:/vagrant/openSUSE_Leap_$releasever/' vagrant
 # sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/devel:/languages:/ruby:/extensions/openSUSE_Leap_$releasever/'  devel:languages:ruby:extensions
 sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/editors/openSUSE_Leap_$releasever/' editors
-sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/utilities/openSUSE_Leap_$releasever/' utilities
+# sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/utilities/openSUSE_Leap_$releasever/' utilities
 # sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/Office/openSUSE_Leap_$releasever' office
 sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/M17N:/fonts/openSUSE_Leap_$releasever/'  M17N:fonts
 # sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/M17N/openSUSE_Leap_$releasever/' M17N
