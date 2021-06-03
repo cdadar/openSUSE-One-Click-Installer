@@ -72,7 +72,7 @@ sudo zypper -n in -l zsh
 sudo zypper -n in -l mlocate
 sudo zypper -n in -l nodejs
 sudo zypper -n in -l java-1_8_0-openjdk java-1_8_0-openjdk-devel java-1_8_0-openjdk-src
-sudo zypper -n in -l java-11-openjdk java-11-openjdk-devel java-11-openjdk-src
+sudo zypper -n in -l java-11-openjdk java-11-openjdk-devel java-11-openjdk-src  java-11-openjdk-jmods
 sudo zypper -n in -l maven gradle tomcat
 # sudo zypper -n in -l zookeeper-server
 # sudo zypper -n in -l adoptopenjdk-8-hotspot adoptopenjdk-11-hotspot
