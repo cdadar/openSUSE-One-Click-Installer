@@ -81,6 +81,7 @@ sudo zypper -n si emacs
 sudo zypper -n in -l ctags
 sudo zypper -n in -l the_silver_searcher
 sudo zypper -n in -l ripgrep
+sudo zypper -n in -l fzf
 sudo zypper -n in -l fd
 sudo zypper -n in -l global
 sudo pip install pygments
