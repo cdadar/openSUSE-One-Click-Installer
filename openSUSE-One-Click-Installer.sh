@@ -17,12 +17,10 @@ else
     . $SCRIPT_DIR/tumbleweed-repositories.sh 
 fi
 
-
-
 # 刷新软件源并更新系统
-# sudo zypper al libqt5-qtbase-platformtheme-gtk3 libqt5-qtstyleplugins-platformtheme-gtk2
 sudo zypper --gpg-auto-import-keys ref
 sudo zypper -n update -l
+# sudo zypper al libqt5-qtbase-platformtheme-gtk3 libqt5-qtstyleplugins-platformtheme-gtk2
 # 安装 gstreamer 相关插件，这样基于 phonon 框架的多媒体软件就可以播放受专利保护的多媒体文件了
 sudo zypper -n in -l gstreamer-0_10-plugins-base gstreamer-0_10-plugins-good gstreamer-0_10-plugins-bad gstreamer-0_10-plugins-ugly gstreamer-0_10-plugins-ffmpeg  gstreamer-plugins-bad-orig-addon
 sudo zypper -n in -l packman gstreamer-plugins-bad gstreamer-plugins-bad-chromaprint gstreamer-plugins-bad-devel gstreamer-plugins-bad-fluidsynth gstreamer-plugins-bad-lang gstreamer-plugins-libav gstreamer-plugins-ugly gstreamer-plugins-ugly-lang
@@ -43,8 +41,8 @@ if [ ! -f ./install_uget_integrator.sh ]; then
 fi
 sudo zypper -n in -l git subversion mercurial
 wget --no-check-certificate -q  https://raw.githubusercontent.com/petervanderdoes/gitflow-avh/develop/contrib/gitflow-installer.sh && sudo bash gitflow-installer.sh install stable; rm gitflow-installer.sh
-sudo zypper -n in -l deluge
-#sudo zypper -n in -l transmission
+# sudo zypper -n in -l deluge
+# sudo zypper -n in -l transmission
 sudo zypper -n in -l qbittorrent
 sudo zypper -n in -l mldonkey
 sudo zypper -n in -l aMule
@@ -83,8 +81,8 @@ sudo zypper -n in -l the_silver_searcher
 sudo zypper -n in -l ripgrep
 sudo zypper -n in -l fzf
 sudo zypper -n in -l fd
-sudo zypper -n in -l global
-sudo pip install pygments
+# sudo zypper -n in -l global
+# sudo pip install pygments
 # 压缩，解压 rar 文件
 sudo zypper -n in -l rar unrar
 # 支持 7zip 压缩包
@@ -100,9 +98,10 @@ sudo zypper -n in -l vim
 sudo zypper -n in -l neovim
 sudo zypper -n in -l rdesktop
 sudo zypper -n in -l fcitx fcitx-rime
-#sudo zypper -n in -l ibus ibus-rime
-# sudo zypper -n in -l xsel
+# sudo zypper -n in -l ibus ibus-rime
+sudo zypper -n in -l xsel
 sudo zypper -n in -l xclip
+# sudo zypper -n in -l wl-clipborad
 sudo zypper -n in -l aspell
 sudo zypper -n in -l sbcl
 sudo zypper -n in -l clisp
@@ -117,9 +116,9 @@ sudo zypper -n in -l privoxy
 sudo zypper -n in -l filezilla
 sudo zypper -n in -l xterm
 sudo zypper -n in -l rxvt-unicode urxvt-font-size urxvt-perls
-sudo zypper -n in -l mu4e
-sudo zypper -n in -l mutt getmail msmtp procmail fetchmail
-sudo zypper -n in -l MozillaThunderbird  
+# sudo zypper -n in -l mu4e
+# sudo zypper -n in -l mutt getmail msmtp procmail fetchmail
+# sudo zypper -n in -l MozillaThunderbird  
 sudo zypper -n in -l code
 # sudo zypper -n in -l sublime-text
 sudo zypper -n in -l noto-serif-sc-fonts-full
@@ -144,20 +143,20 @@ sudo zypper -n in -l screenfetch
 sudo zypper -n in -l keepassxc
 sudo zypper -n in -l zeal
 sudo zypper -n in -l rofi
-sudo zypper -n in -l freemind
-sudo zypper -n in -l freeplane
-sudo zypper -n in -l vym
+# sudo zypper -n in -l freemind
+# sudo zypper -n in -l freeplane
+# sudo zypper -n in -l vym
 # sudo zypper -n in jiarenlu:bcloud
 sudo zypper -n in -l libnotify-tools
 sudo zypper -n in -l redis
 #视频编辑
-sudo zypper -n in -l  --no-recommends  kdenlive
+sudo zypper -n in -l  --no-recommends kdenlive
 sudo zypper -n in -l blender
 #图片处理
 sudo zypper -n in -l krita
 sudo zypper -n in -l gnuplot
 sudo zypper -n in -l bibletime
-sudo zypper -n in -l syslog-ng syslog-service
+# sudo zypper -n in -l syslog-ng syslog-service
 sudo zypper -n in -l sysstat
 sudo zypper -n in -l fish
 sudo zypper -n in -l goldendict stardict
@@ -178,7 +177,7 @@ sudo zypper -n in -l exfat-utils
 # sudo zypper -n in -l gnome-shell-extension-user-theme
 # sudo zypper -n in -l gnome-calendar 
 # sudo zypper -n in -l typelib-1_0-LunarDate-3_0
-sudo zypper -n in -l xournalpp
+# sudo zypper -n in -l xournalpp
 sudo zypper -n in -l stow
 # 禁用 leap 软件检查更新
 #sudo zypper remove plasma5-pk-updates
