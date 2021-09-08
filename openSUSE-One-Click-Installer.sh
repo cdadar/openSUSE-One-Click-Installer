@@ -34,13 +34,13 @@ sudo zypper -n in -l netease-cloud-music
 sudo zypper -n in -l flash-player-ppapi
 sudo zypper -n in -l aria2
 sudo zypper -n in -l uget
-if [ ! -f ./install_uget_integrator.sh ]; then
-    wget https://raw.githubusercontent.com/ugetdm/uget-integrator/master/install/linux/install_uget_integrator.sh
-    chmod +x install_uget_integrator.sh
-    ./install_uget_integrator.sh
-fi
+# if [ ! -f ./install_uget_integrator.sh ]; then
+#     wget https://raw.githubusercontent.com/ugetdm/uget-integrator/master/install/linux/install_uget_integrator.sh
+#     chmod +x install_uget_integrator.sh
+#     ./install_uget_integrator.sh
+# fi
 sudo zypper -n in -l git subversion mercurial
-wget --no-check-certificate -q  https://raw.githubusercontent.com/petervanderdoes/gitflow-avh/develop/contrib/gitflow-installer.sh && sudo bash gitflow-installer.sh install stable; rm gitflow-installer.sh
+# wget --no-check-certificate -q  https://raw.githubusercontent.com/petervanderdoes/gitflow-avh/develop/contrib/gitflow-installer.sh && sudo bash gitflow-installer.sh install stable; rm gitflow-installer.sh
 # sudo zypper -n in -l deluge
 # sudo zypper -n in -l transmission
 sudo zypper -n in -l qbittorrent
@@ -120,7 +120,7 @@ sudo zypper -n in -l rxvt-unicode urxvt-font-size urxvt-perls
 # sudo zypper -n in -l mutt getmail msmtp procmail fetchmail
 # sudo zypper -n in -l MozillaThunderbird  
 sudo zypper -n in -l code
-# sudo zypper -n in -l sublime-text
+sudo zypper -n in -l sublime-text
 sudo zypper -n in -l noto-serif-sc-fonts-full
 sudo zypper -n in -l noto-sans-sc-fonts-full
 # sudo zypper -n in -l noto-serif-tc-fonts-full noto-serif-jp-fonts-full noto-serif-kr-fonts-full
@@ -138,7 +138,7 @@ sudo zypper -n in -l mariadb mariadb-client libmariadb-devel
 # sudo zypper -n in -l pgadmin3
 sudo zypper -n in -l dolphin-plugins
 sudo zypper -n in -l dropbox
-#sudo zypper -n in -l patterns-opensuse-base patterns-opensuse-devel_basis
+sudo zypper -n in -l patterns-opensuse-base patterns-opensuse-devel_basis
 sudo zypper -n in -l scrot
 sudo zypper -n in -l screenfetch
 sudo zypper -n in -l keepassxc
@@ -180,9 +180,10 @@ sudo zypper -n in -l exfat-utils
 # sudo zypper -n in -l typelib-1_0-LunarDate-3_0
 # sudo zypper -n in -l xournalpp
 sudo zypper -n in -l stow
+sudo zypper -n in -l kio-gdrive
 # 禁用 leap 软件检查更新
-#sudo zypper remove plasma5-pk-updates
-#sudo zypper addlock plasma5-pk-updates
+sudo zypper remove plasma5-pk-updates
+sudo zypper addlock plasma5-pk-updates
 # sudo zypper -n in -l https://pencil.evolus.vn/dl/v3.0.4/pencil-3.0.4-49.x86_64.rpm
 # sudo zypper -n in -l https://dbeaver.jkiss.org/files/4.1.2/dbeaver-ce-4.1.2-stable.x86_64.rpm
 chsh -s /bin/zsh
