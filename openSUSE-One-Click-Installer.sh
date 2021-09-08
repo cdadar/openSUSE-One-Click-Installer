@@ -136,6 +136,7 @@ sudo zypper -n in -l saja-cascadia-code-fonts
 sudo zypper -n in -l postgresql postgresql-server postgresql-contrib postgresql-devel postgresql-server-devel
 sudo zypper -n in -l mariadb mariadb-client libmariadb-devel
 # sudo zypper -n in -l pgadmin3
+sudo zypper -n in -l dolphin-plugins
 sudo zypper -n in -l dropbox
 #sudo zypper -n in -l patterns-opensuse-base patterns-opensuse-devel_basis
 sudo zypper -n in -l scrot
