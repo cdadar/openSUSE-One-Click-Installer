@@ -87,6 +87,7 @@ sudo zypper -n in -l fd
 sudo zypper -n in -l rar unrar
 # 支持 7zip 压缩包
 sudo zypper -n in -l p7zip
+sudo zypper -n in -l zip unzip
 # 安装了该包后 ark 打开一些 windows 下创建的 zip 时不再乱码
 # 这些 zip 包中的文件名实际上是以 GBK 编码的
 sudo zypper -n in -l unzip-rcc
