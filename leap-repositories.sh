@@ -9,7 +9,12 @@
 #sudo zypper ar -fc 'https://mirrors.aliyun.com/packman/openSUSE_Leap_$releasever' openSUSE-Aliyun-Packman
 # 添加软件源
 # w32codec-all 需要该源
+# sudo zypper --gpg-auto-import-keys ar -c  'http://download.opensuse.org/update/leap/$releasever/sle/' repo-sle-update
+# sudo zypper --gpg-auto-import-keys ar -c  'http://download.opensuse.org/debug/update/leap/$releasever/sle/' repo-sle-debug-update
+# sudo zypper --gpg-auto-import-keys ar -c  'http://download.opensuse.org/update/leap/$releasever/backports/' repo-sle-backports
+
 # sudo zypper --gpg-auto-import-keys ar -c  'https://packman.inode.at/suse/openSUSE_Leap_$releasever/' packman
+
 sudo zypper --gpg-auto-import-keys ar -fcg -p 90 'https://mirrors.ustc.edu.cn/packman/suse/openSUSE_Leap_$releasever/' packman
 
 sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/home:/opensuse_zh/openSUSE_Leap_$releasever/' opensuse_zh
