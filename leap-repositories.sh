@@ -10,8 +10,10 @@
 # 添加软件源
 # w32codec-all 需要该源
 # sudo zypper --gpg-auto-import-keys ar -c  'http://download.opensuse.org/update/leap/$releasever/sle/' repo-sle-update
+# sudo zypper --gpg-auto-import-keys ar -c  'http://download.opensuse.org/update/leap/$releasever/backports/' repo-backports-update
+
 # sudo zypper --gpg-auto-import-keys ar -c  'http://download.opensuse.org/debug/update/leap/$releasever/sle/' repo-sle-debug-update
-# sudo zypper --gpg-auto-import-keys ar -c  'http://download.opensuse.org/update/leap/$releasever/backports/' repo-sle-backports
+# sudo zypper --gpg-auto-import-keys ar -c  'http://download.opensuse.org/update/leap/$releasever/backports_debug/' repo-backports-debug-update
 
 # sudo zypper --gpg-auto-import-keys ar -c  'https://packman.inode.at/suse/openSUSE_Leap_$releasever/' packman
 
