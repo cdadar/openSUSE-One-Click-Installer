@@ -122,8 +122,10 @@ sudo zypper -n in -l rxvt-unicode urxvt-font-size urxvt-perls
 # sudo zypper -n in -l MozillaThunderbird  
 sudo zypper -n in -l code
 sudo zypper -n in -l sublime-text
-sudo zypper -n in -l noto-serif-sc-fonts-full
-sudo zypper -n in -l noto-sans-sc-fonts-full
+# sudo zypper -n in -l noto-serif-sc-fonts-full
+# sudo zypper -n in -l noto-sans-sc-fonts-full
+sudo zypper -n in -l source-han-sans-cn-fonts
+sudo zypper -n in -l source-han-serif-cn-fonts
 # sudo zypper -n in -l noto-serif-tc-fonts-full noto-serif-jp-fonts-full noto-serif-kr-fonts-full
 sudo zypper -n in -l hack-fonts
 sudo zypper -n in -l fira-code-fonts
