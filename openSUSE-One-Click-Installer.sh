@@ -40,17 +40,17 @@ sudo zypper -n in -l flash-player-ppapi
 #     ./install_uget_integrator.sh
 # fi
 sudo zypper -n in -l git subversion mercurial
-# wget --no-check-certificate -q  https://raw.githubusercontent.com/petervanderdoes/gitflow-avh/develop/contrib/gitflow-installer.sh && sudo bash gitflow-installer.sh install stable; rm gitflow-installer.sh
-# sudo zypper -n in -l deluge
-# sudo zypper -n in -l transmission
-#sudo zypper -n in -l qbittorrent
+#wget --no-check-certificate -q  https://raw.githubusercontent.com/petervanderdoes/gitflow-avh/develop/contrib/gitflow-installer.sh && sudo bash gitflow-installer.sh install stable; rm gitflow-installer.sh
+#sudo zypper -n in -l deluge
+#sudo zypper -n in -l transmission
+sudo zypper -n in -l qbittorrent
 #sudo zypper -n in -l mldonkey
 #sudo zypper -n in -l aMule
 #sudo zypper -n in -l axel
 sudo zypper -n in -l htop
 sudo zypper -n in -l google-chrome-stable
 #sudo zypper -n in -l chromium
-# sudo zypper -n in -l midori
+#sudo zypper -n in -l midori
 sudo zypper -n in -l packman:ffmpeg
 # tomahawk use phonon-backend-vlc, so vlc-codecs ( in packman ) is needed.
 # vlc-codecs 包含许多受限多媒体格式的解码器
@@ -93,7 +93,7 @@ sudo zypper -n in -l zip unzip
 sudo zypper -n in -l unzip-rcc
 sudo zypper -n in -l gcc-c++ gcc
 sudo zypper -n in -l cmake
-#sudo zypper -n in -l clang llvm llvm-devel clang-devel rtags
+sudo zypper -n in -l clang llvm llvm-devel clang-devel rtags
 sudo zypper -n in -l tmux 
 sudo zypper -n in -l vim
 sudo zypper -n in -l neovim
@@ -102,16 +102,16 @@ sudo zypper -n in -l fcitx5 fcitx5-rime
 #sudo zypper -n in -l ibus ibus-rime
 sudo zypper -n in -l xsel
 sudo zypper -n in -l xclip
-# sudo zypper -n in -l wl-clipborad
+sudo zypper -n in -l wl-clipborad
 sudo zypper -n in -l aspell
-#sudo zypper -n in -l sbcl
+sudo zypper -n in -l sbcl
 #sudo zypper -n in -l clisp
-#sudo zypper -n in -l osc rpmdevtools
+sudo zypper -n in -l osc rpmdevtools
 sudo zypper -n in -l gcc kernel-source virtualbox virtualbox-qt
-#sudo zypper -n in -l -t pattern kvm_server kvm_tools
-#sudo zypper -n in -l docker docker-compose
-#sudo zypper -n in -l vagrant
-#sudo zypper -n in -l shadowsocks-libev
+sudo zypper -n in -l -t pattern kvm_server kvm_tools
+sudo zypper -n in -l docker docker-compose
+sudo zypper -n in -l vagrant
+sudo zypper -n in -l shadowsocks-libev
 sudo zypper -n in -l proxychains
 sudo zypper -n in -l privoxy
 sudo zypper -n in -l filezilla
@@ -122,8 +122,8 @@ sudo zypper -n in -l rxvt-unicode urxvt-font-size urxvt-perls
 # sudo zypper -n in -l MozillaThunderbird  
 sudo zypper -n in -l code
 sudo zypper -n in -l sublime-text
-# sudo zypper -n in -l noto-serif-sc-fonts-full
-# sudo zypper -n in -l noto-sans-sc-fonts-full
+sudo zypper -n in -l noto-serif-sc-fonts-full
+sudo zypper -n in -l noto-sans-sc-fonts-full
 sudo zypper -n in -l source-han-sans-cn-fonts
 sudo zypper -n in -l source-han-serif-cn-fonts
 # sudo zypper -n in -l noto-serif-tc-fonts-full noto-serif-jp-fonts-full noto-serif-kr-fonts-full
@@ -137,12 +137,12 @@ sudo zypper -n in -l sarasa-gothic-fonts
 #sudo zypper -n in -l adobe-sourcehanserif-fonts adobe-sourcehanserif-cn-fonts adobe-sourcehanserif-jp-fonts adobe-sourcehanserif-kr-fonts adobe-sourcehanserif-tw-fonts
 #sudo zypper -n in -l adobe-sourcehansans-fonts adobe-sourcehansans-cn-fonts adobe-sourcehansans-jp-fonts adobe-sourcehansans-kr-fonts 
 # sudo zypper -n in -l adobe-sourcehansans-tw-fonts
-#sudo zypper -n in -l postgresql postgresql-server postgresql-contrib postgresql-devel postgresql-server-devel
+sudo zypper -n in -l postgresql postgresql-server postgresql-contrib postgresql-devel postgresql-server-devel
 sudo zypper -n in -l mariadb mariadb-client libmariadb-devel
 # sudo zypper -n in -l pgadmin3
-#sudo zypper -n in -l dolphin-plugins
+sudo zypper -n in -l dolphin-plugins
 sudo zypper -n in -l dropbox
-#sudo zypper -n in -l patterns-opensuse-base patterns-opensuse-devel_basis
+sudo zypper -n in -l patterns-opensuse-base patterns-opensuse-devel_basis
 sudo zypper -n in -l scrot
 sudo zypper -n in -l screenfetch
 sudo zypper -n in -l keepassxc
@@ -156,18 +156,18 @@ sudo zypper -n in -l libnotify-tools
 sudo zypper -n in -l redis
 #视频编辑
 #sudo zypper -n in -l  --no-recommends kdenlive
-#sudo zypper -n in -l blender
+sudo zypper -n in -l blender
 #图片处理
-#sudo zypper -n in -l krita
-#sudo zypper -n in -l gnuplot
-#sudo zypper -n in -l bibletime
+sudo zypper -n in -l krita
+sudo zypper -n in -l gnuplot
+sudo zypper -n in -l bibletime
 # sudo zypper -n in -l syslog-ng syslog-service
 sudo zypper -n in -l sysstat
 #sudo zypper -n in -l fish
 #sudo zypper -n in -l goldendict stardict
 # sudo zypper -n in -l youdao-dict
-#sudo zypper -n in -l ledger
-#sudo zypper -n in -l shotcut
+sudo zypper -n in -l ledger
+sudo zypper -n in -l shotcut
 sudo zypper -n in -l direnv
 sudo zypper -n in -l net-tools-deprecated
 sudo zypper -n in -l remmina
@@ -175,9 +175,9 @@ sudo zypper -n in -l calibre
 sudo zypper -n in -l inotify-tools
 # centos lrzsz
 sudo zypper -n in -l rzsz
-# sudo zypper -n in -l calligra
-#sudo zypper -n in -l steam
-#sudo zypper -n in -l lutris
+sudo zypper -n in -l calligra
+sudo zypper -n in -l steam
+sudo zypper -n in -l lutris
 sudo zypper -n in -l exfat-utils
 # sudo zypper -n in -l gnome-shell-extension-user-theme
 # sudo zypper -n in -l gnome-calendar 
@@ -186,8 +186,8 @@ sudo zypper -n in -l exfat-utils
 sudo zypper -n in -l stow
 #sudo zypper -n in -l kio-gdrive
 # 禁用 leap 软件检查更新
-#sudo zypper remove plasma5-pk-updates
-#sudo zypper addlock plasma5-pk-updates
+sudo zypper remove plasma5-pk-updates
+sudo zypper addlock plasma5-pk-updates
 # sudo zypper -n in -l https://pencil.evolus.vn/dl/v3.0.4/pencil-3.0.4-49.x86_64.rpm
 # sudo zypper -n in -l https://dbeaver.jkiss.org/files/4.1.2/dbeaver-ce-4.1.2-stable.x86_64.rpm
 chsh -s /bin/zsh
