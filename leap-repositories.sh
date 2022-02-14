@@ -50,8 +50,17 @@ sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/reposito
 # sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/devel:/tools/openSUSE_Leap_$releasever/' devel:tools
 # sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/server:/mail/openSUSE_Leap_$releasever/' mail
 # sudo zyppr --gpg-auto-import-keys ar -c  'https://download.opensuse.org/repositories/server:/database:/postgresql/openSUSE_Leap_$releasever' postgresql
+
+# vs code
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/zypp/repos.d/vscode.repo'
+
+# vs codium
+sudo rpmkeys --import https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg
+printf "[vscodium]\nname=vs codium\nbaseurl=https://download.vscodium.com/rpms/\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=1\ngpgkey=https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg\nmetadata_expire=1h" | sudo tee -a /etc/zypp/repos.d/vscodium.repo
+
 # sublime text
 sudo rpm -v --import https://download.sublimetext.com/sublimehq-rpm-pub.gpg
 sudo zypper addrepo -g -f https://download.sublimetext.com/rpm/stable/x86_64/sublime-text.repo
+
+# 刷新软件源并更新系统
