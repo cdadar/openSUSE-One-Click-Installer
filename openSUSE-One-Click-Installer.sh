@@ -31,7 +31,7 @@ sudo zypper -n in -l gstreamer-plugins-bad gstreamer-plugins-bad-chromaprint gst
 # sudo tar -xvf netease-cloud-music_tmp.tar.xz -C /
 sudo zypper -n in -l netease-cloud-music
 # 解决Firefox不能播放flash在线视频
-sudo zypper -n in -l flash-player-ppapi
+sudo zypper -n in -l flash-player
 #sudo zypper -n in -l aria2
 #sudo zypper -n in -l uget
 # if [ ! -f ./install_uget_integrator.sh ]; then
@@ -42,8 +42,8 @@ sudo zypper -n in -l flash-player-ppapi
 sudo zypper -n in -l git subversion mercurial
 #wget --no-check-certificate -q  https://raw.githubusercontent.com/petervanderdoes/gitflow-avh/develop/contrib/gitflow-installer.sh && sudo bash gitflow-installer.sh install stable; rm gitflow-installer.sh
 #sudo zypper -n in -l deluge
-#sudo zypper -n in -l transmission
-sudo zypper -n in -l qbittorrent
+sudo zypper -n in -l transmission
+#sudo zypper -n in -l qbittorrent
 #sudo zypper -n in -l mldonkey
 #sudo zypper -n in -l aMule
 #sudo zypper -n in -l axel
@@ -71,6 +71,7 @@ sudo zypper -n in -l mlocate
 sudo zypper -n in -l nodejs
 sudo zypper -n in -l java-1_8_0-openjdk java-1_8_0-openjdk-devel java-1_8_0-openjdk-src
 sudo zypper -n in -l java-11-openjdk java-11-openjdk-devel java-11-openjdk-src  java-11-openjdk-jmods
+# sudo zypper -n in -l java-17-openjdk java-17-openjdk-devel java-17-openjdk-src  java-17-openjdk-jmods
 sudo zypper -n in -l maven gradle tomcat
 # sudo zypper -n in -l zookeeper-server
 # sudo zypper -n in -l adoptopenjdk-8-hotspot adoptopenjdk-11-hotspot
@@ -98,8 +99,8 @@ sudo zypper -n in -l tmux
 sudo zypper -n in -l vim
 sudo zypper -n in -l neovim
 sudo zypper -n in -l rdesktop
-sudo zypper -n in -l fcitx5 fcitx5-rime
-#sudo zypper -n in -l ibus ibus-rime
+#sudo zypper -n in -l fcitx5 fcitx5-rime
+sudo zypper -n in -l ibus ibus-rime
 sudo zypper -n in -l xsel
 sudo zypper -n in -l xclip
 sudo zypper -n in -l wl-clipborad
@@ -140,7 +141,7 @@ sudo zypper -n in -l sarasa-gothic-fonts
 sudo zypper -n in -l postgresql postgresql-server postgresql-contrib postgresql-devel postgresql-server-devel
 sudo zypper -n in -l mariadb mariadb-client libmariadb-devel
 # sudo zypper -n in -l pgadmin3
-sudo zypper -n in -l dolphin-plugins
+# sudo zypper -n in -l dolphin-plugins
 sudo zypper -n in -l dropbox
 sudo zypper -n in -l patterns-opensuse-base patterns-opensuse-devel_basis
 sudo zypper -n in -l scrot
@@ -158,7 +159,7 @@ sudo zypper -n in -l redis
 #sudo zypper -n in -l  --no-recommends kdenlive
 sudo zypper -n in -l blender
 #图片处理
-sudo zypper -n in -l krita
+#sudo zypper -n in -l krita
 sudo zypper -n in -l gnuplot
 sudo zypper -n in -l bibletime
 # sudo zypper -n in -l syslog-ng syslog-service
@@ -175,7 +176,7 @@ sudo zypper -n in -l calibre
 sudo zypper -n in -l inotify-tools
 # centos lrzsz
 sudo zypper -n in -l rzsz
-sudo zypper -n in -l calligra
+# sudo zypper -n in -l calligra
 sudo zypper -n in -l steam
 sudo zypper -n in -l lutris
 sudo zypper -n in -l exfat-utils

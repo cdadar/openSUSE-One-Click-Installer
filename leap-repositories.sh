@@ -29,9 +29,8 @@ sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/reposito
 # sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/utilities/openSUSE_Leap_$releasever/' utilities
 # sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/Office/openSUSE_Leap_$releasever' office
 sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/M17N:/fonts/openSUSE_Leap_$releasever/'  M17N:fonts
-sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/M17N/openSUSE_Leap_$releasever/' M17N
+#sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/M17N/openSUSE_Leap_$releasever/' M17N
 # sudo zypper --gpg-auto-import-keys ar -c 'https://adoptopenjdk.jfrog.io/adoptopenjdk/rpm/opensuse/$releasever/'$(uname -m)/ adoptopenjdk
-# sudo zypper --gpg-auto-import-keys ar -c 'http://download.opensuse.org/repositories/Java:/Factory/openSUSE_Leap_$releasever/' java
 # sudo zypper --gpg-auto-import-keys ar -c 'http://download.opensuse.org/repositories/Java:/Factory/SLE_15_SP3/' java
 # sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/server:/database/openSUSE_Leap_$releasever/' server:database
 # sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/devel:/languages:/nodejs/openSUSE_Leap_$releasever/' nodejs
