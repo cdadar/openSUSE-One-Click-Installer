@@ -175,6 +175,7 @@ sudo zypper -n in -l remmina
 sudo zypper -n in -l calibre
 sudo zypper -n in -l inotify-tools
 sudo zypper -n in -l libnotify-tools
+sudo zypper -n in -l xchm
 # centos lrzsz
 sudo zypper -n in -l rzsz
 # sudo zypper -n in -l calligra
