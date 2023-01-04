@@ -30,7 +30,7 @@ sudo zypper -n in -l gstreamer-plugins-bad gstreamer-plugins-bad-chromaprint gst
 # ar p netease-cloud-music_*.deb data.tar.xz > netease-cloud-music_tmp.tar.xz
 # sudo tar -xvf netease-cloud-music_tmp.tar.xz -C /
 sudo zypper -n in -l netease-cloud-music
-# 解决Firefox不能播放flash在线视频
+# 解决 Firefox 不能播放 flash 在线视频
 sudo zypper -n in -l flash-player
 #sudo zypper -n in -l aria2
 #sudo zypper -n in -l uget
@@ -188,11 +188,12 @@ sudo zypper -n in -l exfat-utils
 # sudo zypper -n in -l xournalpp
 sudo zypper -n in -l stow
 #sudo zypper -n in -l kio-gdrive
+sudo zypper -n in -l wl-clipboard
 # 禁用 leap 软件检查更新
 sudo zypper remove plasma5-pk-updates
 sudo zypper addlock plasma5-pk-updates
 # sudo zypper -n in -l https://pencil.evolus.vn/dl/v3.0.4/pencil-3.0.4-49.x86_64.rpm
 # sudo zypper -n in -l https://dbeaver.jkiss.org/files/4.1.2/dbeaver-ce-4.1.2-stable.x86_64.rpm
 chsh -s /bin/zsh
-#todo 将github管理的配置处理
+#todo 将 github 管理的配置处理
 export LANG=$OLD_LANG

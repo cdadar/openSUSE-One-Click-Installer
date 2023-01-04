@@ -32,6 +32,7 @@ sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/reposito
 
  # sudo zypper --gpg-auto-import-keys ar -c 'http://download.opensuse.org/repositories/Java:/Factory/SLE_15_SP4/' java
 
+
 # sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/Virtualization/$releasever/' virtualization
 # sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/Virtualization:/vagrant/$releasever/' vagrant
 
