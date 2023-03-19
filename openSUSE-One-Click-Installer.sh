@@ -20,7 +20,7 @@ fi
 # 刷新软件源并更新系统
 sudo zypper --gpg-auto-import-keys ref
 sudo zypper -n update -l
-sudo zypper al libqt5-qtbase-platformtheme-gtk3 libqt5-qtstyleplugins-platformtheme-gtk2
+# sudo zypper al libqt5-qtbase-platformtheme-gtk3 libqt5-qtstyleplugins-platformtheme-gtk2
 # 安装 gstreamer 相关插件，这样基于 phonon 框架的多媒体软件就可以播放受专利保护的多媒体文件了
 sudo zypper -n in -l gstreamer-0_10-plugins-base gstreamer-0_10-plugins-good gstreamer-0_10-plugins-bad gstreamer-0_10-plugins-ugly gstreamer-0_10-plugins-ffmpeg  gstreamer-plugins-bad-orig-addon
 sudo zypper -n in -l gstreamer-plugins-bad gstreamer-plugins-bad-chromaprint gstreamer-plugins-bad-devel gstreamer-plugins-bad-fluidsynth gstreamer-plugins-bad-lang gstreamer-plugins-libav gstreamer-plugins-ugly gstreamer-plugins-ugly-lang
@@ -104,15 +104,15 @@ sudo zypper -n in -l tmux
 sudo zypper -n in -l vim
 sudo zypper -n in -l neovim
 sudo zypper -n in -l rdesktop
-sudo zypper -n in -l fcitx5 fcitx5-rime
-# sudo zypper -n in -l ibus ibus-rime
+# sudo zypper -n in -l fcitx5 fcitx5-rime
+sudo zypper -n in -l ibus ibus-rime
 sudo zypper -n in -l xsel
 sudo zypper -n in -l xclip
 sudo zypper -n in -l wl-clipborad
 sudo zypper -n in -l aspell
 sudo zypper -n in -l sbcl
 #sudo zypper -n in -l clisp
-sudo zypper -n in -l osc rpmdevtools
+# sudo zypper -n in -l osc rpmdevtools
 sudo zypper -n in -l gcc kernel-source virtualbox virtualbox-qt
 sudo zypper -n in -l -t pattern kvm_server kvm_tools
 sudo zypper -n in -l docker docker-compose
@@ -140,6 +140,7 @@ sudo zypper -n in -l wqy-microhei-fonts
 sudo zypper -n in -l wqy-zenhei-fonts
 sudo zypper -n in -l saja-cascadia-code-fonts
 sudo zypper -n in -l sarasa-gothic-fonts
+sudo zypper -n in -l lxgw-wenkai-fonts
 #sudo zypper -n in -l adobe-sourcehanserif-fonts adobe-sourcehanserif-cn-fonts adobe-sourcehanserif-jp-fonts adobe-sourcehanserif-kr-fonts adobe-sourcehanserif-tw-fonts
 #sudo zypper -n in -l adobe-sourcehansans-fonts adobe-sourcehansans-cn-fonts adobe-sourcehansans-jp-fonts adobe-sourcehansans-kr-fonts 
 # sudo zypper -n in -l adobe-sourcehansans-tw-fonts
@@ -148,12 +149,12 @@ sudo zypper -n in -l mariadb mariadb-client libmariadb-devel
 # sudo zypper -n in -l pgadmin3
 # sudo zypper -n in -l dolphin-plugins
 sudo zypper -n in -l dropbox
-sudo zypper -n in -l patterns-opensuse-base patterns-opensuse-devel_basis
+# sudo zypper -n in -l patterns-opensuse-base patterns-opensuse-devel_basis
 sudo zypper -n in -l scrot
 sudo zypper -n in -l screenfetch
 sudo zypper -n in -l keepassxc
 sudo zypper -n in -l zeal
-sudo zypper -n in -l rofi
+# sudo zypper -n in -l rofi
 # sudo zypper -n in -l freemind
 # sudo zypper -n in -l freeplane
 # sudo zypper -n in -l vym
@@ -162,11 +163,12 @@ sudo zypper -n in -l libnotify-tools
 sudo zypper -n in -l redis
 #视频编辑
 #sudo zypper -n in -l  --no-recommends kdenlive
-sudo zypper -n in -l blender
+# sudo zypper -n in -l blender
 #图片处理
 #sudo zypper -n in -l krita
-sudo zypper -n in -l gnuplot
+# sudo zypper -n in -l gnuplot
 sudo zypper -n in -l bibletime
+sudo zypper -n in -l xiphos
 # sudo zypper -n in -l syslog-ng syslog-service
 sudo zypper -n in -l sysstat
 #sudo zypper -n in -l fish
@@ -190,13 +192,12 @@ sudo zypper -n in -l exfat-utils
 # sudo zypper -n in -l gnome-shell-extension-user-theme
 # sudo zypper -n in -l gnome-calendar 
 # sudo zypper -n in -l typelib-1_0-LunarDate-3_0
-# sudo zypper -n in -l xournalpp
+sudo zypper -n in -l xournalpp
 sudo zypper -n in -l stow
 #sudo zypper -n in -l kio-gdrive
-sudo zypper -n in -l wl-clipboard
 # 禁用 leap 软件检查更新
-sudo zypper remove plasma5-pk-updates
-sudo zypper addlock plasma5-pk-updates
+#sudo zypper remove plasma5-pk-updates
+#sudo zypper addlock plasma5-pk-updates
 # sudo zypper -n in -l https://pencil.evolus.vn/dl/v3.0.4/pencil-3.0.4-49.x86_64.rpm
 # sudo zypper -n in -l https://dbeaver.jkiss.org/files/4.1.2/dbeaver-ce-4.1.2-stable.x86_64.rpm
 chsh -s /bin/zsh

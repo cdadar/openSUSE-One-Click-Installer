@@ -26,7 +26,7 @@ sudo zypper --gpg-auto-import-keys ar -c  https://dl.google.com/linux/chrome/rpm
 
 sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/editors/$releasever/' editors
 
-# sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/Office/openSUSE_Leap_$releasever' office
+# sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/Office/$releasever' office
 sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/M17N:/fonts/$releasever/'  M17N:fonts
 # sudo zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/M17N/$releasever/' M17N
 
@@ -64,6 +64,7 @@ sudo zypper addrepo -g -f https://download.sublimetext.com/rpm/stable/x86_64/sub
 # atom
 # sudo sh -c 'echo -e "[Atom]\nname=Atom Editor\nbaseurl=https://packagecloud.io/AtomEditor/atom/el/7/\$basearch\nenabled=1\ntype=rpm-md\ngpgcheck=0\nrepo_gpgcheck=1\ngpgkey=https://packagecloud.io/AtomEditor/atom/gpgkey" > /etc/zypp/repos.d/atom.repo'
 # sudo zypper --gpg-auto-import-keys refresh
+sudo zypper --gpg-auto-import-keys refresh
 
 # 刷新软件源并更新系统
 
