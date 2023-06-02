@@ -20,7 +20,7 @@ fi
 # 刷新软件源并更新系统
 sudo zypper --gpg-auto-import-keys ref
 sudo zypper -n update -l
-sudo zypper al libqt5-qtbase-platformtheme-gtk3 libqt5-qtstyleplugins-platformtheme-gtk2
+# sudo zypper al libqt5-qtbase-platformtheme-gtk3 libqt5-qtstyleplugins-platformtheme-gtk2
 # 安装 gstreamer 相关插件，这样基于 phonon 框架的多媒体软件就可以播放受专利保护的多媒体文件了
 # sudo zypper -n in -l gstreamer-0_10-plugins-base gstreamer-0_10-plugins-good gstreamer-0_10-plugins-bad gstreamer-0_10-plugins-ugly gstreamer-0_10-plugins-ffmpeg  gstreamer-plugins-bad-orig-addon
 # sudo zypper -n in -l gstreamer-plugins-bad gstreamer-plugins-bad-chromaprint gstreamer-plugins-bad-devel gstreamer-plugins-bad-fluidsynth gstreamer-plugins-bad-lang gstreamer-plugins-libav gstreamer-plugins-ugly gstreamer-plugins-ugly-lang
@@ -30,7 +30,7 @@ sudo zypper al libqt5-qtbase-platformtheme-gtk3 libqt5-qtstyleplugins-platformth
 # ar p netease-cloud-music_*.deb data.tar.xz > netease-cloud-music_tmp.tar.xz
 # sudo tar -xvf netease-cloud-music_tmp.tar.xz -C /
 # sudo zypper -n in -l netease-cloud-music
-# 解决Firefox不能播放flash在线视频
+# 解决 Firefox 不能播放 flash 在线视频
 # sudo zypper -n in -l flash-player
 #sudo zypper -n in -l aria2
 #sudo zypper -n in -l uget
@@ -69,6 +69,9 @@ sudo zypper -n in -l google-chrome-stable
 sudo zypper -n in -l zsh
 sudo zypper -n in -l mlocate
 sudo zypper -n in -l nodejs
+sudo zypper -n in -l nodejs12 npm12
+sudo zypper -n in -l nodejs14 npm14
+sudo zypper -n in -l nodejs16 npm16
 sudo zypper -n in -l java-1_8_0-openjdk java-1_8_0-openjdk-devel java-1_8_0-openjdk-src
 sudo zypper -n in -l java-11-openjdk java-11-openjdk-devel java-11-openjdk-src  java-11-openjdk-jmods
 sudo zypper -n in -l java-17-openjdk java-17-openjdk-devel java-17-openjdk-src  java-17-openjdk-jmods
@@ -189,10 +192,10 @@ sudo zypper -n in -l exfat-utils
 sudo zypper -n in -l stow
 #sudo zypper -n in -l kio-gdrive
 # 禁用 leap 软件检查更新
-# sudo zypper remove plasma5-pk-updates
-# sudo zypper addlock plasma5-pk-updates
+sudo zypper remove plasma5-pk-updates
+sudo zypper addlock plasma5-pk-updates
 # sudo zypper -n in -l https://pencil.evolus.vn/dl/v3.0.4/pencil-3.0.4-49.x86_64.rpm
 # sudo zypper -n in -l https://dbeaver.jkiss.org/files/4.1.2/dbeaver-ce-4.1.2-stable.x86_64.rpm
 chsh -s /bin/zsh
-#todo 将github管理的配置处理
+#todo 将 github 管理的配置处理
 export LANG=$OLD_LANG
