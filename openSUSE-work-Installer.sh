@@ -97,7 +97,7 @@ sudo zypper -n in -l zip unzip
 sudo zypper -n in -l unzip-rcc
 sudo zypper -n in -l gcc-c++ gcc
 sudo zypper -n in -l cmake
-sudo zypper -n in -l clang llvm llvm-devel clang-devel rtags
+# sudo zypper -n in -l clang llvm llvm-devel clang-devel rtags
 sudo zypper -n in -l tmux 
 sudo zypper -n in -l vim
 sudo zypper -n in -l neovim
@@ -114,7 +114,7 @@ sudo zypper -n in -l aspell
 sudo zypper -n in -l gcc kernel-source virtualbox virtualbox-qt
 sudo zypper -n in -l -t pattern kvm_server kvm_tools
 sudo zypper -n in -l docker docker-compose
-sudo zypper -n in -l vagrant
+# sudo zypper -n in -l vagrant
 # sudo zypper -n in -l shadowsocks-libev
 sudo zypper -n in -l proxychains
 sudo zypper -n in -l privoxy
@@ -175,7 +175,7 @@ sudo zypper -n in -l redis
 sudo zypper -n in -l direnv
 sudo zypper -n in -l net-tools-deprecated
 sudo zypper -n in -l remmina
-sudo zypper -n in -l calibre
+# sudo zypper -n in -l calibre
 sudo zypper -n in -l inotify-tools
 sudo zypper -n in -l libnotify-tools
 sudo zypper -n in -l xchm
@@ -192,8 +192,8 @@ sudo zypper -n in -l exfat-utils
 sudo zypper -n in -l stow
 #sudo zypper -n in -l kio-gdrive
 # 禁用 leap 软件检查更新
-sudo zypper remove plasma5-pk-updates
-sudo zypper addlock plasma5-pk-updates
+# sudo zypper remove plasma5-pk-updates
+# sudo zypper addlock plasma5-pk-updates
 # sudo zypper -n in -l https://pencil.evolus.vn/dl/v3.0.4/pencil-3.0.4-49.x86_64.rpm
 # sudo zypper -n in -l https://dbeaver.jkiss.org/files/4.1.2/dbeaver-ce-4.1.2-stable.x86_64.rpm
 chsh -s /bin/zsh
