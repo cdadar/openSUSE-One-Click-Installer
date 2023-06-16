@@ -29,5 +29,5 @@ sudo zypper addrepo -g -f https://download.sublimetext.com/rpm/stable/x86_64/sub
 sudo zypper --gpg-auto-import-keys refresh
 # 刷新软件源并更新系统
 
-sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
-sudo zypper addrepo https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
+# sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+# sudo zypper addrepo https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
