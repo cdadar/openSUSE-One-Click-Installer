@@ -39,7 +39,7 @@ sudo zypper -n update -l
 #     chmod +x install_uget_integrator.sh
 #     ./install_uget_integrator.sh
 # fi
-sudo zypper -n in -l git subversion mercurial
+sudo zypper -n in -l git 
 #wget --no-check-certificate -q  https://raw.githubusercontent.com/petervanderdoes/gitflow-avh/develop/contrib/gitflow-installer.sh && sudo bash gitflow-installer.sh install stable; rm gitflow-installer.sh
 #sudo zypper -n in -l deluge
 # sudo zypper -n in -l transmission
@@ -95,15 +95,15 @@ sudo zypper -n in -l zip unzip
 # 安装了该包后 ark 打开一些 windows 下创建的 zip 时不再乱码
 # 这些 zip 包中的文件名实际上是以 GBK 编码的
 sudo zypper -n in -l unzip-rcc
-sudo zypper -n in -l gcc-c++ gcc
-sudo zypper -n in -l cmake
+# sudo zypper -n in -l gcc-c++ gcc
+# sudo zypper -n in -l cmake
 # sudo zypper -n in -l clang llvm llvm-devel clang-devel rtags
 sudo zypper -n in -l tmux 
 sudo zypper -n in -l vim
 sudo zypper -n in -l neovim
-sudo zypper -n in -l rdesktop
-#sudo zypper -n in -l fcitx5 fcitx5-rime
-sudo zypper -n in -l ibus ibus-rime
+# sudo zypper -n in -l rdesktop
+sudo zypper -n in -l fcitx5 fcitx5-rime
+# sudo zypper -n in -l ibus ibus-rime
 sudo zypper -n in -l xsel
 sudo zypper -n in -l xclip
 sudo zypper -n in -l wl-clipborad
@@ -111,8 +111,8 @@ sudo zypper -n in -l aspell
 # sudo zypper -n in -l sbcl
 #sudo zypper -n in -l clisp
 # sudo zypper -n in -l osc rpmdevtools
-sudo zypper -n in -l gcc kernel-source virtualbox virtualbox-qt
-sudo zypper -n in -l -t pattern kvm_server kvm_tools
+# sudo zypper -n in -l gcc kernel-source virtualbox virtualbox-qt
+# sudo zypper -n in -l -t pattern kvm_server kvm_tools
 sudo zypper -n in -l docker docker-compose
 # sudo zypper -n in -l vagrant
 # sudo zypper -n in -l shadowsocks-libev
@@ -141,14 +141,14 @@ sudo zypper -n in -l sarasa-gothic-fonts
 #sudo zypper -n in -l adobe-sourcehanserif-fonts adobe-sourcehanserif-cn-fonts adobe-sourcehanserif-jp-fonts adobe-sourcehanserif-kr-fonts adobe-sourcehanserif-tw-fonts
 #sudo zypper -n in -l adobe-sourcehansans-fonts adobe-sourcehansans-cn-fonts adobe-sourcehansans-jp-fonts adobe-sourcehansans-kr-fonts 
 # sudo zypper -n in -l adobe-sourcehansans-tw-fonts
-sudo zypper -n in -l postgresql postgresql-server postgresql-contrib postgresql-devel postgresql-server-devel
-sudo zypper -n in -l mariadb mariadb-client libmariadb-devel
+# sudo zypper -n in -l postgresql postgresql-server postgresql-contrib postgresql-devel postgresql-server-devel
+# sudo zypper -n in -l mariadb mariadb-client libmariadb-devel
 # sudo zypper -n in -l pgadmin3
 # sudo zypper -n in -l dolphin-plugins
 sudo zypper -n in -l dropbox
 # sudo zypper -n in -l patterns-opensuse-base patterns-opensuse-devel_basis
-sudo zypper -n in -l scrot
-sudo zypper -n in -l screenfetch
+# sudo zypper -n in -l scrot
+# sudo zypper -n in -l screenfetch
 sudo zypper -n in -l keepassxc
 sudo zypper -n in -l zeal
 # sudo zypper -n in -l rofi
@@ -157,7 +157,7 @@ sudo zypper -n in -l zeal
 # sudo zypper -n in -l vym
 # sudo zypper -n in jiarenlu:bcloud
 sudo zypper -n in -l libnotify-tools
-sudo zypper -n in -l redis
+# sudo zypper -n in -l redis
 #视频编辑
 #sudo zypper -n in -l  --no-recommends kdenlive
 # sudo zypper -n in -l blender
