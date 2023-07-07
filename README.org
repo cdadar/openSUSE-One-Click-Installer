@@ -8,7 +8,7 @@ netease-cloud-music
 *** google-chrome
 google-chrome-stable
 *** editors
-主要使用 emacs25.2 ,oss中的emacs现在才24.3
+主要使用 emacs28.2
 *** M17N:fonts
 
 *** nodejs

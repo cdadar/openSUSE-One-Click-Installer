@@ -16,7 +16,7 @@
 # w32codec-all 需要该源
  sudo zypper --gpg-auto-import-keys ar -c  'https://packman.inode.at/suse/openSUSE_Leap_$releasever/' packman
 # 第三方源
-#sudo zypper ar -fc 'https://mirrors.aliyun.com/packman/openSUSE_Leap_$releasever' openSUSE-Aliyun-Packman
+#sudo zypper ar -fc 'https://mirrors.aliyun.com/packman/suse/openSUSE_Leap_$releasever' openSUSE-Aliyun-Packman
 
 # sudo zypper --gpg-auto-import-keys ar -fcg -p 90 'https://mirrors.ustc.edu.cn/packman/suse/openSUSE_Leap_$releasever/' packman
 

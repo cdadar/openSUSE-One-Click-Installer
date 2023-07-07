@@ -50,11 +50,11 @@ sudo zypper -n in -l unzip-rcc
 sudo zypper -n in -l tmux 
 sudo zypper -n in -l vim
 sudo zypper -n in -l neovim
-sudo zypper -n in -l fcitx5 fcitx5-rime
-# sudo zypper -n in -l ibus ibus-rime
+# sudo zypper -n in -l fcitx5 fcitx5-rime
+sudo zypper -n in -l ibus ibus-rime
 sudo zypper -n in -l xsel
 sudo zypper -n in -l xclip
-sudo zypper -n in -l wl-clipborad
+sudo zypper -n in -l wl-clipboard
 sudo zypper -n in -l aspell
 sudo zypper -n in -l docker docker-compose
 sudo zypper -n in -l proxychains
@@ -87,11 +87,8 @@ sudo zypper -n in -l libnotify-tools
 sudo zypper -n in -l xchm
 # centos lrzsz
 sudo zypper -n in -l rzsz
-sudo zypper -n in -l exfat-utils
 sudo zypper -n in -l stow
 # 禁用 leap 软件检查更新
-sudo zypper remove plasma5-pk-updates 
-sudo zypper addlock plasma5-pk-updates
 chsh -s /bin/zsh
 #todo 将 github 管理的配置处理
 export LANG=$OLD_LANG
