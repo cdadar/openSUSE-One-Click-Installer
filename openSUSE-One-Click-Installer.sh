@@ -80,6 +80,7 @@ sudo zypper -n in -l maven gradle tomcat
 # sudo zypper -n in -l adoptopenjdk-8-hotspot adoptopenjdk-11-hotspot
 sudo zypper -n in -l emacs emacs-el etags
 sudo zypper -n in -l tree-sitter
+sudo zypper -n in -l tree-sitter-devel
 #sudo zypper -n si emacs
 sudo zypper -n in -l ctags
 sudo zypper -n in -l the_silver_searcher
