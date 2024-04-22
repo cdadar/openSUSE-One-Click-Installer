@@ -194,6 +194,7 @@ sudo zypper -n in -l exfat-utils
 # sudo zypper -n in -l typelib-1_0-LunarDate-3_0
 sudo zypper -n in -l xournalpp
 sudo zypper -n in -l stow
+sudo zypper -n in -l tesseract-ocr tesseract-ocr-traineddata-chi_sim
 #sudo zypper -n in -l kio-gdrive
 # 禁用 leap 软件检查更新
 #sudo zypper remove plasma5-pk-updates
