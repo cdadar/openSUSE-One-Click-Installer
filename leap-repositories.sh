@@ -5,6 +5,8 @@
 #sudo zypper ar -fc 'https://mirrors.aliyun.com/opensuse/distribution/leap/$releasever/repo/non-oss' openSUSE-Aliyun-NON-OSS
 #sudo zypper ar -fc 'https://mirrors.aliyun.com/opensuse/update/leap/$releasever/oss' openSUSE-Aliyun-UPDATE-OSS
 #sudo zypper ar -fc 'https://mirrors.aliyun.com/opensuse/update/leap/$releasever/non-oss' openSUSE-Aliyun-UPDATE-NON-OSS
+#sudo zypper ar -fc 'https://mirrors.aliyun.com/opensuse/update/leap/$releasever/sle' openSUSE-Aliyun-Sle
+#sudo zypper ar -fc 'https://mirrors.aliyun.com/opensuse/update/leap/$releasever/backports' openSUSE-Aliyun-Backports
 
 # sudo zypper --gpg-auto-import-keys ar -c  'https://cnd.opensuse.org/update/leap/$releasever/sle/' repo-sle-update
 # sudo zypper --gpg-auto-import-keys ar -c  'https://cnd.opensuse.org/update/leap/$releasever/backports/' repo-backports-update
@@ -25,6 +27,8 @@
 sudo zypper --gpg-auto-import-keys ar -c  https://dl.google.com/linux/chrome/rpm/stable/$(uname -m) google-chrome
 
 sudo zypper --gpg-auto-import-keys ar -c 'https://cnd.opensuse.org/repositories/editors/$releasever/' editors
+
+sudo zypper --gpg-auto-import-keys ar -c 'https://cdn.opensuse.org/repositories/devel:/tools/$releasever/' devel:tools
 
 # sudo zypper --gpg-auto-import-keys ar -c 'https://cnd.opensuse.org/repositories/Office/$releasever' office
 sudo zypper --gpg-auto-import-keys ar -c 'https://cnd.opensuse.org/repositories/M17N:/fonts/$releasever/'  M17N:fonts
