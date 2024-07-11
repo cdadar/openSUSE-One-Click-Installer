@@ -25,14 +25,14 @@ sudo zypper -n in -l htop
 sudo zypper -n in -l google-chrome-stable
 sudo zypper -n in -l zsh
 sudo zypper -n in -l mlocate
-sudo zypper -n in -l nodejs
-sudo zypper -n in -l nodejs12 npm12
-sudo zypper -n in -l nodejs14 npm14
-sudo zypper -n in -l nodejs16 npm16
-sudo zypper -n in -l java-1_8_0-openjdk java-1_8_0-openjdk-devel java-1_8_0-openjdk-src
-sudo zypper -n in -l java-11-openjdk java-11-openjdk-devel java-11-openjdk-src  java-11-openjdk-jmods
-sudo zypper -n in -l java-17-openjdk java-17-openjdk-devel java-17-openjdk-src  java-17-openjdk-jmods
-sudo zypper -n in -l maven gradle tomcat
+sudo zypper -n in -l nodejs npm
+# sudo zypper -n in -l nodejs12 npm12
+# sudo zypper -n in -l nodejs14 npm14
+# sudo zypper -n in -l nodejs16 npm16
+# sudo zypper -n in -l java-1_8_0-openjdk java-1_8_0-openjdk-devel java-1_8_0-openjdk-src
+# sudo zypper -n in -l java-11-openjdk java-11-openjdk-devel java-11-openjdk-src  java-11-openjdk-jmods
+# sudo zypper -n in -l java-17-openjdk java-17-openjdk-devel java-17-openjdk-src  java-17-openjdk-jmods
+# sudo zypper -n in -l maven gradle tomcat
 sudo zypper -n in -l emacs emacs-el etags
 sudo zypper -n in -l ctags
 sudo zypper -n in -l the_silver_searcher
