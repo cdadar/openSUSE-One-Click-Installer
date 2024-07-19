@@ -25,7 +25,7 @@ sudo zypper -n in -l htop
 sudo zypper -n in -l google-chrome-stable
 sudo zypper -n in -l zsh
 sudo zypper -n in -l mlocate
-sudo zypper -n in -l nodejs npm
+# sudo zypper -n in -l nodejs npm
 # sudo zypper -n in -l nodejs12 npm12
 # sudo zypper -n in -l nodejs14 npm14
 # sudo zypper -n in -l nodejs16 npm16
@@ -75,7 +75,7 @@ sudo zypper -n in -l wqy-microhei-fonts
 sudo zypper -n in -l wqy-zenhei-fonts
 sudo zypper -n in -l saja-cascadia-code-fonts
 sudo zypper -n in -l sarasa-gothic-fonts
-sudo zypper -n in -l dropbox
+# sudo zypper -n in -l dropbox
 sudo zypper -n in -l keepassxc
 sudo zypper -n in -l zeal
 sudo zypper -n in -l libnotify-tools
