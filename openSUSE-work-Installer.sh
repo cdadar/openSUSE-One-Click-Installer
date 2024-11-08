@@ -20,7 +20,7 @@ fi
 # 刷新软件源并更新系统
 sudo zypper --gpg-auto-import-keys ref
 sudo zypper -n update -l
-sudo zypper -n in -l git 
+sudo zypper -n in -l git git-lfs
 sudo zypper -n in -l htop
 sudo zypper -n in -l google-chrome-stable
 sudo zypper -n in -l zsh

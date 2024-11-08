@@ -39,7 +39,7 @@ sudo zypper -n in -l flash-player
 #     chmod +x install_uget_integrator.sh
 #     ./install_uget_integrator.sh
 # fi
-sudo zypper -n in -l git subversion mercurial
+sudo zypper -n in -l git git-lfs subversion mercurial
 #wget --no-check-certificate -q  https://raw.githubusercontent.com/petervanderdoes/gitflow-avh/develop/contrib/gitflow-installer.sh && sudo bash gitflow-installer.sh install stable; rm gitflow-installer.sh
 #sudo zypper -n in -l deluge
 sudo zypper -n in -l transmission
