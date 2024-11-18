@@ -34,6 +34,19 @@ sudo zypper -n in -l mlocate
 # sudo zypper -n in -l java-17-openjdk java-17-openjdk-devel java-17-openjdk-src  java-17-openjdk-jmods
 # sudo zypper -n in -l maven gradle tomcat
 sudo zypper -n in -l emacs emacs-el etags
+sudo zypper -n in -l tree-sitter
+sudo zypper -n in -l tree-sitter-python
+sudo zypper -n in -l tree-sitter-java
+sudo zypper -n in -l tree-sitter-javascript
+sudo zypper -n in -l tree-sitter-bash
+sudo zypper -n in -l tree-sitter-css
+sudo zypper -n in -l tree-sitter-go
+sudo zypper -n in -l tree-sitter-html
+sudo zypper -n in -l tree-sitter-json
+sudo zypper -n in -l tree-sitter-markdown
+sudo zypper -n in -l tree-sitter-typescript
+sudo zypper -n in -l tree-sitter-xml
+sudo zypper -n in -l tree-sitter-devel
 sudo zypper -n in -l ctags
 sudo zypper -n in -l the_silver_searcher
 sudo zypper -n in -l ripgrep
@@ -50,8 +63,8 @@ sudo zypper -n in -l unzip-rcc
 sudo zypper -n in -l tmux 
 sudo zypper -n in -l vim
 sudo zypper -n in -l neovim
-# sudo zypper -n in -l fcitx5 fcitx5-rime
-sudo zypper -n in -l ibus ibus-rime
+sudo zypper -n in -l fcitx5 fcitx5-rime
+# sudo zypper -n in -l ibus ibus-rime
 sudo zypper -n in -l xsel
 sudo zypper -n in -l xclip
 sudo zypper -n in -l wl-clipboard
@@ -88,6 +101,7 @@ sudo zypper -n in -l xchm
 # centos lrzsz
 sudo zypper -n in -l rzsz
 sudo zypper -n in -l stow
+sudo zypper -n in -l wireshark
 # 禁用 leap 软件检查更新
 chsh -s /bin/zsh
 #todo 将 github 管理的配置处理

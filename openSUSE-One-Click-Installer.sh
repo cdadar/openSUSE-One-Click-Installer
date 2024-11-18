@@ -69,17 +69,41 @@ sudo zypper -n in -l peek simplescreenrecorder
 sudo zypper -n in -l zsh
 sudo zypper -n in -l mlocate
 sudo zypper -n in -l nodejs
-sudo zypper -n in -l nodejs12 npm12
-sudo zypper -n in -l nodejs14 npm14
-sudo zypper -n in -l nodejs16 npm16
-sudo zypper -n in -l java-1_8_0-openjdk java-1_8_0-openjdk-devel java-1_8_0-openjdk-src
-sudo zypper -n in -l java-11-openjdk java-11-openjdk-devel java-11-openjdk-src  java-11-openjdk-jmods
+# sudo zypper -n in -l nodejs12 npm12
+# sudo zypper -n in -l nodejs14 npm14
+# sudo zypper -n in -l nodejs16 npm16
+# sudo zypper -n in -l java-1_8_0-openjdk java-1_8_0-openjdk-devel java-1_8_0-openjdk-src
+# sudo zypper -n in -l java-11-openjdk java-11-openjdk-devel java-11-openjdk-src  java-11-openjdk-jmods
 sudo zypper -n in -l java-17-openjdk java-17-openjdk-devel java-17-openjdk-src  java-17-openjdk-jmods
 sudo zypper -n in -l maven gradle tomcat
 # sudo zypper -n in -l zookeeper-server
 # sudo zypper -n in -l adoptopenjdk-8-hotspot adoptopenjdk-11-hotspot
 sudo zypper -n in -l emacs emacs-el etags
 sudo zypper -n in -l tree-sitter
+sudo zypper -n in -l tree-sitter-python
+sudo zypper -n in -l tree-sitter-java
+sudo zypper -n in -l tree-sitter-javascript
+sudo zypper -n in -l tree-sitter-bash
+sudo zypper -n in -l tree-sitter-c
+sudo zypper -n in -l tree-sitter-c-sharp
+sudo zypper -n in -l tree-sitter-cpp
+sudo zypper -n in -l tree-sitter-css
+sudo zypper -n in -l tree-sitter-go
+sudo zypper -n in -l tree-sitter-haskell
+sudo zypper -n in -l tree-sitter-html
+sudo zypper -n in -l tree-sitter-json
+sudo zypper -n in -l tree-sitter-lua
+sudo zypper -n in -l tree-sitter-markdown
+sudo zypper -n in -l tree-sitter-qmldir
+sudo zypper -n in -l tree-sitter-qmljs
+sudo zypper -n in -l tree-sitter-query
+sudo zypper -n in -l tree-sitter-regex
+sudo zypper -n in -l tree-sitter-ruby
+sudo zypper -n in -l tree-sitter-rust
+sudo zypper -n in -l tree-sitter-typescript
+sudo zypper -n in -l tree-sitter-vim
+sudo zypper -n in -l tree-sitter-vimdoc
+sudo zypper -n in -l tree-sitter-xml
 sudo zypper -n in -l tree-sitter-devel
 #sudo zypper -n si emacs
 sudo zypper -n in -l ctags
@@ -100,12 +124,12 @@ sudo zypper -n in -l unzip-rcc
 sudo zypper -n in -l gcc-c++ gcc
 sudo zypper -n in -l cmake
 sudo zypper -n in -l clang llvm llvm-devel clang-devel rtags
-sudo zypper -n in -l tmux 
+sudo zypper -n in -l tmux
 sudo zypper -n in -l vim
 sudo zypper -n in -l neovim
 sudo zypper -n in -l rdesktop
-# sudo zypper -n in -l fcitx5 fcitx5-rime
-sudo zypper -n in -l ibus ibus-rime
+sudo zypper -n in -l fcitx5 fcitx5-rime
+# sudo zypper -n in -l ibus ibus-rime
 sudo zypper -n in -l xsel
 sudo zypper -n in -l xclip
 sudo zypper -n in -l wl-clipborad
@@ -195,6 +219,7 @@ sudo zypper -n in -l exfat-utils
 sudo zypper -n in -l xournalpp
 sudo zypper -n in -l stow
 sudo zypper -n in -l tesseract-ocr tesseract-ocr-traineddata-chi_sim
+sudo zypper -n in -l wireshark
 #sudo zypper -n in -l kio-gdrive
 # 禁用 leap 软件检查更新
 #sudo zypper remove plasma5-pk-updates
