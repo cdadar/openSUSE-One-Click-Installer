@@ -186,11 +186,12 @@ sudo zypper -n in -l zeal
 sudo zypper -n in -l libnotify-tools
 sudo zypper -n in -l redis
 #视频编辑
-#sudo zypper -n in -l  --no-recommends kdenlive
-# sudo zypper -n in -l blender
+sudo zypper -n in -l  --no-recommends kdenlive
+sudo zypper -n in -l blender
+sudo zypper -n in -l audacity
 #图片处理
-#sudo zypper -n in -l krita
-# sudo zypper -n in -l gnuplot
+sudo zypper -n in -l krita
+sudo zypper -n in -l gnuplot
 sudo zypper -n in -l bibletime
 sudo zypper -n in -l xiphos
 # sudo zypper -n in -l syslog-ng syslog-service
@@ -212,7 +213,6 @@ sudo zypper -n in -l rzsz
 # sudo zypper -n in -l calligra
 sudo zypper -n in -l steam
 sudo zypper -n in -l lutris
-sudo zypper -n in -l exfat-utils
 # sudo zypper -n in -l gnome-shell-extension-user-theme
 # sudo zypper -n in -l gnome-calendar 
 # sudo zypper -n in -l typelib-1_0-LunarDate-3_0
