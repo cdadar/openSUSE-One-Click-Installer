@@ -16,8 +16,8 @@
 
 # 添加软件源
 # w32codec-all 需要该源
- # sudo zypper --gpg-auto-import-keys ar -c  'https://packman.inode.at/suse/$releasever/' packman
-sudo zypper --gpg-auto-import-keys ar -c 'http://mirrors.aliyun.com/packman/$releasever' packman
+sudo zypper --gpg-auto-import-keys ar -c  'https://packman.inode.at/suse/$releasever/' packman
+# sudo zypper --gpg-auto-import-keys ar -c 'http://mirrors.aliyun.com/packman/$releasever' packman
 # 第三方源
 #sudo zypper ar -fc 'https://mirrors.aliyun.com/packman/suse/openSUSE_Leap_$releasever' openSUSE-Aliyun-Packman
 
@@ -34,7 +34,7 @@ sudo zypper --gpg-auto-import-keys ar -c 'https://cdn.opensuse.org/repositories/
 
 # sudo zypper --gpg-auto-import-keys ar -c 'https://cdn.opensuse.org/repositories/Office/$releasever' office
 sudo zypper --gpg-auto-import-keys ar -c 'https://cdn.opensuse.org/repositories/M17N:/fonts/$releasever/'  M17N:fonts
-# sudo zypper --gpg-auto-import-keys ar -c 'https://cdn.opensuse.org/repositories/M17N/$releasever/' M17N
+sudo zypper --gpg-auto-import-keys ar -c 'https://cdn.opensuse.org/repositories/M17N/$releasever/' M17N
 
  # sudo zypper --gpg-auto-import-keys ar -c 'https://cdn.opensuse.org/repositories/Java:/Factory/SLE_15_SP4/' java
 
