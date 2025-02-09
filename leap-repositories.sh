@@ -16,7 +16,7 @@
 
 # 添加软件源
 # w32codec-all 需要该源
-sudo zypper --gpg-auto-import-keys ar -c  'https://packman.inode.at/suse/$releasever/' packman
+sudo zypper --gpg-auto-import-keys ar -c  'https://ftp.fau.de/packman/suse/openSUSE_Leap_$releasever/' packman
 # sudo zypper --gpg-auto-import-keys ar -c 'http://mirrors.aliyun.com/packman/$releasever' packman
 # 第三方源
 #sudo zypper ar -fc 'https://mirrors.aliyun.com/packman/suse/openSUSE_Leap_$releasever' openSUSE-Aliyun-Packman
@@ -28,7 +28,8 @@ sudo zypper --gpg-auto-import-keys ar -c 'https://cdn.opensuse.org/repositories/
 sudo zypper --gpg-auto-import-keys ar -c  https://dl.google.com/linux/chrome/rpm/stable/$(uname -m) google-chrome
 
 sudo zypper --gpg-auto-import-keys ar -c 'https://cdn.opensuse.org/repositories/editors/$releasever/' editors
-sudo zypper --gpg-auto-import-keys ar -c 'https://cdn.opensuse.org/repositories/network:/vpn/$releasever/' network:vpn
+sudo zypper --gpg-auto-import-keys ar -c 'https://cdn.opensuse.org/repositories/editors:tree-sitter/$releasever' editors:tree-sitter
+sudo zypper --gpg-auto-import-keys ar -c 'https://cdn.opensuse.org/repositories/network:/vpn/openSUSE_Leqp_$releasever/' network:vpn
 
 sudo zypper --gpg-auto-import-keys ar -c 'https://cdn.opensuse.org/repositories/devel:/tools/$releasever/' devel:tools
 

@@ -128,8 +128,8 @@ sudo zypper -n in -l tmux
 sudo zypper -n in -l vim
 sudo zypper -n in -l neovim
 sudo zypper -n in -l rdesktop
-sudo zypper -n in -l fcitx5 fcitx5-rime
-# sudo zypper -n in -l ibus ibus-rime
+# sudo zypper -n in -l fcitx5 fcitx5-rime
+sudo zypper -n in -l ibus ibus-rime
 sudo zypper -n in -l xsel
 sudo zypper -n in -l xclip
 sudo zypper -n in -l wl-clipborad
@@ -183,10 +183,9 @@ sudo zypper -n in -l zeal
 # sudo zypper -n in -l freeplane
 # sudo zypper -n in -l vym
 # sudo zypper -n in jiarenlu:bcloud
-sudo zypper -n in -l libnotify-tools
 sudo zypper -n in -l redis
 #视频编辑
-sudo zypper -n in -l  --no-recommends kdenlive
+#sudo zypper -n in -l  --no-recommends kdenlive
 sudo zypper -n in -l blender
 sudo zypper -n in -l audacity
 #图片处理
