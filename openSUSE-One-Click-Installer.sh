@@ -105,6 +105,7 @@ sudo zypper -n in -l tree-sitter-vim
 sudo zypper -n in -l tree-sitter-vimdoc
 sudo zypper -n in -l tree-sitter-xml
 sudo zypper -n in -l tree-sitter-devel
+sudo zypper -n in -l tree-sitter-zig
 #sudo zypper -n si emacs
 sudo zypper -n in -l ctags
 sudo zypper -n in -l the_silver_searcher
