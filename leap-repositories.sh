@@ -24,7 +24,10 @@ sudo zypper --gpg-auto-import-keys ar -c  'https://ftp.fau.de/packman/suse/openS
 # sudo zypper --gpg-auto-import-keys ar -fcg -p 90 'https://mirrors.ustc.edu.cn/packman/suse/openSUSE_Leap_$releasever/' packman
 
 sudo zypper --gpg-auto-import-keys ar -c 'https://cdn.opensuse.org/repositories/home:/opensuse_zh/$releasever/' opensuse_zh
-# sudo zypper --gpg-auto-import-keys ar -c 'https://cdn.opensuse.org/repositories/home:/jiarenlu/openSUSE_Leap_$releasever/' jiarenlu
+# sudo zypper --gpg-auto-import-keys ar -c 'https://cdn.opensuse.org/repositories/home:/jiarenlu/$releasever/' jiarenlu
+
+# wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub > linux_signing_key.pub
+# sudo rpm --import linux_signing_key.pub
 sudo zypper --gpg-auto-import-keys ar -c  https://dl.google.com/linux/chrome/rpm/stable/$(uname -m) google-chrome
 
 sudo zypper --gpg-auto-import-keys ar -c 'https://cdn.opensuse.org/repositories/editors/$releasever/' editors

@@ -42,7 +42,7 @@ sudo zypper -n in -l flash-player
 sudo zypper -n in -l git git-lfs subversion mercurial
 #wget --no-check-certificate -q  https://raw.githubusercontent.com/petervanderdoes/gitflow-avh/develop/contrib/gitflow-installer.sh && sudo bash gitflow-installer.sh install stable; rm gitflow-installer.sh
 #sudo zypper -n in -l deluge
-sudo zypper -n in -l transmission
+# sudo zypper -n in -l transmission
 #sudo zypper -n in -l qbittorrent
 #sudo zypper -n in -l mldonkey
 #sudo zypper -n in -l aMule
@@ -57,6 +57,9 @@ sudo zypper -n in -l packman:ffmpeg
 sudo zypper -n in -l packman:vlc-codecs 
 sudo zypper -n in -l packman:vlc 
 sudo zypper -n in -l handbrake-cli
+sudo zypper -n in -l mpv
+sudo zypper -n in -l kodi
+
 # sudo zypper -n in -l packman:MPlayer
 # sudo zypper -n in -l packman:gmplayer
 # sudo zypper -n in -l packman:smplayer
@@ -136,6 +139,7 @@ sudo zypper -n in -l xclip
 sudo zypper -n in -l wl-clipborad
 sudo zypper -n in -l aspell
 sudo zypper -n in -l sbcl
+sudo zypper -n in -l tailscale
 #sudo zypper -n in -l clisp
 # sudo zypper -n in -l osc rpmdevtools
 sudo zypper -n in -l gcc kernel-source virtualbox virtualbox-qt
@@ -176,6 +180,7 @@ sudo zypper -n in -l mariadb mariadb-client libmariadb-devel
 sudo zypper -n in -l dropbox
 # sudo zypper -n in -l patterns-opensuse-base patterns-opensuse-devel_basis
 sudo zypper -n in -l scrot
+sudo zypper -n in -l shotcut
 sudo zypper -n in -l screenfetch
 sudo zypper -n in -l keepassxc
 sudo zypper -n in -l zeal
