@@ -26,6 +26,10 @@ sudo zypper addrepo -g -f https://download.sublimetext.com/rpm/stable/x86_64/sub
 
 # atom
 # sudo sh -c 'echo -e "[Atom]\nname=Atom Editor\nbaseurl=https://packagecloud.io/AtomEditor/atom/el/7/\$basearch\nenabled=1\ntype=rpm-md\ngpgcheck=0\nrepo_gpgcheck=1\ngpgkey=https://packagecloud.io/AtomEditor/atom/gpgkey" > /etc/zypp/repos.d/atom.repo'
+# brave
+sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+sudo zypper addrepo https://brave-browser-rpm-release.s3.brave.com/x86_64/ brave-browser
+
 sudo zypper --gpg-auto-import-keys refresh
 # 刷新软件源并更新系统
 
