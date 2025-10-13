@@ -5,7 +5,7 @@ OLD_LANG=$LANG
 export LANG=default
 SCRIPT_DIR=$(dirname $0)
 
-sudo zypper -n in -l lsb-release
+ zypper -n in -l lsb-release
 
 is_leap=$(echo $(lsb-release -d) |grep 'Leap')
 if [[ "$is_leap" != "" ]]
@@ -18,90 +18,90 @@ else
 fi
 
 # 刷新软件源并更新系统
-sudo zypper --gpg-auto-import-keys ref
-sudo zypper -n update -l
-sudo zypper -n in -l git git-lfs
-sudo zypper -n in -l htop
-sudo zypper -n in -l google-chrome-stable
-sudo zypper -n in -l zsh
-sudo zypper -n in -l mlocate
-# sudo zypper -n in -l nodejs npm
-# sudo zypper -n in -l nodejs12 npm12
-# sudo zypper -n in -l nodejs14 npm14
-# sudo zypper -n in -l nodejs16 npm16
-# sudo zypper -n in -l java-1_8_0-openjdk java-1_8_0-openjdk-devel java-1_8_0-openjdk-src
-# sudo zypper -n in -l java-11-openjdk java-11-openjdk-devel java-11-openjdk-src  java-11-openjdk-jmods
-# sudo zypper -n in -l java-17-openjdk java-17-openjdk-devel java-17-openjdk-src  java-17-openjdk-jmods
-# sudo zypper -n in -l maven gradle tomcat
-sudo zypper -n in -l emacs emacs-el etags
-sudo zypper -n in -l tree-sitter
-sudo zypper -n in -l tree-sitter-python
-sudo zypper -n in -l tree-sitter-java
-sudo zypper -n in -l tree-sitter-javascript
-sudo zypper -n in -l tree-sitter-bash
-sudo zypper -n in -l tree-sitter-css
-sudo zypper -n in -l tree-sitter-go
-sudo zypper -n in -l tree-sitter-html
-sudo zypper -n in -l tree-sitter-json
-sudo zypper -n in -l tree-sitter-markdown
-sudo zypper -n in -l tree-sitter-typescript
-sudo zypper -n in -l tree-sitter-xml
-sudo zypper -n in -l tree-sitter-devel
-sudo zypper -n in -l ctags
-sudo zypper -n in -l the_silver_searcher
-sudo zypper -n in -l ripgrep
-sudo zypper -n in -l fzf
-sudo zypper -n in -l fd
+ zypper --gpg-auto-import-keys ref
+ zypper -n update -l
+ zypper -n in -l git git-lfs
+ zypper -n in -l htop
+ zypper -n in -l google-chrome-stable
+ zypper -n in -l zsh
+ zypper -n in -l mlocate
+#  zypper -n in -l nodejs npm
+#  zypper -n in -l nodejs12 npm12
+#  zypper -n in -l nodejs14 npm14
+#  zypper -n in -l nodejs16 npm16
+#  zypper -n in -l java-1_8_0-openjdk java-1_8_0-openjdk-devel java-1_8_0-openjdk-src
+#  zypper -n in -l java-11-openjdk java-11-openjdk-devel java-11-openjdk-src  java-11-openjdk-jmods
+#  zypper -n in -l java-17-openjdk java-17-openjdk-devel java-17-openjdk-src  java-17-openjdk-jmods
+#  zypper -n in -l maven gradle tomcat
+ zypper -n in -l emacs emacs-el etags
+ zypper -n in -l tree-sitter
+ zypper -n in -l tree-sitter-python
+ zypper -n in -l tree-sitter-java
+ zypper -n in -l tree-sitter-javascript
+ zypper -n in -l tree-sitter-bash
+ zypper -n in -l tree-sitter-css
+ zypper -n in -l tree-sitter-go
+ zypper -n in -l tree-sitter-html
+ zypper -n in -l tree-sitter-json
+ zypper -n in -l tree-sitter-markdown
+ zypper -n in -l tree-sitter-typescript
+ zypper -n in -l tree-sitter-xml
+ zypper -n in -l tree-sitter-devel
+ zypper -n in -l ctags
+ zypper -n in -l the_silver_searcher
+ zypper -n in -l ripgrep
+ zypper -n in -l fzf
+ zypper -n in -l fd
 # 压缩，解压 rar 文件
-sudo zypper -n in -l rar unrar
+ zypper -n in -l rar unrar
 # 支持 7zip 压缩包
-sudo zypper -n in -l p7zip
-sudo zypper -n in -l zip unzip
+ zypper -n in -l p7zip
+ zypper -n in -l zip unzip
 # 安装了该包后 ark 打开一些 windows 下创建的 zip 时不再乱码
 # 这些 zip 包中的文件名实际上是以 GBK 编码的
-sudo zypper -n in -l unzip-rcc
-sudo zypper -n in -l tmux 
-sudo zypper -n in -l vim
-sudo zypper -n in -l neovim
-sudo zypper -n in -l fcitx5 fcitx5-rime
-# sudo zypper -n in -l ibus ibus-rime
-sudo zypper -n in -l xsel
-sudo zypper -n in -l xclip
-sudo zypper -n in -l wl-clipboard
-sudo zypper -n in -l aspell
-sudo zypper -n in -l docker docker-compose
-sudo zypper -n in -l proxychains
-sudo zypper -n in -l privoxy
-sudo zypper -n in -l filezilla
-sudo zypper -n in -l xterm
-sudo zypper -n in -l rxvt-unicode urxvt-font-size urxvt-perls
-sudo zypper -n in -l code
-sudo zypper -n in -l sublime-text
-sudo zypper -n in -l noto-serif-sc-fonts-full
-sudo zypper -n in -l noto-sans-sc-fonts-full
-sudo zypper -n in -l source-han-sans-cn-fonts
-sudo zypper -n in -l source-han-serif-cn-fonts
-sudo zypper -n in -l hack-fonts
-sudo zypper -n in -l fira-code-fonts
-sudo zypper -n in -l wqy-bitmap-fonts
-sudo zypper -n in -l wqy-microhei-fonts
-sudo zypper -n in -l wqy-zenhei-fonts
-sudo zypper -n in -l saja-cascadia-code-fonts
-sudo zypper -n in -l sarasa-gothic-fonts
-# sudo zypper -n in -l dropbox
-sudo zypper -n in -l keepassxc
-sudo zypper -n in -l zeal
-sudo zypper -n in -l libnotify-tools
-sudo zypper -n in -l direnv
-sudo zypper -n in -l net-tools-deprecated
-sudo zypper -n in -l remmina
-sudo zypper -n in -l inotify-tools
-sudo zypper -n in -l libnotify-tools
-sudo zypper -n in -l xchm
+ zypper -n in -l unzip-rcc
+ zypper -n in -l tmux 
+ zypper -n in -l vim
+ zypper -n in -l neovim
+ zypper -n in -l fcitx5 fcitx5-rime
+#  zypper -n in -l ibus ibus-rime
+ zypper -n in -l xsel
+ zypper -n in -l xclip
+ zypper -n in -l wl-clipboard
+ zypper -n in -l aspell
+ zypper -n in -l docker docker-compose
+ zypper -n in -l proxychains
+ zypper -n in -l privoxy
+ zypper -n in -l filezilla
+ zypper -n in -l xterm
+ zypper -n in -l rxvt-unicode urxvt-font-size urxvt-perls
+ zypper -n in -l code
+ zypper -n in -l sublime-text
+ zypper -n in -l noto-serif-sc-fonts-full
+ zypper -n in -l noto-sans-sc-fonts-full
+ zypper -n in -l source-han-sans-cn-fonts
+ zypper -n in -l source-han-serif-cn-fonts
+ zypper -n in -l hack-fonts
+ zypper -n in -l fira-code-fonts
+ zypper -n in -l wqy-bitmap-fonts
+ zypper -n in -l wqy-microhei-fonts
+ zypper -n in -l wqy-zenhei-fonts
+ zypper -n in -l saja-cascadia-code-fonts
+ zypper -n in -l sarasa-gothic-fonts
+#  zypper -n in -l dropbox
+ zypper -n in -l keepassxc
+ zypper -n in -l zeal
+ zypper -n in -l libnotify-tools
+ zypper -n in -l direnv
+ zypper -n in -l net-tools-deprecated
+ zypper -n in -l remmina
+ zypper -n in -l inotify-tools
+ zypper -n in -l libnotify-tools
+ zypper -n in -l xchm
 # centos lrzsz
-sudo zypper -n in -l rzsz
-sudo zypper -n in -l stow
-sudo zypper -n in -l wireshark
+ zypper -n in -l rzsz
+ zypper -n in -l stow
+ zypper -n in -l wireshark
 # 禁用 leap 软件检查更新
 chsh -s /bin/zsh
 #todo 将 github 管理的配置处理
