@@ -83,32 +83,8 @@ zypper -n in -l java-21-openjdk java-21-openjdk-devel java-21-openjdk-src  java-
 # zypper -n in -l zookeeper-server
 # zypper -n in -l adoptopenjdk-8-hotspot adoptopenjdk-11-hotspot
 zypper -n in -l emacs emacs-el etags
-# zypper -n in -l tree-sitter
-# zypper -n in -l tree-sitter-python
-# zypper -n in -l tree-sitter-java
-# zypper -n in -l tree-sitter-javascript
-# zypper -n in -l tree-sitter-bash
-# zypper -n in -l tree-sitter-c
-# zypper -n in -l tree-sitter-c-sharp
-# zypper -n in -l tree-sitter-cpp
-# zypper -n in -l tree-sitter-css
-# zypper -n in -l tree-sitter-go
-# zypper -n in -l tree-sitter-haskell
-# zypper -n in -l tree-sitter-html
-# zypper -n in -l tree-sitter-json
-# zypper -n in -l tree-sitter-lua
-# zypper -n in -l tree-sitter-markdown
-# zypper -n in -l tree-sitter-qmldir
-# zypper -n in -l tree-sitter-qmljs
-# zypper -n in -l tree-sitter-query
-# zypper -n in -l tree-sitter-regex
-# zypper -n in -l tree-sitter-ruby
-# zypper -n in -l tree-sitter-rust
-# zypper -n in -l tree-sitter-typescript
-# zypper -n in -l tree-sitter-vim
-# zypper -n in -l tree-sitter-vimdoc
-# zypper -n in -l tree-sitter-xml
-# zypper -n in -l tree-sitter-devel
+zypper -n in -l tree-sitter
+# zypper -n in -l tree-sitter-python tree-sitter-java tree-sitter-javascript tree-sitter-bash tree-sitter-c tree-sitter-c-sharp tree-sitter-cpp tree-sitter-css tree-sitter-go tree-sitter-haskell tree-sitter-html tree-sitter-json tree-sitter-lua tree-sitter-markdown tree-sitter-qmldir tree-sitter-qmljs tree-sitter-query tree-sitter-regex tree-sitter-ruby tree-sitter-rust tree-sitter-typescript tree-sitter-vim tree-sitter-vimdoc tree-sitter-xml tree-sitter-devel 
 # zypper -n in -l tree-sitter-zig
 # zypper -n si emacs
 zypper -n in -l ctags
