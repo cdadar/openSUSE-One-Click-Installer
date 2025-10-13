@@ -2,13 +2,13 @@
 
 # 添加软件源
 # w32codec-all 需要该源
- zypper --gpg-auto-import-keys ar -c  http://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Slowroll/Essentials/ packman
+zypper --gpg-auto-import-keys ar -c  http://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Slowroll/Essentials/ packman
 
- zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/home:/opensuse_zh/openSUSE_Slowroll/ opensuse_zh
-#  zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/M17N:/fonts/openSUSE_Slowroll/  M17N:fonts
-#  zypper --gpg-auto-import-keys ar http://repo.fdzh.org/chrome/ google-chrome-stable
- zypper --gpg-auto-import-keys ar -c  http://dl.google.com/linux/chrome/rpm/stable/$(uname -m) google-chrome
-#  zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/devel:/languages:/nodejs/openSUSE_Slowroll/' nodejs
+zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/home:/opensuse_zh/openSUSE_Slowroll/ opensuse_zh
+# zypper --gpg-auto-import-keys ar -c http://download.opensuse.org/repositories/M17N:/fonts/openSUSE_Slowroll/  M17N:fonts
+# zypper --gpg-auto-import-keys ar http://repo.fdzh.org/chrome/ google-chrome-stable
+zypper --gpg-auto-import-keys ar -c  http://dl.google.com/linux/chrome/rpm/stable/$(uname -m) google-chrome
+# zypper --gpg-auto-import-keys ar -c 'https://download.opensuse.org/repositories/devel:/languages:/nodejs/openSUSE_Slowroll/' nodejs
 # vs code
  rpm --import https://packages.microsoft.com/keys/microsoft.asc
  sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/zypp/repos.d/vscode.repo'
@@ -19,20 +19,20 @@
 
 # sublime text
  rpm -v --import https://download.sublimetext.com/sublimehq-rpm-pub.gpg
- zypper addrepo -g -f https://download.sublimetext.com/rpm/stable/x86_64/sublime-text.repo
+zypper addrepo -g -f https://download.sublimetext.com/rpm/stable/x86_64/sublime-text.repo
 
 # atom
 #  sh -c 'echo -e "[Atom]\nname=Atom Editor\nbaseurl=https://packagecloud.io/AtomEditor/atom/el/7/\$basearch\nenabled=1\ntype=rpm-md\ngpgcheck=0\nrepo_gpgcheck=1\ngpgkey=https://packagecloud.io/AtomEditor/atom/gpgkey" > /etc/zypp/repos.d/atom.repo'
 
 # brave
  rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
- zypper addrepo https://brave-browser-rpm-release.s3.brave.com/x86_64/ brave-browser
+zypper addrepo https://brave-browser-rpm-release.s3.brave.com/x86_64/ brave-browser
 
- zypper --gpg-auto-import-keys refresh
+zypper --gpg-auto-import-keys refresh
 # 刷新软件源并更新系统
 
 
 
 
 #  rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
-#  zypper addrepo https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
+# zypper addrepo https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
