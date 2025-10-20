@@ -226,6 +226,7 @@ zypper -n in -l xournalpp
 zypper -n in -l stow
 zypper -n in -l tesseract-ocr tesseract-ocr-traineddata-chi_sim
 zypper -n in -l wireshark
+zypper -n in -l libgthread-2_0-0
 #zypper -n in -l kio-gdrive
 # 禁用 leap 软件检查更新
 #zypper remove plasma5-pk-updates

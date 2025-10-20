@@ -103,6 +103,7 @@ zypper -n in -l xchm
 zypper -n in -l rzsz
 zypper -n in -l stow
 zypper -n in -l wireshark
+zypper -n in -l libgthread-2_0-0
 # 禁用 leap 软件检查更新
 chsh -s /bin/zsh
 #todo 将 github 管理的配置处理
