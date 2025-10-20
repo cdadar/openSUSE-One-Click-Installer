@@ -78,6 +78,7 @@ zypper -n in -l rxvt-unicode urxvt-font-size urxvt-perls
 zypper -n in -l code
 zypper -n in -l sublime-text
 zypper -n in -l noto-serif-sc-fonts-full
+zypper -n in -l google-noto-sans-cjk-fonts
 zypper -n in -l noto-sans-sc-fonts-full
 zypper -n in -l source-han-sans-cn-fonts
 zypper -n in -l source-han-serif-cn-fonts
