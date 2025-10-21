@@ -25,7 +25,7 @@ zypper -n in -l htop
 zypper -n in -l google-chrome-stable
 zypper -n in -l zsh
 zypper -n in -l mlocate
-# zypper -n in -l nodejs npm
+zypper -n in -l nodejs npm
 # zypper -n in -l nodejs12 npm12
 # zypper -n in -l nodejs14 npm14
 # zypper -n in -l nodejs16 npm16
